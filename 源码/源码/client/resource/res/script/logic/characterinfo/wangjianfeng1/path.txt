@@ -1,0 +1,6 @@
+MTG-16029
+
+【BUG】【人物属性】人物属性面板显示与加点面板显示属性不一致（差一）
+
+
+E:\mt3\client\resource\res\script\logic\characterinfo

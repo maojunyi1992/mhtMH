@@ -1,0 +1,7 @@
+MTG-14759
+ 
+【BUG】【排行榜】红包榜、鲜花榜点击界面下方信息栏弹出个人评分详情界面【0.0.175PC
+
+审核人：刘庚 提交人：王剑峰
+
+E:\mt3\client\resource\res\script\logic\rank\ 

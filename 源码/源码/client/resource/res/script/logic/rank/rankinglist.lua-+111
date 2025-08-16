@@ -1,0 +1,995 @@
+require "logic.dialog"
+require "utils.mhsdutils"
+require "utils.stringbuilder"
+require "protodef.fire.pb.ranklist.crequestranklist"
+require "protodef.rpcgen.fire.pb.ranklist.ranktype"
+require "protodef.rpcgen.fire.pb.ranklist.levelrankdata"
+require "protodef.rpcgen.fire.pb.ranklist.petgraderankdata"
+require "protodef.rpcgen.fire.pb.ranklist.factionrankrecord"
+require "protodef.rpcgen.fire.pb.ranklist.rolezongherankrecord"
+require "protodef.rpcgen.fire.pb.ranklist.factionraidrankrecord"
+require "protodef.rpcgen.fire.pb.ranklist.factionrankrecordex"
+
+local FIRST_COLOR = "[colrect='tl:FFFFFF00 tr:FFFFFF00 bl:FFFFFF00 br:FFFFFF00']"
+local maxNum = 6  --�������
+RankingList = { }
+setmetatable(RankingList, Dialog)
+RankingList.__index = RankingList 
+
+------------------- public: -----------------------------------
+---- singleton /////////////////////////////////////////------
+local _instance;
+local typeEnum = RankType:new()  
+function RankingList.getInstance()
+    LogInfo("enter RankingList getInstance")
+    if not _instance then
+        _instance = RankingList:new()
+        _instance:OnCreate()
+    end
+
+    return _instance
+end
+
+function RankingList.hide()
+    if _instance then
+        _instance:SetVisible(false)
+    end
+end
+
+local getInstanceAndShowCallback = nil;
+
+function RankingList_AsyncLoadCallback(pWindow)
+	if _instance then
+		_instance.m_pMainFrame = pWindow;
+
+		local bCloseIsHide = _instance.m_bCloseIsHide;
+		_instance.m_bCloseIsHide = false;
+		_instance:OnCreate();
+		_instance.m_bCloseIsHide = bCloseIsHide;
+
+		if getInstanceAndShowCallback then
+			getInstanceAndShowCallback();
+		end
+	end
+end
+
+function RankingList.getInstanceAndShow(cb)
+    LogInfo("enter instance show")
+    if not _instance then
+        _instance = RankingList:new()
+
+		getInstanceAndShowCallback = cb;
+
+		local fileName = _instance.GetLayoutFileName();
+		gGetGameUIManager():asyncLoadWindowLayout(fileName, "", "RankingList_AsyncLoadCallback");
+
+    elseif _instance.m_pMainFrame then
+        LogInfo("set visible")
+        _instance:SetVisible(true)
+        _instance.m_pMainFrame:setAlpha(1)
+
+		if cb then
+			cb();
+		end
+    end
+
+    return _instance
+end
+
+function RankingList.getInstanceNotCreate()
+    return _instance
+end
+
+function RankingList:OnClose()
+    Dialog.OnClose(self)
+    _instance = nil
+end
+
+function RankingList.DestroyDialog()
+    if _instance then
+        if not _instance.m_bCloseIsHide then
+            _instance:OnClose()
+            _instance = nil
+        else
+            _instance:ToggleOpenClose()
+        end
+    end
+end
+
+function RankingList.ToggleOpenClose()
+    if not _instance then
+        _instance = RankingList:new()
+        _instance:OnCreate()
+    else
+        if _instance:IsVisible() then
+            _instance:SetVisible(false)
+        else
+            _instance:SetVisible(true)
+        end
+    end
+end
+
+function RankingList.processList(ranktype, myrank, list, page, hasmore, mytitle, takeAwardFlag, extdata, extdata1,extdata2,extdata3)
+
+    if _instance and _instance.m_rankType~=ranktype then
+        
+        _instance.m_pMain:getVertScrollbar():Stop()
+        _instance.m_pMain:getVertScrollbar():setScrollPosition(0)
+    end
+
+    LogInfo("RankingList processList")
+    if _instance then
+        _instance.m_rankType = ranktype
+        if myrank == 0 then
+            -- ���ڰ��� by changhao
+            if ranktype == typeEnum.ROLE_ZONGHE_RANK then
+                -- �ۺ� by changhao
+                local strbuilder = StringBuilder:new()
+                strbuilder:Set("parameter1", mytitle)
+                _instance.m_pText:setText(strbuilder:GetString(MHSD_UTILS.get_resstring(2913)))
+                strbuilder:delete()
+            elseif ranktype == typeEnum.PROFESSION_WARRIOR_RANK or
+                ranktype == typeEnum.PROFESSION_MAGIC_RANK or
+                ranktype == typeEnum.PROFESSION_PRIEST_RANK or
+                ranktype == typeEnum.PROFESSION_PALADIN_RANK or
+                ranktype == typeEnum.PROFESSION_HUNTER_RANK or
+                ranktype == typeEnum.PROFESSION_DRUID_RANK or
+                ranktype == typeEnum.ROLE_RANK or
+                ranktype == typeEnum.PROFESSION_ROGUE_RANK or
+                ranktype == typeEnum.PROFESSION_SAMAN_RANK or
+                ranktype == typeEnum.PROFESSION_WARLOCK_RANK then
+
+                local strbuilder = StringBuilder:new()
+                strbuilder:Set("parameter1", mytitle)
+                _instance.m_pText:setText(strbuilder:GetString(MHSD_UTILS.get_resstring(2913)))
+                strbuilder:delete()
+
+            else
+                _instance.m_pText:setText(MHSD_UTILS.get_resstring(2898))
+            end
+        else
+            local strbuilder = StringBuilder:new()
+            strbuilder:Set("parameter1", myrank)
+            if ranktype == typeEnum.FACTION_RANK then
+                _instance.m_pText:setText(strbuilder:GetString(MHSD_UTILS.get_resstring(2911)))
+            elseif ranktype == typeEnum.ROLE_ZONGHE_RANK then
+                strbuilder:Set("parameter1", myrank)
+                strbuilder:Set("parameter2", mytitle)
+                _instance.m_pText:setText(strbuilder:GetString(MHSD_UTILS.get_resstring(2912)))
+            elseif ranktype == typeEnum.PROFESSION_WARRIOR_RANK or
+                ranktype == typeEnum.PROFESSION_MAGIC_RANK or
+                ranktype == typeEnum.PROFESSION_PRIEST_RANK or
+                ranktype == typeEnum.PROFESSION_PALADIN_RANK or
+                ranktype == typeEnum.PROFESSION_HUNTER_RANK or ranktype == typeEnum.PROFESSION_DRUID_RANK or
+                ranktype == typeEnum.PROFESSION_ROGUE_RANK or
+                ranktype == typeEnum.PROFESSION_SAMAN_RANK or
+                ranktype == typeEnum.PROFESSION_WARLOCK_RANK then
+                strbuilder:Set("parameter1", myrank)
+                strbuilder:Set("parameter2", mytitle)
+                _instance.m_pText:setText(strbuilder:GetString(MHSD_UTILS.get_resstring(2912)))
+            
+            else
+                _instance.m_pText:setText(strbuilder:GetString(MHSD_UTILS.get_resstring(2899)))
+            end
+            strbuilder:delete()
+        end
+        _instance.m_iCurPage = page
+        _instance.m_bHasMore = hasmore
+
+        local record = BeanConfigManager.getInstance():GetTableByName("game.cpaihangbang"):getRecorder(ranktype)
+        if record.lingjiang == 0 then
+            _instance.m_pRewardBtn:setVisible(false)
+        else
+            _instance.m_pRewardBtn:setVisible(true)
+        end
+        if takeAwardFlag == 1 then
+            _instance.m_pRewardBtn:setEnabled(true)
+        else
+            _instance.m_pRewardBtn:setEnabled(false)
+        end
+
+        if ranktype == typeEnum.LEVEL_RANK then
+            -- �ȼ����� by changhao
+            local sizeof_recordlist = #list
+            for k = 1, sizeof_recordlist do
+                local row = LevelRankData:new()
+                local _os_ = FireNet.Marshal.OctetsStream:new(list[k])
+                row:unmarshal(_os_)
+                _os_:delete()
+                local level = ""..row.level
+                if row.level>1000 then
+                    local zscs,t2 = math.modf(row.level/1000)
+                    level = zscs..""..(row.level-zscs*1000)
+                end
+                _instance:AddRow(row.rank - 1, row.roleid, tostring(row.rank), row.nickname, BeanConfigManager.getInstance():GetTableByName("role.schoolinfo"):getRecorder(row.school).name, tostring(level))
+            end
+
+            local myschool = BeanConfigManager.getInstance():GetTableByName("role.schoolinfo"):getRecorder(gGetDataManager():GetMainCharacterSchoolID()).name
+            local myname = gGetDataManager():GetMainCharacterName()
+            local mylevel = gGetDataManager():GetMainCharacterLevel()
+            local myzscs = gGetDataManager():GetMainCharacterZs()
+            mylevel=myzscs..""..mylevel
+            _instance:UpdateMyRank(tostring(myrank), myname, myschool, tostring(mylevel));
+            -- �����Լ�����Ϣ by changhao
+
+        elseif ranktype == typeEnum.PET_GRADE_RANK then
+            -- ���� by changhao
+            local sizeof_recordlist = #list
+            for k = 1, sizeof_recordlist do
+                local row = PetGradeRankData:new()
+                local _os_ = FireNet.Marshal.OctetsStream:new(list[k])
+                row:unmarshal(_os_)
+                _os_:delete()
+                _instance:AddRow(row.rank - 1, row.uniquepetid, tostring(row.rank), row.petname, row.nickname, tostring(row.petgrade))
+            end
+
+            local myschool = BeanConfigManager.getInstance():GetTableByName("role.schoolinfo"):getRecorder(gGetDataManager():GetMainCharacterSchoolID()).name
+            local myname = gGetDataManager():GetMainCharacterName()
+            local mylevel = gGetDataManager():GetMainCharacterLevel()
+
+            _instance:UpdateMyRank(tostring(myrank), mytitle, myname, tostring(extdata));
+            -- �����Լ�����Ϣ by changhao			
+
+        elseif (ranktype == typeEnum.CAMP_TRIBE_RANK) or(ranktype == typeEnum.CAMP_LEAGUE_RANK) then
+            local sizeof_recordlist = #list
+            for k = 1, sizeof_recordlist do
+                local row = CampRecordBean:new()
+                local _os_ = FireNet.Marshal.OctetsStream:new(list[k])
+                row:unmarshal(_os_)
+                _os_:delete()
+                _instance:AddRow(row.index - 1, row.roleid, tostring(row.index), row.rolename, BeanConfigManager.getInstance():GetTableByName("role.schoolinfo"):getRecorder(row.school).name, tostring(row.score), row.title)
+            end
+
+        elseif ranktype == typeEnum.FACTION_RANK then
+            local sizeof_recordlist = #list
+            for k = 1, sizeof_recordlist do
+                local row = FactionRankRecord:new()
+                local _os_ = FireNet.Marshal.OctetsStream:new(list[k])
+                row:unmarshal(_os_)
+                _os_:delete()
+                _instance:AddRow(row.rank - 1, row.factionkey, tostring(row.rank), row.factionname, tostring(row.level), row.mastername)
+            end
+        elseif ranktype == typeEnum.ROLE_ZONGHE_RANK then
+            -- �ۺ����� by changhao
+            local sizeof_recordlist = #list
+            for k = 1, sizeof_recordlist do
+                local row = RoleZongheRankRecord:new()
+                local _os_ = FireNet.Marshal.OctetsStream:new(list[k])
+                row:unmarshal(_os_)
+                _os_:delete()
+                local level = ""..row.rolelevel
+                if row.rolelevel>1000 then
+                    local zscs,t2 = math.modf(row.rolelevel/1000)
+                    level = zscs..""..(row.rolelevel-zscs*1000)
+                end
+                _instance:AddRow(row.rank - 1, row.roleid, tostring(row.rank), row.rolename, BeanConfigManager.getInstance():GetTableByName("role.schoolinfo"):getRecorder(row.school).name,tostring(level),tostring(row.score))
+            end
+
+            local myschool = BeanConfigManager.getInstance():GetTableByName("role.schoolinfo"):getRecorder(gGetDataManager():GetMainCharacterSchoolID()).name
+            local myname = gGetDataManager():GetMainCharacterName()
+            local mylevel = gGetDataManager():GetMainCharacterLevel()
+            local level = ""..mylevel
+            if mylevel>1000 then
+                local zscs,t2 = math.modf(mylevel/1000)
+                level = zscs..""..(mylevel-zscs*1000)
+            end
+
+            _instance:UpdateMyRank(tostring(myrank), myname, myschool, tostring(level), tostring(extdata));
+            -- �����Լ�����Ϣ by changhao			
+
+        elseif ranktype == typeEnum.PROFESSION_WARRIOR_RANK or
+            ranktype == typeEnum.PROFESSION_MAGIC_RANK or
+            ranktype == typeEnum.PROFESSION_PRIEST_RANK or
+            ranktype == typeEnum.PROFESSION_PALADIN_RANK or
+            ranktype == typeEnum.PROFESSION_HUNTER_RANK or ranktype == typeEnum.PROFESSION_DRUID_RANK or
+            ranktype == typeEnum.PROFESSION_ROGUE_RANK or
+            ranktype == typeEnum.PROFESSION_SAMAN_RANK or
+            ranktype == typeEnum.PROFESSION_WARLOCK_RANK then
+            local sizeof_recordlist = #list
+            for k = 1, sizeof_recordlist do
+                local row = RoleProfessionRankRecord:new()
+                local _os_ = FireNet.Marshal.OctetsStream:new(list[k])
+                row:unmarshal(_os_)
+                _os_:delete()
+                local level = ""..row.rolelevel
+                if row.rolelevel>1000 then
+                    local zscs,t2 = math.modf(row.rolelevel/1000)
+                    level = zscs..""..(row.rolelevel-zscs*1000)
+                end
+                _instance:AddRow(row.rank - 1, row.roleid, tostring(row.rank), row.rolename, tostring(level),tostring(row.score))
+            end
+
+            local myschool = BeanConfigManager.getInstance():GetTableByName("role.schoolinfo"):getRecorder(gGetDataManager():GetMainCharacterSchoolID()).name
+            local myname = gGetDataManager():GetMainCharacterName()
+            local mylevel = gGetDataManager():GetMainCharacterLevel()
+            local myzscs = gGetDataManager():GetMainCharacterZs()
+            mylevel=myzscs..""..mylevel
+            _instance:UpdateMyRank(tostring(myrank), myname, tostring(mylevel), tostring(extdata));
+            -- �����Լ�����Ϣ by changhao
+
+        elseif ranktype == typeEnum.ROLE_RANK then
+            -- ���� by changhao
+
+            local sizeof_recordlist = #list
+            for k = 1, sizeof_recordlist do
+                local row = RoleZongheRankRecord:new()
+                local _os_ = FireNet.Marshal.OctetsStream:new(list[k])
+                row:unmarshal(_os_)
+                _os_:delete()
+                local level = ""..row.rolelevel
+                if row.rolelevel>1000 then
+                    local zscs,t2 = math.modf(row.rolelevel/1000)
+                    level = zscs..""..(row.rolelevel-zscs*1000)
+                end
+                _instance:AddRow(row.rank - 1, row.roleid, tostring(row.rank), row.rolename, BeanConfigManager.getInstance():GetTableByName("role.schoolinfo"):getRecorder(row.school).name, tostring(level),tostring(row.score))
+            end
+
+            local myschool = BeanConfigManager.getInstance():GetTableByName("role.schoolinfo"):getRecorder(gGetDataManager():GetMainCharacterSchoolID()).name
+            local myname = gGetDataManager():GetMainCharacterName()
+            local mylevel = gGetDataManager():GetMainCharacterLevel()
+            local myzscs = gGetDataManager():GetMainCharacterZs()
+            mylevel=myzscs..""..mylevel
+            _instance:UpdateMyRank(tostring(myrank), myname, myschool, tostring(mylevel), tostring(extdata));
+            -- �����Լ�����Ϣ by changhao					
+
+            -- ���Ὰ�ٰ�--�ۻ�֮�� -- �ɿ�����˹
+        elseif ranktype == typeEnum.FACTION_MC or
+            ranktype == typeEnum.FACTION_NAXX then
+            local record = BeanConfigManager.getInstance():GetTableByName("game.cpaihangbang"):getRecorder(ranktype)
+            local sizeof_recordlist = #list
+            for k = 1, sizeof_recordlist do
+                local row = FactionRaidRankRecord:new()
+                local _os_ = FireNet.Marshal.OctetsStream:new(list[k])
+                row:unmarshal(_os_)
+                _os_:delete()
+                _instance:AddRow(row.rank - 1, row.factionid, tostring(row.rank), row.factionname, _instance:FormatTime(row.progressstime), tostring(row.progresss) .. "/" .. tostring(10))
+            end
+            local datamanager = require "logic.faction.factiondatamanager"
+            if datamanager then
+                if datamanager:IsHasFaction() then
+                    _instance:UpdateMyRank(tostring(myrank), datamanager.factionname, _instance:FormatTime(extdata1), tostring(extdata) .. "/" .. tostring(10));
+                else
+                    _instance:NoRank()
+                end
+            else
+                _instance:NoRank()
+            end
+        elseif ranktype == typeEnum.FACTION_COPY then
+            --���ḱ������
+            local record = BeanConfigManager.getInstance():GetTableByName("game.cpaihangbang"):getRecorder(ranktype)
+            local sizeof_recordlist = #list
+            for k = 1, sizeof_recordlist do
+                local row = FactionRaidRankRecord:new()
+                local _os_ = FireNet.Marshal.OctetsStream:new(list[k])
+                row:unmarshal(_os_)
+                _os_:delete()
+                _instance:AddRow(row.rank - 1, row.factionid, tostring(row.rank), row.factionname, row.factioncopyname, tostring(row.progresss) .. "/" .. tostring(10), tostring(100 - math.floor(row.bosshp*100)).. "%", _instance:FormatTime(row.progressstime))
+            end
+            local datamanager = require "logic.faction.factiondatamanager"
+            if datamanager then
+                if datamanager:IsHasFaction() then
+                    _instance:UpdateMyRank(tostring(myrank), datamanager.factionname,  tostring(extdata3), tostring(extdata) .. "/" .. tostring(10), tostring(100 - math.floor(extdata2*100)).. "%", _instance:FormatTime(extdata1))
+                else
+                    _instance:NoRank()
+                end
+            else
+                _instance:NoRank()
+            end
+        elseif  ranktype == typeEnum.PVP5_LAST_GRADE1  or
+                ranktype == typeEnum.PVP5_LAST_GRADE2  or
+                ranktype == typeEnum.PVP5_LAST_GRADE3  or
+                ranktype == typeEnum.PVP5_HISTORY_GRADE1  or
+                ranktype == typeEnum.PVP5_HISTORY_GRADE2  or
+                ranktype == typeEnum.PVP5_HISTORY_GRADE3  
+        then
+            local PvP5RankData = require("protodef.rpcgen.fire.pb.ranklist.pvp5rankdata")
+            local sizeof_recordlist = #list
+            for k = 1, sizeof_recordlist do
+                local row = PvP5RankData:new()
+                local _os_ = FireNet.Marshal.OctetsStream:new(list[k])
+                row:unmarshal(_os_)
+                _os_:delete()
+
+                local strJobName = ""
+                local jobTable =  BeanConfigManager.getInstance():GetTableByName("role.schoolinfo"):getRecorder(row.school)
+                if jobTable then
+                    strJobName = jobTable.name
+                end
+                _instance:AddRow(row.rank - 1, row.roleid, tostring(row.rank), row.rolename, strJobName,tostring(row.score))
+            end
+            local nMyJobId = gGetDataManager():GetMainCharacterSchoolID()
+            local jobTable = BeanConfigManager.getInstance():GetTableByName("role.schoolinfo"):getRecorder(nMyJobId)
+            local myschool = ""
+            if jobTable then
+                myschool = jobTable.name
+            end
+            
+            local myname = gGetDataManager():GetMainCharacterName()
+            local mylevel = gGetDataManager():GetMainCharacterLevel()
+
+            _instance:UpdateMyRank(tostring(myrank), myname, myschool, tostring(extdata));
+
+            -- ����� -- ����ȼ� �����ۺ�ʵ��
+        elseif ranktype == typeEnum.FACTION_RANK_LEVEL or
+            ranktype == typeEnum.FACTION_ZONGHE then
+            local isUpdateSelfFaction = false
+            local sizeof_recordlist = #list
+            for k = 1, sizeof_recordlist do
+                local row = FactionRankRecordEx:new()
+                local _os_ = FireNet.Marshal.OctetsStream:new(list[k])
+                row:unmarshal(_os_)
+                _os_:delete()
+                if ranktype == typeEnum.FACTION_RANK_LEVEL then
+                    local temp = BeanConfigManager.getInstance():GetTableByName("clan.cfactionhotel"):getRecorder(row.hotellevel)
+                    local text = tostring(row.externdata) .. "/" .. tostring(temp.peoplemax)
+                    _instance:AddRow(row.rank - 1, row.factionid, tostring(row.rank), row.factionname, tostring(row.factionlevel), text)
+
+                else
+                    _instance:AddRow(row.rank - 1, row.factionid, tostring(row.rank), row.factionname, tostring(row.factionlevel), tostring(row.externdata))
+                end
+            end
+            local datamanager = require "logic.faction.factiondatamanager"
+            if datamanager then
+                if datamanager:IsHasFaction() and datamanager.factionname then
+                    local mytext = tostring(datamanager.GetPersonNumber()) .. "/" .. tostring(datamanager.GetMaxPersonNumber())
+                    _instance:UpdateMyRank(tostring(myrank), datamanager.factionname, tostring(datamanager.factionlevel), mytext)
+                else
+                    _instance:NoRank()
+                end
+            else
+                _instance:NoRank()
+            end
+        elseif ranktype == typeEnum.RED_PACK_1 or ranktype == typeEnum.RED_PACK_2 then
+            local sizeof_recordlist = #list
+            for k = 1, sizeof_recordlist do
+                local row = RedPackRankRecord:new()
+                local _os_ = FireNet.Marshal.OctetsStream:new(list[k])
+                row:unmarshal(_os_)
+                _os_:delete()
+                local strJobName = ""
+                local jobTable =  BeanConfigManager.getInstance():GetTableByName("role.schoolinfo"):getRecorder(row.school)
+                if jobTable then
+                    strJobName = jobTable.name
+                end
+                _instance:AddRow(row.rank - 1, row.roleid, tostring(row.rank), row.rolename, strJobName, tostring(row.num))
+            end
+            local myname = gGetDataManager():GetMainCharacterName()
+            local myschool = gGetDataManager():GetMainCharacterSchoolName()
+            _instance:UpdateMyRank(tostring(myrank), myname, myschool, tostring(extdata))
+        elseif ranktype == typeEnum.FLOWER_RECEIVE or ranktype == typeEnum.FLOWER_GIVE then
+            local sizeof_recordlist = #list
+            for k = 1, sizeof_recordlist do
+                local row = FlowerRankRecord:new()
+                local _os_ = FireNet.Marshal.OctetsStream:new(list[k])
+                row:unmarshal(_os_)
+                _os_:delete()
+                local strJobName = ""
+                local jobTable =  BeanConfigManager.getInstance():GetTableByName("role.schoolinfo"):getRecorder(row.school)
+                if jobTable then
+                    strJobName = jobTable.name
+                end
+                _instance:AddRow(row.rank - 1, row.roleid, tostring(row.rank), row.rolename, strJobName, tostring(row.num))
+            end       
+            local myname = gGetDataManager():GetMainCharacterName()
+            local myschool = gGetDataManager():GetMainCharacterSchoolName()
+            _instance:UpdateMyRank(tostring(myrank), myname, myschool, tostring(extdata)) 
+        end
+    end
+end
+-- ��ʽ��ʱ��
+function RankingList:FormatTime(time)
+    if not time then
+        return ""
+    end
+    local text = MHSD_UTILS.get_resstring(1239)
+    if time == 0 then
+        return  string.format(text, 0, 0)
+    end
+    if time < 1000 then
+        return ""
+    end
+    local min = math.floor(time / 1000 / 60)
+    local sec = time / 1000 - min * 60
+    text = string.format(text, min, sec)
+    return text
+end
+-- û�й���
+function RankingList:NoRank()
+    self.m_myRank[0]:setText("");
+    self.m_myRank[1]:setText("");
+    self.m_myRank[2]:setText("");
+    self.m_myRank[3]:setText("");
+    self.m_myRank[4]:setText("");
+    self.m_myRank[5]:setText("");
+end
+-- �����ҵ�������Ϣ by changhao
+function RankingList:UpdateMyRank(col0, col1, col2, col3, col4, col5)
+
+    self.m_myRank[0]:setText(col0);
+    self.m_myRank[1]:setText(col1);
+    self.m_myRank[2]:setText(col2);
+    self.m_myRank[3]:setText(col3);
+    self.m_myRank[4]:setText(col4);
+    self.m_myRank[5]:setText(col5);
+
+    if col0 == "0" then
+        -- ���� by changhao
+        self.m_myRank[0]:setText(MHSD_UTILS.get_resstring(11204));
+    end
+
+    if col4 then
+        self:ResetRankPos(maxNum - 1)
+        if col5 then
+            self:ResetRankPos(maxNum)
+        end
+    else
+        self:ResetRankPos(maxNum - 2)
+    end
+
+end
+
+function RankingList.TakeAwardSuccess(ranktype)
+    LogInfo("RankingList take award success")
+    if _instance then
+        if _instance.m_rankType == ranktype then
+            _instance.m_pRewardBtn:setEnabled(false)
+        end
+    end
+end
+
+----/////////////////////////////////////////------
+
+function RankingList.GetLayoutFileName()
+    return "rankinglist.layout"
+end
+
+function RankingList:OnCreate()
+    LogInfo("enter RankingList oncreate")
+    Dialog.OnCreate(self)
+    SetPositionScreenCenter(self:GetWindow())
+    self.m_FontText = "simhei-12"
+    local winMgr = CEGUI.WindowManager:getSingleton()
+    -- get windows
+    self.m_pTree = CEGUI.toGroupBtnTree(winMgr:getWindow("RankingList/tree"))
+    self.m_pMain = CEGUI.Window.toMultiColumnList(winMgr:getWindow("RankingList/PersonalInfo/list"))
+    self.m_CloseBtnEx = CEGUI.Window.toPushButton(winMgr:getWindow("RankingList/close"))
+    self.m_pRewardBtn = CEGUI.Window.toPushButton(winMgr:getWindow("RankingList/get"))
+    self.m_pText = winMgr:getWindow("RankingList/personalrank")
+
+    self.m_pMain:setUserSortControlEnabled(false)
+    self:InitTree()
+
+    -- �Լ������� by changhao
+    self.m_myRank = { };
+
+    self.m_myRank[0] = winMgr:getWindow("RankingList/bangwaixinxi/paiming")
+    self.m_myRank[1] = winMgr:getWindow("RankingList/bangwaixinxi/canshu1")
+    self.m_myRank[2] = winMgr:getWindow("RankingList/bangwaixinxi/canshu2")
+    self.m_myRank[3] = winMgr:getWindow("RankingList/bangwaixinxi/canshu3")
+    self.m_myRank[4] = winMgr:getWindow("RankingList/bangwaixinxi/canshu4")
+    self.m_myRank[5] = winMgr:getWindow("RankingList/bangwaixinxi/canshu5")
+    
+    self.m_myRank[6] = CEGUI.Window.toPushButton(winMgr:getWindow("RankingList/bangwaixinxi/xiangyinganniu"));
+
+    self.m_myRank[6]:subscribeEvent("Clicked", RankingList.HandleMySelfClick, self)
+
+    self.m_myRankWidth = self.m_myRank[6]:getWidth().offset
+
+    self.m_myRankTextXpos = {}
+    -- subscribe event
+    self.m_CloseBtnEx:subscribeEvent("Clicked", RankingList.OnCloseBtnEx, self)
+    self.m_pTree:subscribeEvent("ItemSelectionChanged", RankingList.HandleSelectRank, self)
+    -- ��Ӧ���ظı�by changhao
+    self.m_pMain:subscribeEvent("NextPage", RankingList.HandleNextPage, self)
+    self.m_pMain:subscribeEvent("SelectionChanged", RankingList.HandleListMemberSelected, self)
+    self.m_pTree:SetLastOpenItem(self.m_PersonalItem)
+    self.m_pTree:SetLastSelectItem(self.m_zongheItem)
+    self.m_pTree:invalidate()
+
+    local p = require "protodef.fire.pb.clan.copenclan":new()
+    require "manager.luaprotocolmanager".getInstance():send(p)
+
+    LogInfo("exit RankingList OnCreate")
+end
+
+------------------- private: -----------------------------------
+
+function RankingList:new()
+    local self = { }
+    self = Dialog:new()
+    setmetatable(self, RankingList)
+
+    return self
+end
+
+function RankingList:HandleSelectRank(args)
+    -- ѡ��һ���µ����� by changhao
+    LogInfo("RankingList handle select rank")
+    local item = self.m_pTree:getSelectedItem()
+    if item == nil then
+        return true
+    end
+
+    local id = item:getID()
+    local req = CRequestRankList.Create()
+    req.ranktype = id
+    self.m_iRankType = id
+    req.page = 0
+    self.m_iCurPage = 0
+    LuaProtocolManager.getInstance():send(req)
+
+    self.m_pMain:resetList()
+    local record = BeanConfigManager.getInstance():GetTableByName("game.cpaihangbang"):getRecorder(id)
+    -- ���������б�ͷ���� by changhao
+    self.m_myRankTextXpos = {}
+    self.m_myRankTextXpos[1] = record.kuandu1
+    self.m_myRankTextXpos[2] = record.kuandu2
+    self.m_myRankTextXpos[3] = record.kuandu3
+    self.m_myRankTextXpos[4] = record.kuandu4
+    self.m_myRankTextXpos[5] = record.kuandu5
+    self.m_myRankTextXpos[6] = record.kuandu6
+    self.m_pMain:getListHeader():getSegmentFromColumn(0):setText(record.name1)
+    self.m_pMain:setColumnHeaderWidth(0, CEGUI.UDim(record.kuandu1, 0))
+    self.m_pMain:getListHeader():getSegmentFromColumn(1):setText(record.name2)
+    self.m_pMain:setColumnHeaderWidth(1, CEGUI.UDim(record.kuandu2, 0))
+    self.m_pMain:getListHeader():getSegmentFromColumn(2):setText(record.name3)
+    self.m_pMain:setColumnHeaderWidth(2, CEGUI.UDim(record.kuandu3, 0))
+    self.m_pMain:getListHeader():getSegmentFromColumn(3):setText(record.name4)
+    self.m_pMain:setColumnHeaderWidth(3, CEGUI.UDim(record.kuandu4, 0))
+    self.m_pMain:getListHeader():getSegmentFromColumn(4):setText(record.name5)
+    self.m_pMain:setColumnHeaderWidth(4, CEGUI.UDim(record.kuandu5, 0))
+    self.m_pMain:getListHeader():getSegmentFromColumn(5):setText(record.name6)
+    self.m_pMain:setColumnHeaderWidth(5, CEGUI.UDim(record.kuandu6, 0))
+
+    self:ResetRankPos(maxNum)
+
+end
+
+function RankingList:ResetRankPos(num)
+    local offset = 4
+    for i = 0, (num-1) do
+        local scale = self.m_myRankTextXpos[i + 1]
+        local myRank = self.m_myRank[i]
+        offset = offset + (scale * self.m_myRankWidth) / 2
+        myRank:setXPosition(CEGUI.UDim(0, offset - myRank:getWidth().offset / 2))
+        offset = offset + (scale * self.m_myRankWidth) / 2
+    end
+end
+
+function RankingList:HandleMySelfClick(args)
+
+    local rankItem = self.m_pTree:getSelectedItem()
+    if rankItem == nil then
+        return;
+    end
+
+    local rankType = rankItem:getID();
+
+    local req = require "protodef.fire.pb.ranklist.getrankinfo.crankgetinfo".Create()
+
+    if rankType == typeEnum.PET_GRADE_RANK then
+        req.ranktype = typeEnum.PET_GRADE_RANK;
+        req.rank = -2;
+
+    elseif rankType == typeEnum.ROLE_ZONGHE_RANK then
+        req.ranktype = typeEnum.ROLE_ZONGHE_RANK;
+        req.rank = -1;
+    elseif rankType == typeEnum.ROLE_RANK then
+        req.ranktype = typeEnum.ROLE_RANK
+        req.rank = -1;
+    elseif rankType == typeEnum.LEVEL_RANK then
+        req.ranktype = typeEnum.LEVEL_RANK;
+        req.rank = -1;
+    elseif rankType == typeEnum.FACTION_RANK_LEVEL or
+        rankType == typeEnum.FACTION_ZONGHE or
+        rankType == typeEnum.FACTION_MC or
+        rankType == typeEnum.FACTION_NAXX then
+        req.ranktype = rankType
+        req.rank = -1;
+    elseif  rankType == typeEnum.FACTION_COPY then
+        req.ranktype = rankType
+        req.rank = -1;
+    elseif rankType == typeEnum.RED_PACK_1 or rankType == typeEnum.RED_PACK_2 or rankType == typeEnum.FLOWER_GIVE or rankType == typeEnum.FLOWER_RECEIVE then
+        req.rank = -1;
+    else
+        req.ranktype = typeEnum.ROLE_ZONGHE_RANK;
+        req.rank = -1;
+    end
+
+    require "manager.luaprotocolmanager".getInstance():send(req)
+
+end
+
+function RankingList:HandleListMemberSelected(args)
+    local rowItem = self.m_pMain:getFirstSelectedItem()
+    local rankItem = self.m_pTree:getSelectedItem()
+    if rankItem == nil or rowItem == nil then
+        return true
+    end
+    local rowId = rowItem:getID()
+    local rankType = rankItem:getID()
+    local id = rowItem:GetUserID()
+    if rankType == typeEnum.ROLE_ZONGHE_RANK or rankType == typeEnum.LEVEL_RANK or rankType == typeEnum.PET_GRADE_RANK or rankType == typeEnum.XIAKE_RANK
+        or rankType == typeEnum.PROFESSION_WARRIOR_RANK
+        or rankType == typeEnum.PROFESSION_MAGIC_RANK
+        or rankType == typeEnum.PROFESSION_PRIEST_RANK
+        or rankType == typeEnum.PROFESSION_PALADIN_RANK
+        or rankType == typeEnum.PROFESSION_HUNTER_RANK
+        or rankType == typeEnum.PROFESSION_DRUID_RANK
+        or rankType == typeEnum.ROLE_RANK
+        or rankType == typeEnum.PROFESSION_ROGUE_RANK
+        or rankType == typeEnum.PROFESSION_SAMAN_RANK
+        or rankType == typeEnum.PROFESSION_WARLOCK_RANK or
+        
+         rankType == typeEnum.PVP5_LAST_GRADE1  or
+         rankType == typeEnum.PVP5_LAST_GRADE2  or
+         rankType == typeEnum.PVP5_LAST_GRADE3  or
+         rankType == typeEnum.PVP5_HISTORY_GRADE1  or
+         rankType == typeEnum.PVP5_HISTORY_GRADE2  or
+         rankType == typeEnum.PVP5_HISTORY_GRADE3  or
+         rankType == typeEnum.RED_PACK_1  or
+         rankType == typeEnum.RED_PACK_2  or
+         rankType == typeEnum.FLOWER_GIVE  or
+         rankType == typeEnum.FLOWER_RECEIVE 
+        then
+
+        local req = require "protodef.fire.pb.ranklist.getrankinfo.crankgetinfo".Create()
+        req.ranktype = rankType
+        req.rank = rowId
+        req.id = id
+        require "manager.luaprotocolmanager".getInstance():send(req)
+
+    elseif rankType == typeEnum.PET_GRADE_RANK then
+
+        local req = require "protodef.fire.pb.ranklist.getrankinfo.crankgetinfo".Create()
+        req.ranktype = rankType
+        req.rank = rowId
+        require "manager.luaprotocolmanager".getInstance():send(req)
+    elseif rankType == typeEnum.FACTION_RANK_LEVEL or
+        rankType == typeEnum.FACTION_ZONGHE or
+        rankType == typeEnum.FACTION_MC or
+        rankType == typeEnum.FACTION_NAXX or 
+        rankType == typeEnum.FACTION_COPY then
+        local req = require "protodef.fire.pb.ranklist.getrankinfo.crankgetinfo".Create()
+        req.ranktype = rankType
+        req.rank = rowId
+        req.id = id
+        require "manager.luaprotocolmanager".getInstance():send(req)
+    end
+
+end
+
+function RankingList:HandleNextPage(args)
+    LogInfo("RankingList handle next page")
+    if self.m_bHasMore then
+        self.m_iCurPage = self.m_iCurPage + 1
+        local BarPos = self.m_pMain:getVertScrollbar():getScrollPosition()
+        self.m_pMain:getVertScrollbar():Stop()
+        self.m_pMain:getVertScrollbar():setScrollPosition(BarPos)
+
+        local req = CRequestRankList.Create()
+        req.ranktype = self.m_iRankType
+        req.page = self.m_iCurPage
+        LuaProtocolManager.getInstance():send(req)
+    end
+    return true
+end
+
+function RankingList:InitTree()
+    LogInfo("RankingList init tree")
+
+    local strTitle1 = MHSD_UTILS.get_resstring(2900)
+    local first = self.m_pTree:addItem(CEGUI.String(FIRST_COLOR ..strTitle1))
+    -- ������Ϣ�� by changhao
+
+    local record = BeanConfigManager.getInstance():GetTableByName("game.cpaihangbang"):getRecorder(typeEnum.ROLE_ZONGHE_RANK)
+    -- �ۺ�            p���а����ñ�.xlsx by changhao
+    local second = first:addItem(CEGUI.String(record.leixing), typeEnum.ROLE_ZONGHE_RANK)
+    SetGroupBtnTreeSecondIcon(second)
+
+    self.m_PersonalItem = first
+    self.m_zongheItem = second
+
+    record = BeanConfigManager.getInstance():GetTableByName("game.cpaihangbang"):getRecorder(typeEnum.LEVEL_RANK)
+    -- �ȼ� by changhao
+    second = first:addItem(CEGUI.String(record.leixing), typeEnum.LEVEL_RANK)
+    SetGroupBtnTreeFirstIcon(first)
+    SetGroupBtnTreeSecondIcon(second)
+
+    record = BeanConfigManager.getInstance():GetTableByName("game.cpaihangbang"):getRecorder(38)
+    -- ���� by changhao
+    second = first:addItem(CEGUI.String(record.leixing), 38)
+    SetGroupBtnTreeSecondIcon(second)
+
+    record = BeanConfigManager.getInstance():GetTableByName("game.cpaihangbang"):getRecorder(typeEnum.PET_GRADE_RANK)
+    -- ���� by changhao
+    second = first:addItem(CEGUI.String(record.leixing), typeEnum.PET_GRADE_RANK)
+    SetGroupBtnTreeSecondIcon(second)
+    first:toggleIsOpen()
+
+    -------------------------------------------
+    first = self.m_pTree:addItem(CEGUI.String(FIRST_COLOR .. MHSD_UTILS.get_resstring(11195)))
+    -- ְҵ�� by changhao
+    SetGroupBtnTreeFirstIcon(first)
+
+    record = BeanConfigManager.getInstance():GetTableByName("game.cpaihangbang"):getRecorder(43)
+    --  սʿ by changhao
+    second = first:addItem(CEGUI.String(record.leixing), 43)
+    SetGroupBtnTreeSecondIcon(second)
+
+    record = BeanConfigManager.getInstance():GetTableByName("game.cpaihangbang"):getRecorder(44)
+    --  ��ʦ by changhao
+    second = first:addItem(CEGUI.String(record.leixing), 44)
+    SetGroupBtnTreeSecondIcon(second)
+
+    record = BeanConfigManager.getInstance():GetTableByName("game.cpaihangbang"):getRecorder(45)
+    --  ��ʦ by changhao
+    second = first:addItem(CEGUI.String(record.leixing), 45)
+    SetGroupBtnTreeSecondIcon(second)
+
+    record = BeanConfigManager.getInstance():GetTableByName("game.cpaihangbang"):getRecorder(46)
+    --  ʥ��ʿ by changhao
+    second = first:addItem(CEGUI.String(record.leixing), 46)
+    SetGroupBtnTreeSecondIcon(second)
+
+    record = BeanConfigManager.getInstance():GetTableByName("game.cpaihangbang"):getRecorder(47)
+    --  ���� by changhao
+    second = first:addItem(CEGUI.String(record.leixing), 47)
+    SetGroupBtnTreeSecondIcon(second)
+
+    record = BeanConfigManager.getInstance():GetTableByName("game.cpaihangbang"):getRecorder(48)
+    --  ��³�� by changhao
+    second = first:addItem(CEGUI.String(record.leixing), 48)
+    SetGroupBtnTreeSecondIcon(second)
+
+    record = BeanConfigManager.getInstance():GetTableByName("game.cpaihangbang"):getRecorder(60)
+    --  ���� by changhao
+    second = first:addItem(CEGUI.String(record.leixing), 60)
+    SetGroupBtnTreeSecondIcon(second)
+
+    record = BeanConfigManager.getInstance():GetTableByName("game.cpaihangbang"):getRecorder(61)
+    --  ���� by changhao
+    second = first:addItem(CEGUI.String(record.leixing), 61)
+    SetGroupBtnTreeSecondIcon(second)
+
+    record = BeanConfigManager.getInstance():GetTableByName("game.cpaihangbang"):getRecorder(62)
+    --  ��ʿ by changhao
+    second = first:addItem(CEGUI.String(record.leixing), 62)
+    SetGroupBtnTreeSecondIcon(second)
+    -- ==============================================
+    -------------------------------------------------
+    first = self.m_pTree:addItem(CEGUI.String(FIRST_COLOR .. MHSD_UTILS.get_resstring(11331)))
+    -- ����� by changhao
+    SetGroupBtnTreeFirstIcon(first)
+
+    record = BeanConfigManager.getInstance():GetTableByName("game.cpaihangbang"):getRecorder(49)
+    --  ����ȼ� by sunwen
+    second = first:addItem(CEGUI.String(record.leixing), 49)
+    SetGroupBtnTreeSecondIcon(second)
+
+    record = BeanConfigManager.getInstance():GetTableByName("game.cpaihangbang"):getRecorder(50)
+    --  �����ۺ�ʵ�� by sunwen
+    second = first:addItem(CEGUI.String(record.leixing), 50)
+    SetGroupBtnTreeSecondIcon(second)
+
+    -- ==============================================
+    -------------------------------------------------
+   -- first = self.m_pTree:addItem(CEGUI.String(FIRST_COLOR .. MHSD_UTILS.get_resstring(11332)))
+    -- ���Ὰ�ٰ� by changhao
+  --  SetGroupBtnTreeFirstIcon(first)
+
+   -- record = BeanConfigManager.getInstance():GetTableByName("game.cpaihangbang"):getRecorder(70)
+    --  �ۻ�֮�� by sunwen
+   -- second = first:addItem(CEGUI.String(record.leixing), 70)
+  --  SetGroupBtnTreeSecondIcon(second)
+
+    --record = BeanConfigManager.getInstance():GetTableByName("game.cpaihangbang"):getRecorder(52)
+    --  �ɿ�����˹ by sunwen
+    --second = first:addItem(CEGUI.String(record.leixing), 52)
+    --SetGroupBtnTreeSecondIcon(second)
+    -- ==============================================
+    local str5v5Title = MHSD_UTILS.get_resstring(11475) 
+    first = self.m_pTree:addItem(CEGUI.String(FIRST_COLOR ..str5v5Title))
+    SetGroupBtnTreeFirstIcon(first)
+
+    self:addSecondRank(first,81)
+    self:addSecondRank(first,82)
+    self:addSecondRank(first,83)
+    self:addSecondRank(first,84)
+    self:addSecondRank(first,85)
+    self:addSecondRank(first,86)
+
+    local strRedPackTitle = MHSD_UTILS.get_resstring(11571) 
+    first = self.m_pTree:addItem(CEGUI.String(FIRST_COLOR ..strRedPackTitle))
+    SetGroupBtnTreeFirstIcon(first)
+    if IsPointCardServer() then
+        self:addSecondRank(first,102)
+    else
+        self:addSecondRank(first,101)
+    end
+    
+    
+
+    local strRedPackTitle = MHSD_UTILS.get_resstring(11572) 
+    first = self.m_pTree:addItem(CEGUI.String(FIRST_COLOR ..strRedPackTitle))
+    SetGroupBtnTreeFirstIcon(first)
+    self:addSecondRank(first,111)
+    self:addSecondRank(first,112)
+end
+
+function RankingList:addSecondRank(firstItem, nRankId)
+    local record = BeanConfigManager.getInstance():GetTableByName("game.cpaihangbang"):getRecorder(nRankId)
+    if not record then
+        return 
+    end
+    local second = firstItem:addItem(CEGUI.String(record.leixing), nRankId)
+    SetGroupBtnTreeSecondIcon(second)
+
+end
+
+-- ����һ��������
+function RankingList:AddRow(rownum, id, col0, col1, col2, col3, col4, col5)
+    LogInfo("RankingList add row")
+    self.m_pMain:addRow(rownum)
+    -- ���������ɫ
+    local color = self:GetRowColor(rownum)
+
+    local pItem0 = self:CreateColumnItem(col0, color, rownum, id, 0)
+    if pItem0 then
+        if rownum == 0 then
+            -- ǰ3��ֻ��ʾͼ�겻��ʾ���� by changhao
+            pItem0:setStaticImage("set:paihangbang image:diyiditu");
+            pItem0:setText("");
+        elseif rownum == 1 then
+            pItem0:setStaticImage("set:paihangbang image:dierditu");
+            pItem0:setText("");
+        elseif rownum == 2 then
+            pItem0:setStaticImage("set:paihangbang image:disanditu");
+            pItem0:setText("");
+        end
+        pItem0:setStaticImageWidthAndHeight(40.0, 40.0)
+    end
+
+    local pItem1 = self:CreateColumnItem(col1, color, rownum, id, 1)
+    local pItem2 = self:CreateColumnItem(col2, color, rownum, id, 2)
+    local pItem3 = self:CreateColumnItem(col3, color, rownum, id, 3)
+    local pItem4 = self:CreateColumnItem(col4, color, rownum, id, 4)
+    local pItem4 = self:CreateColumnItem(col5, color, rownum, id, 5)
+end
+
+function RankingList:OnCloseBtnEx()
+    self:DestroyDialog()
+end
+-- ����һ����
+function RankingList:CreateColumnItem(text, color, rownum, id, col)
+    if not text then
+        return nil
+    end
+    local pItem = CEGUI.createListboxTextItem(text)
+    if not pItem then
+        return nil
+    end
+    pItem:setTextColours(CEGUI.PropertyHelper:stringToColour(color))
+    pItem:SetTextHorFormat(CEGUI.eListBoxTextItemHorFormat_Center)
+    pItem:setID(rownum)
+    pItem:SetUserID(id)
+    pItem:setFont(self.m_FontText)
+    if self.m_pMain then
+        self.m_pMain:setItem(pItem, col, rownum)
+    end
+    return pItem
+end
+-- ����ɫ
+function RankingList:GetRowColor(rownum)
+    local color = "ff8c5e2a"
+    if rownum == 0 then
+        -- ������һ by changhao
+        color = "ff8c5e2a"
+    elseif rownum == 1 then
+        color = "ff8c5e2a"
+    elseif rownum == 2 then
+        color = "ff8c5e2a"
+    end
+    return color
+end
+return RankingList

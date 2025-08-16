@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="TaharezLook/FrameWindowhcq" Name="chenghaohecheng_yg" >
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value=" " />
+        <Property Name="Scale" Value="x:1 y:1 z:1" />
+        <Property Name="ModalState" Value="True" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="LuaForDialog" Value="True" />
+        <Property Name="RollUpEnabled" Value="True" />
+        <Property Name="SizingEnabled" Value="False" />
+        <Property Name="DragMoveEnable" Value="True" />
+        <Property Name="TitlebarEnabled" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0.5,-473},{0.5,-312},{0.5,473},{0.5,314}}" />
+        <Property Name="DragMovingEnabled" Value="False" />
+        <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+        <Window Type="DefaultWindow" Name="chenghaohecheng_yg/attriView" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="LuaMemberName" Value="attriView" />
+            <Property Name="UnifiedAreaRect" Value="{{0,91.0783},{0,108.016},{0,908.328},{0,586.266}}" />
+            <Window Type="TaharezLook/ScrollablePane" Name="chenghaohecheng_yg/huadong1" >
+                <Property Name="Font" Value="simhei-12" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="ContentArea" Value="l:0 t:0 r:797 b:765" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="HorzStepSize" Value="0.1" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="VertStepSize" Value="0.1" />
+                <Property Name="HorzOverlapSize" Value="0.01" />
+                <Property Name="UnifiedAreaRect" Value="{{0,5.078},{0,-5.989},{0,852.328},{0,463.261}}" />
+                <Property Name="VertOverlapSize" Value="0.01" />
+                <Property Name="HorzScrollPosition" Value="0" />
+                <Property Name="VertScrollPosition" Value="0" />
+                <AutoWindow NameSuffix="__auto_container__" >
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="ContentArea" Value="l:0 t:0 r:797 b:765" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="ChildExtentsArea" Value="l:0 t:0 r:797 b:765" />
+                    <Window Type="TaharezLook/StaticImage" Name="chenghaohecheng_yg/zhuanshi1" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Image" Value="set:cc25413 image:zhuanshi" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,204.078},{0,10.011},{0,606.328},{0,40.261}}" />
+                        <Property Name="MousePassThroughEnabled" Value="True" />
+                        <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/zhuanshi1/sm1" >
+                            <Property Name="Font" Value="simhei-12" />
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                            <Property Name="BorderColour" Value="FF003454" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,150.3},{0,3.3},{0,247.55},{0,28.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                    </Window>
+                    <Window Type="TaharezLook/ImageButton" Name="chenghaohecheng_yg/dt1" >
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="SizeType" Value="Auto" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="NormalImage" Value="set:cc25413 image:hc1" />
+                        <Property Name="PushedImage" Value="set:cc25413 image:hc2" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="EnableClickAni" Value="False" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.1,-68},{0.1,21},{0.1,113},{0.1,86}}" />
+                        <Window Type="TaharezLook/StaticImage" Name="chenghaohecheng_yg/dt1/bs1" >
+                            <Property Name="Font" Value="simhei-12" />
+                            <Property Name="Image" Value="set:itemicon88 image:2426" />
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="AlwaysOnTop" Value="True" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,0.3},{0,4.3},{0,177.55},{0,56.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                        <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/dt1/" >
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                            <Property Name="BorderColour" Value="FF003454" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,43.3},{0,10.3},{0,175.55},{0,52.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                    </Window>
+                    <Window Type="TaharezLook/ImageButton" Name="chenghaohecheng_yg/dt2" >
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="SizeType" Value="Auto" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="NormalImage" Value="set:cc25413 image:hc1" />
+                        <Property Name="PushedImage" Value="set:cc25413 image:hc2" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="EnableClickAni" Value="False" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.1,132},{0.1,21},{0.1,313},{0.1,86}}" />
+                        <Window Type="TaharezLook/StaticImage" Name="chenghaohecheng_yg/dt1/bs2" >
+                            <Property Name="Font" Value="simhei-12" />
+                            <Property Name="Image" Value="set:itemicon88 image:2427" />
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="AlwaysOnTop" Value="True" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,1.3},{0,4.3},{0,177.55},{0,56.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                        <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/dt2/" >
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                            <Property Name="BorderColour" Value="FF003454" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,43.3},{0,10.3},{0,175.55},{0,52.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                    </Window>
+                    <Window Type="TaharezLook/ImageButton" Name="chenghaohecheng_yg/dt3" >
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="SizeType" Value="Auto" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="NormalImage" Value="set:cc25413 image:hc1" />
+                        <Property Name="PushedImage" Value="set:cc25413 image:hc2" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="EnableClickAni" Value="False" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.1,331},{0.1,21},{0.1,512},{0.1,86}}" />
+                        <Window Type="TaharezLook/StaticImage" Name="chenghaohecheng_yg/dt1/bs3" >
+                            <Property Name="Font" Value="simhei-12" />
+                            <Property Name="Image" Value="set:itemicon88 image:2428" />
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="AlwaysOnTop" Value="True" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,0.3},{0,4.3},{0,175.55},{0,56.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                        <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/dt3/" >
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                            <Property Name="BorderColour" Value="FF003454" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,43.3},{0,10.3},{0,175.55},{0,52.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                    </Window>
+                    <Window Type="TaharezLook/ImageButton" Name="chenghaohecheng_yg/dt4" >
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="SizeType" Value="Auto" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="NormalImage" Value="set:cc25413 image:hc1" />
+                        <Property Name="PushedImage" Value="set:cc25413 image:hc2" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="EnableClickAni" Value="False" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.1,531},{0.1,21},{0.1,712},{0.1,86}}" />
+                        <Window Type="TaharezLook/StaticImage" Name="chenghaohecheng_yg/dt1/bs4" >
+                            <Property Name="Font" Value="simhei-12" />
+                            <Property Name="Image" Value="set:itemicon88 image:2429" />
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="AlwaysOnTop" Value="True" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,0.3},{0,4.3},{0,172.55},{0,56.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                        <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/dt4/" >
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                            <Property Name="BorderColour" Value="FF003454" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,43.3},{0,10.3},{0,175.55},{0,52.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                    </Window>
+                    <Window Type="TaharezLook/StaticImage" Name="chenghaohecheng_yg/zhuanshi2" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Image" Value="set:cc25413 image:zhuanshi" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="Visible" Value="False" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,204.078},{0,166.011},{0,606.328},{0,196.261}}" />
+                        <Property Name="MousePassThroughEnabled" Value="True" />
+                        <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/zhuanshi1/sm2" >
+                            <Property Name="Font" Value="simhei-12" />
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                            <Property Name="BorderColour" Value="FF003454" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,150.3},{0,3.3},{0,247.55},{0,28.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                    </Window>
+                    <Window Type="TaharezLook/ImageButton" Name="chenghaohecheng_yg/kn1" >
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="SizeType" Value="Auto" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="NormalImage" Value="set:cc25413 image:hc1" />
+                        <Property Name="PushedImage" Value="set:cc25413 image:hc2" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="EnableClickAni" Value="False" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.1,-68},{0.1,179},{0.1,113},{0.1,244}}" />
+                        <Window Type="TaharezLook/StaticImage" Name="chenghaohecheng_yg/kn1/kn1" >
+                            <Property Name="Font" Value="simhei-12" />
+                            <Property Name="Image" Value="set:itemicon88 image:2430" />
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="AlwaysOnTop" Value="True" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,0.3},{0,4.3},{0,177.55},{0,56.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                        <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/kn1/" >
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                            <Property Name="BorderColour" Value="FF003454" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,43.3},{0,10.3},{0,175.55},{0,52.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                    </Window>
+                    <Window Type="TaharezLook/ImageButton" Name="chenghaohecheng_yg/kn2" >
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="SizeType" Value="Auto" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="NormalImage" Value="set:cc25413 image:hc1" />
+                        <Property Name="PushedImage" Value="set:cc25413 image:hc2" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="EnableClickAni" Value="False" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.1,132},{0.1,179},{0.1,313},{0.1,244}}" />
+                        <Window Type="TaharezLook/StaticImage" Name="chenghaohecheng_yg/kn1/kn2" >
+                            <Property Name="Font" Value="simhei-12" />
+                            <Property Name="Image" Value="set:itemicon88 image:2431" />
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="AlwaysOnTop" Value="True" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,0.3},{0,4.3},{0,173.55},{0,56.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                        <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/kn2/" >
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                            <Property Name="BorderColour" Value="FF003454" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,43.3},{0,10.3},{0,175.55},{0,52.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                    </Window>
+                    <Window Type="TaharezLook/ImageButton" Name="chenghaohecheng_yg/kn3" >
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="SizeType" Value="Auto" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="NormalImage" Value="set:cc25413 image:hc1" />
+                        <Property Name="PushedImage" Value="set:cc25413 image:hc2" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="EnableClickAni" Value="False" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.1,331},{0.1,179},{0.1,512},{0.1,244}}" />
+                        <Window Type="TaharezLook/StaticImage" Name="chenghaohecheng_yg/kn1/kn3" >
+                            <Property Name="Font" Value="simhei-12" />
+                            <Property Name="Image" Value="set:itemicon88 image:2432" />
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="AlwaysOnTop" Value="True" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,0.3},{0,4.3},{0,176.55},{0,56.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                        <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/kn3/" >
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                            <Property Name="BorderColour" Value="FF003454" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,43.3},{0,10.3},{0,175.55},{0,52.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                    </Window>
+                    <Window Type="TaharezLook/ImageButton" Name="chenghaohecheng_yg/kn4" >
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="SizeType" Value="Auto" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="NormalImage" Value="set:cc25413 image:hc1" />
+                        <Property Name="PushedImage" Value="set:cc25413 image:hc2" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="EnableClickAni" Value="False" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.1,531},{0.1,179},{0.1,712},{0.1,244}}" />
+                        <Window Type="TaharezLook/StaticImage" Name="chenghaohecheng_yg/kn1/kn4" >
+                            <Property Name="Font" Value="simhei-12" />
+                            <Property Name="Image" Value="set:itemicon88 image:2433" />
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="AlwaysOnTop" Value="True" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,0.3},{0,4.3},{0,176.55},{0,56.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                        <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/kn4/" >
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                            <Property Name="BorderColour" Value="FF003454" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,43.3},{0,10.3},{0,175.55},{0,52.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                    </Window>
+                    <Window Type="TaharezLook/StaticImage" Name="chenghaohecheng_yg/zhuanshi3" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Image" Value="set:cc25413 image:zhuanshi" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="Visible" Value="False" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,204.078},{0,324.011},{0,606.328},{0,354.261}}" />
+                        <Property Name="MousePassThroughEnabled" Value="True" />
+                        <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/zhuanshi1/sm3" >
+                            <Property Name="Font" Value="simhei-12" />
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                            <Property Name="BorderColour" Value="FF003454" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,150.3},{0,3.3},{0,247.55},{0,28.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                    </Window>
+                    <Window Type="TaharezLook/ImageButton" Name="chenghaohecheng_yg/ys1" >
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="Visible" Value="False" />
+                        <Property Name="SizeType" Value="Auto" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="NormalImage" Value="set:cc25413 image:hc1" />
+                        <Property Name="PushedImage" Value="set:cc25413 image:hc2" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="EnableClickAni" Value="False" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.100473,-68},{0.100473,495},{0.100473,113},{0.100473,560}}" />
+                        <Window Type="TaharezLook/StaticImage" Name="chenghaohecheng_yg/ys1/ys1" >
+                            <Property Name="Font" Value="simhei-12" />
+                            <Property Name="Image" Value="set:itemicon88 image:2430" />
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="AlwaysOnTop" Value="True" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,0.3},{0,4.3},{0,51.55},{0,56.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                        <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/ys1/" >
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                            <Property Name="BorderColour" Value="FF003454" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,43.3},{0,10.3},{0,175.55},{0,52.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                    </Window>
+                    <Window Type="TaharezLook/ImageButton" Name="chenghaohecheng_yg/ys2" >
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="Visible" Value="False" />
+                        <Property Name="SizeType" Value="Auto" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="NormalImage" Value="set:cc25413 image:hc1" />
+                        <Property Name="PushedImage" Value="set:cc25413 image:hc2" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="EnableClickAni" Value="False" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.100473,132},{0.100473,495},{0.100473,313},{0.100473,560}}" />
+                        <Window Type="TaharezLook/StaticImage" Name="chenghaohecheng_yg/ys1/ys2" >
+                            <Property Name="Font" Value="simhei-12" />
+                            <Property Name="Image" Value="set:itemicon88 image:2430" />
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="AlwaysOnTop" Value="True" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,0.3},{0,4.3},{0,51.55},{0,56.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                        <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/ys2/" >
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                            <Property Name="BorderColour" Value="FF003454" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,43.3},{0,10.3},{0,175.55},{0,52.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                    </Window>
+                    <Window Type="TaharezLook/ImageButton" Name="chenghaohecheng_yg/ys3" >
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="Visible" Value="False" />
+                        <Property Name="SizeType" Value="Auto" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="NormalImage" Value="set:cc25413 image:hc1" />
+                        <Property Name="PushedImage" Value="set:cc25413 image:hc2" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="EnableClickAni" Value="False" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.100473,331},{0.100473,495},{0.100473,512},{0.100473,560}}" />
+                        <Window Type="TaharezLook/StaticImage" Name="chenghaohecheng_yg/ys1/ys3" >
+                            <Property Name="Font" Value="simhei-12" />
+                            <Property Name="Image" Value="set:itemicon88 image:2430" />
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="AlwaysOnTop" Value="True" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,0.3},{0,4.3},{0,51.55},{0,56.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                        <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/ys3/" >
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                            <Property Name="BorderColour" Value="FF003454" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,43.3},{0,10.3},{0,175.55},{0,52.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                    </Window>
+                    <Window Type="TaharezLook/ImageButton" Name="chenghaohecheng_yg/ys4" >
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="Visible" Value="False" />
+                        <Property Name="SizeType" Value="Auto" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="NormalImage" Value="set:cc25413 image:hc1" />
+                        <Property Name="PushedImage" Value="set:cc25413 image:hc2" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="EnableClickAni" Value="False" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.100473,531},{0.100473,495},{0.100473,712},{0.100473,560}}" />
+                        <Window Type="TaharezLook/StaticImage" Name="chenghaohecheng_yg/ys1/ys4" >
+                            <Property Name="Font" Value="simhei-12" />
+                            <Property Name="Image" Value="set:itemicon88 image:2430" />
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="AlwaysOnTop" Value="True" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,0.3},{0,4.3},{0,51.55},{0,56.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                        <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/ys4/" >
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                            <Property Name="BorderColour" Value="FF003454" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,43.3},{0,10.3},{0,175.55},{0,52.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                    </Window>
+                    <Window Type="TaharezLook/StaticImage" Name="chenghaohecheng_yg/lhsm" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Image" Value="set:cc25413 image:zhuanshi" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="Visible" Value="False" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,204},{0,482},{0,606},{0,512}}" />
+                        <Property Name="MousePassThroughEnabled" Value="True" />
+                        <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/zhuanshi1/lhsm" >
+                            <Property Name="Font" Value="simhei-12" />
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                            <Property Name="BorderColour" Value="FF003454" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,150.3},{0,3.3},{0,247.55},{0,28.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                    </Window>
+                    <Window Type="TaharezLook/ImageButton" Name="chenghaohecheng_yg/lh1" >
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="Visible" Value="False" />
+                        <Property Name="SizeType" Value="Auto" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="NormalImage" Value="set:cc25413 image:hc1" />
+                        <Property Name="PushedImage" Value="set:cc25413 image:hc2" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="EnableClickAni" Value="False" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.1,-68},{0.1,337},{0.1,113},{0.1,402}}" />
+                        <Window Type="TaharezLook/StaticImage" Name="chenghaohecheng_yg/lh1/lh1" >
+                            <Property Name="Font" Value="simhei-12" />
+                            <Property Name="Image" Value="set:itemicon88 image:2430" />
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="AlwaysOnTop" Value="True" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,0.3},{0,4.3},{0,51.55},{0,56.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                        <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/lh1/" >
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                            <Property Name="BorderColour" Value="FF003454" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,43.3},{0,10.3},{0,175.55},{0,52.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                    </Window>
+                    <Window Type="TaharezLook/ImageButton" Name="chenghaohecheng_yg/lh2" >
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="SizeType" Value="Auto" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="NormalImage" Value="set:cc25413 image:hc1" />
+                        <Property Name="PushedImage" Value="set:cc25413 image:hc2" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="EnableClickAni" Value="False" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.1,132},{0.1,337},{0.1,313},{0.1,402}}" />
+                        <Window Type="TaharezLook/StaticImage" Name="chenghaohecheng_yg/lh1/lh2" >
+                            <Property Name="Font" Value="simhei-12" />
+                            <Property Name="Image" Value="set:itemicon88 image:2434" />
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="AlwaysOnTop" Value="True" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,0.3},{0,4.3},{0,177.55},{0,56.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                        <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/lh2/" >
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                            <Property Name="BorderColour" Value="FF003454" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,43.3},{0,10.3},{0,175.55},{0,52.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                    </Window>
+                    <Window Type="TaharezLook/ImageButton" Name="chenghaohecheng_yg/lh3" >
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="SizeType" Value="Auto" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="NormalImage" Value="set:cc25413 image:hc1" />
+                        <Property Name="PushedImage" Value="set:cc25413 image:hc2" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="EnableClickAni" Value="False" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.1,331},{0.1,337},{0.1,512},{0.1,402}}" />
+                        <Window Type="TaharezLook/StaticImage" Name="chenghaohecheng_yg/lh1/lh3" >
+                            <Property Name="Font" Value="simhei-12" />
+                            <Property Name="Image" Value="set:itemicon88 image:2435" />
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="AlwaysOnTop" Value="True" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,0.3},{0,4.3},{0,177.55},{0,56.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                        <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/lh3/" >
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                            <Property Name="BorderColour" Value="FF003454" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,43.3},{0,10.3},{0,175.55},{0,52.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                    </Window>
+                    <Window Type="TaharezLook/ImageButton" Name="chenghaohecheng_yg/lh4" >
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="Visible" Value="False" />
+                        <Property Name="SizeType" Value="Auto" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="NormalImage" Value="set:cc25413 image:hc1" />
+                        <Property Name="PushedImage" Value="set:cc25413 image:hc2" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="EnableClickAni" Value="False" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.1,531},{0.1,337},{0.1,712},{0.1,402}}" />
+                        <Window Type="TaharezLook/StaticImage" Name="chenghaohecheng_yg/lh1/lh4" >
+                            <Property Name="Font" Value="simhei-12" />
+                            <Property Name="Image" Value="set:itemicon88 image:2426" />
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="AlwaysOnTop" Value="True" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,0.3},{0,4.3},{0,51.55},{0,56.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                        <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/lh4/" >
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                            <Property Name="BorderColour" Value="FF003454" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,43.3},{0,10.3},{0,175.55},{0,52.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                    </Window>
+                    <Window Type="TaharezLook/StaticImage" Name="chenghaohecheng_yg/qxsm" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Image" Value="set:cc25413 image:zhuanshi" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="Visible" Value="False" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,204},{0,640},{0,606},{0,670}}" />
+                        <Property Name="MousePassThroughEnabled" Value="True" />
+                        <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/zhuanshi1/qxsm" >
+                            <Property Name="Font" Value="simhei-12" />
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                            <Property Name="BorderColour" Value="FF003454" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,150.3},{0,3.3},{0,247.55},{0,28.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                    </Window>
+                    <Window Type="TaharezLook/ImageButton" Name="chenghaohecheng_yg/qx1" >
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="SizeType" Value="Auto" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="NormalImage" Value="set:cc25413 image:hc1" />
+                        <Property Name="PushedImage" Value="set:cc25413 image:hc2" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="EnableClickAni" Value="False" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.1,-68},{0.1,653},{0.1,113},{0.1,718}}" />
+                        <Window Type="TaharezLook/StaticImage" Name="chenghaohecheng_yg/qx1/qx1" >
+                            <Property Name="Font" Value="simhei-12" />
+                            <Property Name="Image" Value="set:back image:blank" />
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="AlwaysOnTop" Value="True" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,0.3},{0,4.3},{0,51.55},{0,56.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                        <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/qx1/" >
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                            <Property Name="BorderColour" Value="FF003454" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,43.3},{0,10.3},{0,175.55},{0,52.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                    </Window>
+                    <Window Type="TaharezLook/ImageButton" Name="chenghaohecheng_yg/qx2" >
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="Visible" Value="False" />
+                        <Property Name="SizeType" Value="Auto" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="NormalImage" Value="set:cc25413 image:hc1" />
+                        <Property Name="PushedImage" Value="set:cc25413 image:hc2" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="EnableClickAni" Value="False" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.1,132},{0.1,653},{0.1,313},{0.1,718}}" />
+                        <Window Type="TaharezLook/StaticImage" Name="chenghaohecheng_yg/qx1/qx2" >
+                            <Property Name="Font" Value="simhei-12" />
+                            <Property Name="Image" Value="set:back image:blank" />
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="AlwaysOnTop" Value="True" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,0.3},{0,4.3},{0,51.55},{0,56.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                        <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/qx2/" >
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                            <Property Name="BorderColour" Value="FF003454" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,43.3},{0,10.3},{0,175.55},{0,52.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                    </Window>
+                    <Window Type="TaharezLook/ImageButton" Name="chenghaohecheng_yg/qx3" >
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="Visible" Value="False" />
+                        <Property Name="SizeType" Value="Auto" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="NormalImage" Value="set:cc25413 image:hc1" />
+                        <Property Name="PushedImage" Value="set:cc25413 image:hc2" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="EnableClickAni" Value="False" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.1,331},{0.1,653},{0.1,512},{0.1,718}}" />
+                        <Window Type="TaharezLook/StaticImage" Name="chenghaohecheng_yg/qx1/qx3" >
+                            <Property Name="Font" Value="simhei-12" />
+                            <Property Name="Image" Value="set:back image:blank" />
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="AlwaysOnTop" Value="True" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,0.3},{0,4.3},{0,51.55},{0,56.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                        <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/qx3/" >
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                            <Property Name="BorderColour" Value="FF003454" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,43.3},{0,10.3},{0,175.55},{0,52.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                    </Window>
+                    <Window Type="TaharezLook/ImageButton" Name="chenghaohecheng_yg/qx4" >
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="Visible" Value="False" />
+                        <Property Name="SizeType" Value="Auto" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="NormalImage" Value="set:cc25413 image:hc1" />
+                        <Property Name="PushedImage" Value="set:cc25413 image:hc2" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="EnableClickAni" Value="False" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.1,531},{0.1,653},{0.1,712},{0.1,718}}" />
+                        <Window Type="TaharezLook/StaticImage" Name="chenghaohecheng_yg/qx1/qx4" >
+                            <Property Name="Font" Value="simhei-12" />
+                            <Property Name="Image" Value="set:back image:blank" />
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="AlwaysOnTop" Value="True" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,0.3},{0,4.3},{0,51.55},{0,56.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                        <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/qx4/" >
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                            <Property Name="BorderColour" Value="FF003454" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,43.3},{0,10.3},{0,175.55},{0,52.55}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                    </Window>
+                </AutoWindow>
+            </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="chenghaohecheng_yg/biaoshi1" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Image" Value="set:cc25413 image:c2" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,453.079},{0,49.0168},{0,608.329},{0,101.267}}" />
+            <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/biaoshi1/zt1" >
+                <Property Name="Font" Value="hycyj-14" />
+                <Property Name="Text" Value="灵    仙" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="HorzExtent" Value="78" />
+                <Property Name="VertExtent" Value="25.6468" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="UnifiedAreaRect" Value="{{0,-0.700001},{0,0.300003},{0,153.55},{0,51.55}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+        </Window>
+        <Window Type="TaharezLook/ImageButtoncc" Name="chenghaohecheng_yg/wulineidan" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="NormalImage" Value="set:cc25413 image:c3" />
+            <Property Name="PushedImage" Value="set:cc25413 image:c2" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="EnableClickAni" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,117.079},{0,49.0168},{0,272.329},{0,101.267}}" />
+            <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/biaoshi1/zt2" >
+                <Property Name="Font" Value="hycyj-14" />
+                <Property Name="Text" Value="地    仙" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="HorzExtent" Value="78" />
+                <Property Name="VertExtent" Value="25.6468" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="UnifiedAreaRect" Value="{{0,-0.700001},{0,0.300003},{0,153.55},{0,51.55}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+            </Window>
+        </Window>
+        <Window Type="TaharezLook/ImageButtoncc" Name="chenghaohecheng_yg/fashuneidan" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="NormalImage" Value="set:cc25413 image:c3" />
+            <Property Name="PushedImage" Value="set:cc25413 image:c2" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="EnableClickAni" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,284.079},{0,49.0168},{0,439.329},{0,101.267}}" />
+            <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/biaoshi1/zt3" >
+                <Property Name="Font" Value="hycyj-14" />
+                <Property Name="Text" Value="上    仙" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="HorzExtent" Value="78" />
+                <Property Name="VertExtent" Value="25.6468" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="UnifiedAreaRect" Value="{{0,-0.700001},{0,0.300003},{0,153.55},{0,51.55}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+            </Window>
+        </Window>
+        <Window Type="TaharezLook/ImageButtoncc" Name="chenghaohecheng_yg/gaojineidan" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="NormalImage" Value="set:cc25413 image:c3" />
+            <Property Name="PushedImage" Value="set:cc25413 image:c2" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="EnableClickAni" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,623.079},{0,49.0168},{0,778.329},{0,101.267}}" />
+            <Window Type="TaharezLook/StaticText" Name="chenghaohecheng_yg/biaoshi1/zt4" >
+                <Property Name="Font" Value="hycyj-14" />
+                <Property Name="Text" Value="封印治疗" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="HorzExtent" Value="104" />
+                <Property Name="VertExtent" Value="25.6468" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="UnifiedAreaRect" Value="{{0,-0.700001},{0,0.300003},{0,153.55},{0,51.55}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,28 @@
+Index: huodongdlg.lua
+===================================================================
+--- huodongdlg.lua	(revision 50091)
++++ huodongdlg.lua	(working copy)
+@@ -231,6 +231,9 @@
+ 	local index = 0
+     -- t通用配置表 里面存放的最大活跃度值
+     local recordmacactvalue = GameTable.common.GetCCommonTableInstance():getRecorder(173)
++    if IsPointCardServer() then
++        recordmacactvalue = BeanConfigManager.getInstance():GetTableByName("fushi.ccommondaypay"):getRecorder(8)
++    end
+ 	local macactvalue = tonumber(recordmacactvalue.value)
+ 	-- 活跃度进度条
+ 	self.m_progressAct:setProgress(activevalue/math.floor(macactvalue))
+Index: huodongdlgpay.lua
+===================================================================
+--- huodongdlgpay.lua	(revision 50103)
++++ huodongdlgpay.lua	(working copy)
+@@ -242,6 +242,9 @@
+ 	local index = 0
+     -- t通用配置表 里面存放的最大活跃度值
+     local recordmacactvalue = GameTable.common.GetCCommonTableInstance():getRecorder(173)
++    if IsPointCardServer() then
++        recordmacactvalue = BeanConfigManager.getInstance():GetTableByName("fushi.ccommondaypay"):getRecorder(8)
++    end
+ 	local macactvalue = tonumber(recordmacactvalue.value)
+ 	-- 活跃度进度条
+ 	self.m_progressAct:setProgress(activevalue/math.floor(macactvalue))

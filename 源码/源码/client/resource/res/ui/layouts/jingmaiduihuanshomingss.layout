@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="TaharezLook/StaticImage" Name="jingmaiduihuanshoming" >
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Scale" Value="x:1 y:1 z:1" />
+        <Property Name="ModalState" Value="True" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="LuaForDialog" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0.50039,-514},{0.50039,-388},{0.50039,498},{0.50039,340}}" />
+        <Window Type="TaharezLook/StaticImage" Name="jingmaiduihuanshoming/Back/Pattern/diban1" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Image" Value="set:fabaoui image:aa" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.050588,6},{0.050588,53},{0.050588,916},{0.050588,665}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="jingmaiduihuanshoming/1" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Image" Value="set:itemicon49 image:1791" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.050588,70},{0.050588,148},{0.050588,123},{0.050588,199}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/extern02/1" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="[colour=&apos;FF1C1C1C&apos;]碧玉葫芦" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="72" />
+            <Property Name="VertExtent" Value="18.3192" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,105.3},{0,238.3},{0,196.55},{0,266.55}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/Back/Pattern/21" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="佩戴者受到物理攻击时\n有几率降低部分伤害" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="181" />
+            <Property Name="VertExtent" Value="36.6384" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF8B3626 tr:FF8B3626 bl:FF8B3626 br:FFEE9A00" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,177},{0,181},{0,395},{0,244}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="jingmaiduihuanshoming/2" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Image" Value="set:itemicon52 image:1833" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.050588,350},{0.050588,150},{0.050588,403},{0.050588,201}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/extern02/2" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="[colour=&apos;FF1C1C1C&apos;]朱雀盾" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="55" />
+            <Property Name="VertExtent" Value="18.3192" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,668.3},{0,591.3},{0,759.55},{0,619.55}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/Back/Pattern/diban/2" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="战斗中提升佩戴者的\n物理伤害" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="162" />
+            <Property Name="VertExtent" Value="36.6384" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF8B3626 tr:FF8B3626 bl:FF8B3626 br:FFEE9A00" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,460},{0,182},{0,675},{0,245}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="jingmaiduihuanshoming/3" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Image" Value="set:itemicon51 image:1819" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.050588,625},{0.050588,149},{0.050588,678},{0.050588,200}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/extern02/3" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="[colour=&apos;FF1C1C1C&apos;]玄武铠" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="54" />
+            <Property Name="VertExtent" Value="18.3192" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,398.3},{0,592.3},{0,489.55},{0,620.55}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/Back/Pattern/diban/3" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="战斗中提升佩戴者\n的速度" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="144" />
+            <Property Name="VertExtent" Value="36.6384" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF8B3626 tr:FF8B3626 bl:FF8B3626 br:FFEE9A00" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,734},{0,177},{0,890},{0,240}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="jingmaiduihuanshoming/4" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Image" Value="set:itemicon51 image:1825" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.050588,69},{0.050588,238},{0.050588,122},{0.050588,289}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/extern02/4" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="[colour=&apos;FF1C1C1C&apos;]无量经" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="54" />
+            <Property Name="VertExtent" Value="18.3192" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,671.3},{0,502.3},{0,762.55},{0,530.55}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/Back/Pattern/diban/4" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="战斗中提升佩戴者的\n法术伤害" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="162" />
+            <Property Name="VertExtent" Value="36.6384" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF8B3626 tr:FF8B3626 bl:FF8B3626 br:FFEE9A00" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,177},{0,271},{0,395},{0,321}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="jingmaiduihuanshoming/5" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Image" Value="set:itemicon51 image:1828" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.050588,352},{0.050588,237},{0.050588,405},{0.050588,288}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/extern02/5" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="[colour=&apos;FF1C1C1C&apos;]七宝玲珑灯" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="90" />
+            <Property Name="VertExtent" Value="18.3192" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,378.3},{0,501.3},{0,480.55},{0,529.55}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/Back/Pattern/diban/5" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="战斗中提升佩戴者宠物的\n物理伤害" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="198" />
+            <Property Name="VertExtent" Value="36.6384" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF8B3626 tr:FF8B3626 bl:FF8B3626 br:FFEE9A00" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,462},{0,266},{0,680},{0,329}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="jingmaiduihuanshoming/6" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Image" Value="set:itemicon33 image:1536" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.050588,623},{0.050588,239},{0.050588,676},{0.050588,290}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/extern02/6" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="[colour=&apos;FF1C1C1C&apos;]金甲仙衣" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="72" />
+            <Property Name="VertExtent" Value="18.3192" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,669.3},{0,414.3},{0,760.55},{0,442.55}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/Back/Pattern/diban/6" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="提升佩戴者在战斗\n中宠物的物理和\n法术防御" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="144" />
+            <Property Name="VertExtent" Value="54.9575" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF8B3626 tr:FF8B3626 bl:FF8B3626 br:FFEE9A00" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,730},{0,269},{0,948},{0,332}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="jingmaiduihuanshoming/7" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Image" Value="set:itemicon51 image:1823" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.050588,69},{0.050588,326},{0.050588,122},{0.050588,377}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/extern02/7" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="[colour=&apos;FF1C1C1C&apos;]汇灵盏" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="55" />
+            <Property Name="VertExtent" Value="18.3192" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,394.3},{0,415.3},{0,485.55},{0,443.55}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/Back/Pattern/diban/7" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="战斗中提升佩戴者\n宠物的速度" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="144" />
+            <Property Name="VertExtent" Value="36.6384" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF8B3626 tr:FF8B3626 bl:FF8B3626 br:FFEE9A00" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,179},{0,350},{0,397},{0,413}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="jingmaiduihuanshoming/8" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Image" Value="set:itemicon50 image:1807" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.050588,352},{0.050588,324},{0.050588,405},{0.050588,375}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/extern02/8" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="[colour=&apos;FF1C1C1C&apos;]碧玉葫芦" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="72" />
+            <Property Name="VertExtent" Value="18.3192" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,666.3},{0,326.3},{0,757.55},{0,354.55}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/Back/Pattern/diban/8" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="战斗中提升佩戴者宠物\n的法术伤害" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="180" />
+            <Property Name="VertExtent" Value="36.6384" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF8B3626 tr:FF8B3626 bl:FF8B3626 br:FFEE9A00" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,462},{0,356},{0,680},{0,419}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="jingmaiduihuanshoming/9" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Image" Value="set:itemicon49 image:1795" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.050588,623},{0.050588,323},{0.050588,676},{0.050588,374}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/extern02/9" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="[colour=&apos;FF1C1C1C&apos;]九黎战鼓" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="72" />
+            <Property Name="VertExtent" Value="18.3192" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,389.3},{0,327.3},{0,480.55},{0,355.55}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/Back/Pattern/diban/9" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="戴者受到物理攻击\n时有几率降低部分\n伤害" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="145" />
+            <Property Name="VertExtent" Value="54.9575" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF8B3626 tr:FF8B3626 bl:FF8B3626 br:FFEE9A00" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,732},{0,350},{0,950},{0,413}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="jingmaiduihuanshoming/10" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Image" Value="set:itemicon50 image:1811" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.050588,68},{0.050588,410},{0.050588,121},{0.050588,461}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/extern02/10" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="[colour=&apos;FF1C1C1C&apos;]安魂咒" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="55" />
+            <Property Name="VertExtent" Value="18.3192" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,110.3},{0,592.3},{0,201.55},{0,620.55}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/Back/Pattern/diban/10" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="佩戴者受到法术攻击时\n有几率降低部分伤害" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="181" />
+            <Property Name="VertExtent" Value="36.6384" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF8B3626 tr:FF8B3626 bl:FF8B3626 br:FFEE9A00" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,177},{0,440},{0,395},{0,503}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="jingmaiduihuanshoming/11" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Image" Value="set:itemicon50 image:1810" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.050588,352},{0.050588,411},{0.050588,405},{0.050588,462}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/extern02/11" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="[colour=&apos;FF1C1C1C&apos;]降魔斗篷" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="72" />
+            <Property Name="VertExtent" Value="18.3192" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,105.3},{0,502.3},{0,196.55},{0,530.55}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/Back/Pattern/diban/11" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="每回合开始时有一定几率\n随机解除一个作用于己方\n的负面法宝状态" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="198" />
+            <Property Name="VertExtent" Value="54.9575" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF8B3626 tr:FF8B3626 bl:FF8B3626 br:FFEE9A00" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,464},{0,441},{0,682},{0,504}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="jingmaiduihuanshoming/12" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Image" Value="set:itemicon79 image:2267" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.050588,622},{0.050588,414},{0.050588,675},{0.050588,465}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/extern02/12" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="[colour=&apos;FF1C1C1C&apos;]神行飞剑" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="72" />
+            <Property Name="VertExtent" Value="18.3192" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,104.3},{0,414.3},{0,195.55},{0,442.55}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/Back/Pattern/diban/12" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="提升佩戴者战斗中\n伤害结果" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="144" />
+            <Property Name="VertExtent" Value="36.6384" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF8B3626 tr:FF8B3626 bl:FF8B3626 br:FFEE9A00" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,734},{0,440},{0,952},{0,503}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="jingmaiduihuanshoming/13" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Image" Value="set:itemicon79 image:2266" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.050588,66},{0.050588,502},{0.050588,119},{0.050588,553}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/extern02/13" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="[colour=&apos;FF1C1C1C&apos;]附灵玉" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="54" />
+            <Property Name="VertExtent" Value="18.3192" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,114.3},{0,327.3},{0,205.55},{0,355.55}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/Back/Pattern/diban/13" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="提升佩戴者水系和火系的\n吸收几率" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="198" />
+            <Property Name="VertExtent" Value="36.6384" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF8B3626 tr:FF8B3626 bl:FF8B3626 br:FFEE9A00" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,178},{0,535},{0,396},{0,598}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="jingmaiduihuanshoming/14" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Image" Value="set:itemicon79 image:2265" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.050588,352},{0.050588,498},{0.050588,405},{0.050588,549}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/extern02/14" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="[colour=&apos;FF1C1C1C&apos;]风袋" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="36" />
+            <Property Name="VertExtent" Value="18.3192" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,679.3},{0,238.3},{0,770.55},{0,266.55}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/Back/Pattern/diban/14" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="增加佩戴者1%物理防御" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="180" />
+            <Property Name="VertExtent" Value="18.3192" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF8B3626 tr:FF8B3626 bl:FF8B3626 br:FFEE9A00" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,465},{0,533},{0,683},{0,596}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="jingmaiduihuanshoming/15" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Image" Value="set:itemicon79 image:2264" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.050588,622},{0.050588,498},{0.050588,675},{0.050588,549}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/extern02/15" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="[colour=&apos;FF1C1C1C&apos;]飞剑" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="36" />
+            <Property Name="VertExtent" Value="18.3192" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,401.3},{0,239.3},{0,492.55},{0,267.55}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/Back/Pattern/diban/15" >
+            <Property Name="Font" Value="simhei-10" />
+            <Property Name="Text" Value="增加佩戴者1%法术\n防御" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="144" />
+            <Property Name="VertExtent" Value="36.6384" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF8B3626 tr:FF8B3626 bl:FF8B3626 br:FFEE9A00" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,737},{0,530},{0,955},{0,593}}" />
+        </Window>
+        <Window Type="TaharezLook/RichEditbox" Name="jingmaiduihuanshoming/box" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="ReadOnly" Value="True" />
+            <Property Name="LineSpace" Value="1" />
+            <Property Name="BlinkCaret" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="MaxTextLength" Value="2147483647" />
+            <Property Name="UnifiedAreaRect" Value="{{0,-974},{0,181},{0,-469},{0,279}}" />
+            <Property Name="BlinkCaretTimeout" Value="0.5" />
+            <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/common_tittle1" Name="jingmaiduihuanshoming/title" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,-850},{0,5},{0,-411},{0,54}}" />
+            <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/text1" >
+                <Property Name="Font" Value="simhei-14" />
+                <Property Name="Text" Value="功能说明" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="HorzExtent" Value="104" />
+                <Property Name="VertExtent" Value="25.6593" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="UnifiedAreaRect" Value="{{0.05,129},{0.05,0},{0.05,271},{0.05,44}}" />
+            </Window>
+        </Window>
+        <Window Type="TaharezLook/common_text2bg" Name="jingmaiduihuanshoming/di" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,-1231},{0,-447},{0,-525},{0,125}}" />
+            <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/text2" >
+                <Property Name="Font" Value="simhei-13" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="TextColours" Value="tl:FF09DEF7 tr:FF09DEF7 bl:FF09DEF7 br:FF09DEF7" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="UnifiedAreaRect" Value="{{0,-8},{0,-2},{0,693},{0,552}}" />
+            </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/zhiye" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Text" Value="您曾经使用过的职业：" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="220" />
+            <Property Name="VertExtent" Value="21.9893" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FFFFF2DF tr:FFFFF2DF bl:FFFFF2DF br:FFFFF2DF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,-664},{0,112},{0,-494},{0,147}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/juese" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Text" Value="您曾经使用过的种族：" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="220" />
+            <Property Name="VertExtent" Value="21.9893" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FFFFF2DF tr:FFFFF2DF bl:FFFFF2DF br:FFFFF2DF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,-709},{0,193},{0,-492},{0,228}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/zhiye2" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Text" Value="萨满，应曹地府，大唐官府" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="264" />
+            <Property Name="VertExtent" Value="21.9893" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF005B0F tr:FF005B0F bl:FF005B0F br:FF005B0F" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,-799},{0,126},{0,-340},{0,161}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaiduihuanshoming/juese1" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF005B0F tr:FF005B0F bl:FF005B0F br:FF005B0F" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,-789},{0,237},{0,-514},{0,272}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="jingmaiduihuanshoming/back" >
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="NormalImage" Value="set:moban2 image:guanbi" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="EnableClickAni" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.5,358},{0.5,-270},{0.5,469},{0.5,-177}}" />
+            <Property Name="AllowModalStateClick" Value="True" />
+        </Window>
+    </Window>
+</GUILayout>

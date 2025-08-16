@@ -1,0 +1,22 @@
+Index: rankinglist.lua
+===================================================================
+--- rankinglist.lua	(revision 50091)
++++ rankinglist.lua	(working copy)
+@@ -649,6 +649,8 @@
+     elseif  rankType == typeEnum.FACTION_COPY then
+         req.ranktype = rankType
+         req.rank = -1;
++    elseif rankType == typeEnum.RED_PACK_1 or rankType == typeEnum.RED_PACK_2 or rankType == typeEnum.FLOWER_GIVE or rankType == typeEnum.FLOWER_RECEIVE then
++        req.rank = -1;
+     else
+         req.ranktype = typeEnum.ROLE_ZONGHE_RANK;
+         req.rank = -1;
+@@ -686,7 +688,7 @@
+          rankType == typeEnum.PVP5_HISTORY_GRADE2  or
+          rankType == typeEnum.PVP5_HISTORY_GRADE3  or
+          rankType == typeEnum.RED_PACK_1  or
+-         rankType == typeEnum.RED_PACK_1  or
++         rankType == typeEnum.RED_PACK_2  or
+          rankType == typeEnum.FLOWER_GIVE  or
+          rankType == typeEnum.FLOWER_RECEIVE 
+         then

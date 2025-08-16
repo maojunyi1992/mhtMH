@@ -1,0 +1,13 @@
+Index: huodongcell.lua
+===================================================================
+--- huodongcell.lua	(revision 47066)
++++ huodongcell.lua	(working copy)
+@@ -239,7 +239,7 @@
+ 	end
+     
+     --Ó¢ÐÛÊÔÁ¶µ¥¶À´¦Àí
+-    if self.m_id == 103 then
++    if self.m_id == 103 and nLvl >=record.level then
+         
+         if huodongmanager then
+             if huodongmanager.m_HeroTrial == 1 then

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="TaharezLook/CellGroupButtonx2" Name="xianshicell" >
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Scale" Value="x:1 y:1 z:1" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="LuaForDialog" Value="True" />
+        <Property Name="EnableClickAni" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,319},{0,276},{0,569},{0,601}}" />
+        <Window Type="TaharezLook/ItemCell22" Name="xianshicell/item" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,91.289},{0,75.225},{0,166.539},{0,147.475}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCexll2" Name="xianshicell/item1" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,42.289},{0,48.225},{0,210.539},{0,164.475}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="xianshicell/xiangou" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Text" Value="0/100" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="55" />
+            <Property Name="VertExtent" Value="21.9893" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF006633 tr:FF006633 bl:FF006633 br:FF006633" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,114.289},{0,5.225},{0,195.539},{0,39.475}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="xianshicell/xiangou1" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Text" Value="限售量:" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="77" />
+            <Property Name="VertExtent" Value="21.9893" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF000000 tr:FF000000 bl:FF000000 br:FF000000" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,11.2892},{0.05,-13.775},{0.05,162.539},{0.05,20.475}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="xianshicell/xiangou11" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Text" Value="道具名字" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="88" />
+            <Property Name="VertExtent" Value="21.9893" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF000000 tr:FF000000 bl:FF000000 br:FF000000" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.1,17.2892},{0.1,124.225},{0.1,184.539},{0.1,156.475}}" />
+        </Window>
+        <Window Type="TaharezLook/RichEditbox" Name="xianshicell/xiangou11/jieshao" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="LineSpace" Value="1" />
+            <Property Name="BlinkCaret" Value="True" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="MaxTextLength" Value="2147483647" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,18.3},{0.05,175.3},{0.05,207.55},{0.05,290.55}}" />
+            <Property Name="NormalTextColour" Value="FF000000" />
+            <Property Name="BlinkCaretTimeout" Value="0.5" />
+            <Property Name="TextParsingEnabled" Value="False" />
+            <Property Name="AllowModalStateClick" Value="True" />
+        </Window>
+    </Window>
+</GUILayout>

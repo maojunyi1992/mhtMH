@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="TaharezLook/FrameWindow20" Name="jingmaihecheng_df" >
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value=" " />
+        <Property Name="Scale" Value="x:1 y:1 z:1" />
+        <Property Name="ModalState" Value="True" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="LuaForDialog" Value="True" />
+        <Property Name="RollUpEnabled" Value="True" />
+        <Property Name="SizingEnabled" Value="False" />
+        <Property Name="DragMoveEnable" Value="True" />
+        <Property Name="TitlebarEnabled" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0.5,-602},{0.5,-361},{0.5,615},{0.5,375}}" />
+        <Property Name="DragMovingEnabled" Value="False" />
+        <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+        <Window Type="TaharezLook/ImageButton" Name="jingmaihecheng_df/df1" >
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="NormalImage" Value="set:itemicon78 image:2244" />
+            <Property Name="PushedImage" Value="set:itemicon78 image:2244" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="EnableClickAni" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,549},{0,216},{0,613},{0,285}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="jingmaihecheng_df/df2" >
+            <Property Name="Font" Value="simhei-14" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="NormalImage" Value="set:itemicon78 image:2245" />
+            <Property Name="PushedImage" Value="set:itemicon78 image:2245" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="EnableClickAni" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,541},{0,319},{0,613},{0,402}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="jingmaihecheng_df/df3" >
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="NormalImage" Value="set:itemicon78 image:2246" />
+            <Property Name="PushedImage" Value="set:itemicon77 image:2246" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="EnableClickAni" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,548},{0,431},{0,606},{0,496}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="jingmaihecheng_df/df4" >
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="NormalImage" Value="set:itemicon78 image:2247" />
+            <Property Name="PushedImage" Value="set:itemicon78 image:2247" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="EnableClickAni" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,542},{0,528},{0,606},{0,598}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="jingmaihecheng_df/df5" >
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="NormalImage" Value="set:itemicon78 image:2248" />
+            <Property Name="PushedImage" Value="set:itemicon78 image:2248" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="EnableClickAni" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,359},{0,248},{0,423},{0,314}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="jingmaihecheng_df/df6" >
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="NormalImage" Value="set:itemicon78 image:2249" />
+            <Property Name="PushedImage" Value="set:itemicon78 image:2249" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="EnableClickAni" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,739},{0,245},{0,800},{0,308}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="jingmaihecheng_df/df7" >
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="NormalImage" Value="set:itemicon78 image:2250" />
+            <Property Name="PushedImage" Value="set:itemicon78 image:2250" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="EnableClickAni" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,365},{0,403},{0,436},{0,479}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="jingmaihecheng_df/df8" >
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="NormalImage" Value="set:itemicon78 image:2251" />
+            <Property Name="PushedImage" Value="set:itemicon78 image:2251" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="EnableClickAni" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,736},{0,410},{0,801},{0,478}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="jingmaihecheng_df/back/pack" >
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="HoverImage" Value="set:mainui image:main_pack" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="NormalImage" Value="set:mainui image:main_pack" />
+            <Property Name="PushedImage" Value="set:mainui image:main_pack" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="DisabledImage" Value="set:mainui image:main_pack" />
+            <Property Name="EnableClickAni" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,-394},{0,-133},{0,-324},{0,-69}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="EquipDialog/Back/Pattern/df" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Image" Value="set:tuzi3 image:difu" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.050588,-65},{0.050588,-36},{0.050588,1164},{0.050588,697}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaihecheng_df/dfbiaoti1" >
+            <Property Name="Font" Value="hycyj-20" />
+            <Property Name="Text" >
+							地
+							府
+						 经
+						 脉
+						 合
+						 成 
+						 一
+						 级</Property>
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="117.5" />
+            <Property Name="VertExtent" Value="296.71" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF50321A tr:FF50321A bl:FF50321A br:FF50321A" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.5,-967},{0.5,-474},{0.5,-894},{0.5,-465}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaihecheng_df/dfbiaoti2" >
+            <Property Name="Font" Value="hycyj-20" />
+            <Property Name="Text" >
+							地
+							府
+						 经
+						 脉
+						 合
+						 成 
+						 二
+						 级</Property>
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="HorzExtent" Value="117.5" />
+            <Property Name="VertExtent" Value="296.71" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF50321A tr:FF50321A bl:FF50321A br:FF50321A" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.5,-965},{0.5,-479},{0.5,-929},{0.5,-442}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaihecheng_df/dfbiaoti3" >
+            <Property Name="Font" Value="hycyj-20" />
+            <Property Name="Text" >
+							地
+							府
+						 经
+						 脉
+						 合
+						 成 
+						 三
+						 级</Property>
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="117.5" />
+            <Property Name="VertExtent" Value="296.71" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF50321A tr:FF50321A bl:FF50321A br:FF50321A" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.5,-966},{0.5,-472},{0.5,-918},{0.5,-459}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaihecheng_df/dfbiaoti4" >
+            <Property Name="Font" Value="hycyj-20" />
+            <Property Name="Text" >
+							地
+							府
+						 经
+						 脉
+						 合
+						 成 
+						 四
+						 级</Property>
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="117.5" />
+            <Property Name="VertExtent" Value="296.71" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF50321A tr:FF50321A bl:FF50321A br:FF50321A" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.5,-966},{0.5,-475},{0.5,-933},{0.5,-472}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="jingmaihecheng_df/dfbiaoti5" >
+            <Property Name="Font" Value="hycyj-20" />
+            <Property Name="Text" >
+							地
+							府
+						 经
+						 脉
+						 合
+						 成 
+						 五
+						 级</Property>
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="117.5" />
+            <Property Name="VertExtent" Value="296.71" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF50321A tr:FF50321A bl:FF50321A br:FF50321A" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.5,-955},{0.5,-471},{0.5,-917},{0.5,-470}}" />
+        </Window>
+    </Window>
+</GUILayout>

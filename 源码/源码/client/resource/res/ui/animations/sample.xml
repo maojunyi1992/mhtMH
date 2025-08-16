@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" ?>
+<Animations>
+
+	<!--界面从大到小缩放-->
+	<AnimationDefinition name="xinshouyindao" duration="0.7" replayMode="once">
+		<Affector property="Scale" interpolator="Vector3" >
+            <KeyFrame position="0" value="x:5 y:5 z:1" />
+            <KeyFrame position="0.15" value="x:1 y:1 z:1" progression="quadratic accelerating"/>
+            <KeyFrame position="0.2" value="x:1 y:1 z:1" progression="quadratic decelerating"/>
+            <KeyFrame position="0.3" value="x:3 y:3 z:3" progression="quadratic accelerating"/>
+            <KeyFrame position="0.4" value="x:3 y:3 z:1" progression="quadratic accelerating"/>
+            <KeyFrame position="0.5" value="x:2 y:2 z:1" progression="quadratic decelerating"/>
+	    </Affector>
+	</AnimationDefinition>
+
+		<!--战斗状态冒字3-->
+	<AnimationDefinition name="CombatEffect3" duration="2" replayMode="once">
+		<Affector property="Alpha" interpolator="float">
+            <KeyFrame position="0" value="1" />
+			<KeyFrame position="0.5" value="1" progression="linear"/>
+			<KeyFrame position="2" value="0" progression="linear"/>
+        </Affector>
+		<Affector property="Scale" interpolator="Vector3" >
+            <KeyFrame position="0" value="x:0.1 y:0.1 z:1" />
+			<KeyFrame position="0.15" value="x:2 y:2 z:1" progression="quadratic accelerating" />
+			<KeyFrame position="0.3" value="x:1 y:1 z:1" progression="quadratic accelerating" />
+			<KeyFrame position="2" value="x:1 y:1 z:1" progression="quadratic decelerating" />
+	    </Affector>	
+	</AnimationDefinition>
+	<!--战斗状态冒字1-->
+	<AnimationDefinition name="CombatEffect1" duration="1.5" replayMode="once">
+		<Affector property="Scale" interpolator="Vector3" >
+      <KeyFrame position="0" value="x:0 y:0 z:0" />
+			<KeyFrame position="0.2" value="x:2 y:2 z:2" progression="quadratic accelerating" />
+			<KeyFrame position="0.4" value="x:1 y:1 z:1" progression="quadratic accelerating" />
+			<KeyFrame position="1.5" value="x:1 y:1 z:1" progression="quadratic decelerating" />
+	    </Affector>	
+		<Affector property="Alpha" interpolator="float">
+      <KeyFrame position="0.4" value="1" />
+			<KeyFrame position="1.2" value="1" />
+			<KeyFrame position="1.5" value="0" progression="linear"/>
+        </Affector>
+	</AnimationDefinition>
+	<!--
+		   主界面动画
+	-->
+	<AnimationDefinition name="zhujiemianduihuan" duration="0.35" replayMode="once">
+        <Affector property="Rotation" interpolator="Vector3">
+            <KeyFrame position="0" value="x:0 y:0 z:0" />
+			<KeyFrame position="0.35" value="x:0 y:0 z:-135" />
+        </Affector>
+    </AnimationDefinition>
+	<!--
+		   主界面动画2
+	-->
+	<AnimationDefinition name="zhujiemianduihuan2" duration="0.35" replayMode="once">
+        <Affector property="Rotation" interpolator="Vector3">
+            <KeyFrame position="0" value="x:0 y:0 z:-135" />
+			<KeyFrame position="0.35" value="x:0 y:0 z:0" />
+        </Affector>
+    </AnimationDefinition>
+	<!--创建角色动画-->
+	<AnimationDefinition name="createrolebgl" duration="0.6" replayMode="once">
+		<Affector property="UnifiedXPosition" interpolator="UDim" applicationMethod="relative">
+			<KeyFrame position="0" value="{0,1280}" />
+			<KeyFrame position="0.6" value="{0,0}" progression="quadratic decelerating"/>
+		</Affector>
+		<Affector property="Alpha" interpolator="float">
+            <KeyFrame position="0" value="1.0" />
+            <KeyFrame position="0.1" value="0.9" progression="quadratic accelerating" />
+			<KeyFrame position="0.3" value="1.0" progression="quadratic accelerating" />
+        </Affector>
+	</AnimationDefinition>
+	<!--创建角色动画-->
+	<AnimationDefinition name="createrolebgr" duration="0.6" replayMode="once">
+		<Affector property="UnifiedXPosition" interpolator="UDim" applicationMethod="relative">
+			<KeyFrame position="0" value="{0,-1280}" />
+			<KeyFrame position="0.6" value="{0,0}" progression="quadratic decelerating"/>
+		</Affector>
+		<Affector property="Alpha" interpolator="float">
+            <KeyFrame position="0" value="1.0" />
+            <KeyFrame position="0.1" value="0.9" progression="quadratic accelerating" />
+			<KeyFrame position="0.3" value="1.0" progression="quadratic accelerating" />
+        </Affector>
+	</AnimationDefinition>
+	<!--创建角色动画-->
+	<AnimationDefinition name="createrolebgll" duration="0.6" replayMode="once">
+		<Affector property="Alpha" interpolator="float">
+            <KeyFrame position="0" value="1.0" />
+            <KeyFrame position="0.1" value="0.9" progression="quadratic accelerating" />
+			<KeyFrame position="0.3" value="1.0" progression="quadratic accelerating" />
+        </Affector>
+		<Affector property="UnifiedXPosition" interpolator="UDim" applicationMethod="relative">
+			<KeyFrame position="0" value="{0,0}" />
+			<KeyFrame position="0.6" value="{0,-1280}" progression="quadratic decelerating"/>
+		</Affector>
+	</AnimationDefinition>
+	<!--创建角色动画-->
+	<AnimationDefinition name="createrolebglr" duration="0.6" replayMode="once">
+		<Affector property="Alpha" interpolator="float">
+            <KeyFrame position="0" value="1.0" />
+            <KeyFrame position="0.1" value="0.9" progression="quadratic accelerating" />
+			<KeyFrame position="0.3" value="1.0" progression="quadratic accelerating" />
+        </Affector>
+		<Affector property="UnifiedXPosition" interpolator="UDim" applicationMethod="relative">
+			<KeyFrame position="0" value="{0,0}" />
+			<KeyFrame position="0.6" value="{0,1280}" progression="quadratic decelerating"/>
+		</Affector>
+	</AnimationDefinition>	
+	<!--原地跳跃-->
+	<AnimationDefinition name="Pet_egg1" duration="2" replayMode="loop">
+        <Affector property="UnifiedYPosition" interpolator="UDim" applicationMethod="relative">
+            <KeyFrame position="0" value="{0,0}" />
+			<KeyFrame position="0.6" value="{0,0}" />
+            <KeyFrame position="0.82" value="{0,-20}" progression="quadratic decelerating" />
+			<KeyFrame position="1.04" value="{0,0}" progression="quadratic accelerating" />
+			<KeyFrame position="1.26" value="{0,-20}" progression="quadratic decelerating" />
+			<KeyFrame position="1.48" value="{0,0}" progression="quadratic accelerating" />
+			<KeyFrame position="1.7" value="{0,-20}" progression="quadratic decelerating" />
+			<KeyFrame position="1.92" value="{0,0}" progression="quadratic accelerating" />
+			<KeyFrame position="2" value="{0,0}" />
+        </Affector>
+    </AnimationDefinition>
+	<!--宝石镶嵌UI向上移动-->
+	<AnimationDefinition name="baoshiyidong" duration="0.5" replayMode="once">
+		<Affector property="UnifiedYPosition" interpolator="UDim" applicationMethod="relative">
+			<KeyFrame position="0" value="{0,500}" />
+			<KeyFrame position="0.5" value="{0,0}" progression="quadratic decelerating"/>
+		</Affector>
+	</AnimationDefinition>
+	<!--角色掉血掉蓝效果-->	
+	<AnimationDefinition name="biankuangred" duration="1.0" replayMode="once">
+		<Affector property="Alpha" interpolator="float">
+            <KeyFrame position="0" value="0.0" />
+            <KeyFrame position="0.5" value="1.0" progression="quadratic accelerating" />
+			<KeyFrame position="1.0" value="0" progression="quadratic accelerating" />
+        </Affector>
+	</AnimationDefinition>
+<!--新做ani动画-商城商会滚动TIPS1-->
+<AnimationDefinition name="shangchenggundong1" duration="12.5" replayMode="once">
+    <Affector property="UnifiedXPosition" interpolator="UDim" applicationMethod="absolute">
+        <KeyFrame position="0" value="{0.05,0}" />
+        <KeyFrame position="12.5" value="{-1, 0}" progression="linear"> 
+        </KeyFrame> 
+    </Affector>
+    <Event name="AnimationEnded" />  <!-- 触发 "AnimationEnded" 事件 -->
+</AnimationDefinition>
+
+<!--新做ani动画-商城商会滚动TIPS2-->
+<AnimationDefinition name="shangchenggundong2" duration="25" replayMode="loop">
+  <Affector property="UnifiedXPosition" interpolator="UDim" applicationMethod="relative"> 
+      <KeyFrame position="0" value="{1,0}" /> 
+      <KeyFrame position="25" value="{-1,0}" progression="linear"/> 
+  </Affector>
+</AnimationDefinition>
+<!--按钮动画-仿官方-->
+<AnimationDefinition name="studyBtnPress" duration="0.13" replayMode="once">
+    <Affector property="Scale" interpolator="Vector3">
+        <KeyFrame position="0.0" value="x:1.0 y:1.0 z:1.0" />
+        <KeyFrame position="0.05" value="x:0.95 y:0.95 z:1.0" progression="quadraticOut" />  <!---- 按下 0.05 秒-->
+        <KeyFrame position="0.13" value="x:1.0 y:1.0 z:1.0" progression="bounceOut" />     
+    </Affector>
+</AnimationDefinition>
+</Animations>
+

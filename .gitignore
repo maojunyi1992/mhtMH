@@ -1,0 +1,72 @@
+﻿# OS junk
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.user
+*.suo
+*.iml
+
+# Build / cache
+build/
+bin/
+temp/
+library/
+local/
+obj/
+Debug*/
+Release*/
+*.log
+
+# Android/iOS 构建产物
+proj.android*/build/
+proj.android*/obj/
+*.apk
+*.aab
+*.ipa
+
+# 资源类（统统不上传）
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.webp
+*.tga
+*.psd
+*.ai
+*.svg
+*.fbx
+*.obj
+*.prefab
+*.mat
+*.atlas
+*.imageset
+*.font
+*.ttf
+*.otf
+*.mp3
+*.wav
+*.ogg
+*.flac
+*.mp4
+*.mov
+*.avi
+
+# 压缩包/镜像/安装包/第三方运行时（含 rpm）
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.iso
+*.dmg
+*.msi
+*.exe
+*.deb
+*.rpm
+
+# 常见编辑器临时文件
+*.tmp
+*.swp

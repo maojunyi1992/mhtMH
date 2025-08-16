@@ -1,0 +1,13 @@
+Index: characterpropertyaddptrdlg.lua
+===================================================================
+--- characterpropertyaddptrdlg.lua	(revision 53881)
++++ characterpropertyaddptrdlg.lua	(working copy)
+@@ -110,7 +110,7 @@
+ 	SetPositionOfWindowWithLabel(self:GetWindow())
+ 	self.charecterinfo = winMgr:getWindow("charecterjiadian")
+ 	
+-    self.disFloat = 0.5001
++    self.disFloat = 0.0
+ 	
+ 	self.m_protext1 = winMgr:getWindow("charecterjiadian/left/textbg/1");
+ 	self.m_protext2 = winMgr:getWindow("charecterjiadian/left/textbg/2");

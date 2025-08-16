@@ -1,0 +1,92 @@
+<!-- 杨印宇 2015-6-17 开发-->
+<!-- 以后打印FRAME的时候，直接打整图，然后使用这个工具切割成9宫格和3宫格,这样可以避免失真-->
+<!-- 每个要切割的Frame需要写一行，行的名字为frame,然后需要写要切割的imageset和image名字，可以在具体的imageset文件中找到-->
+<!-- 然后写type type有3种形式 OnlyWidth OnlyHeight WidthAndHeight 注意要保持大小写一致-->
+<!-- OnlyWidth 切割Frame成为左，中，右三段 后面要跟着写明left_width,center_width,right_width所需要的像素数-->
+<!-- OnlyHeight 切割Frame成为上，中，下三段，后面要跟着写明top_height,center_height,bottom_height所需要的像素数-->
+<!-- WidthAndHeight 切割Frame成9份，左上，上，右上，右，右下，下，左下，左，中，后面要写明left_width,center_width,right_width,top_height,center_height,bottom_height所需要的像素数-->
+<!-- 
+<frame imageset="common_equip.imageset" image="equip_mengban" type="WidthAndHeight" left_width="27" center_width="29" right_width="27" top_height="27" center_height="29" bottom_height="27" />
+控制列宽度的参数:
+left_width: 控制最左边一竖列的宽度，它包含了左上角、左中、左下角三个小块的宽度。
+center_width: 控制中间一竖列的宽度，它包含了上中、正中、下中三个小块的宽度。
+right_width: 控制最右边一竖列的宽度，它包含了右上角、右中、右下角三个小块的宽度。
+
+控制行高度的参数:
+top_height: 控制最上面一横行的高度，它包含了左上角、上中、右上角三个小块的高度。
+center_height: 控制中间一横行的高度，它包含了左中、正中、右中三个小块的高度。
+bottom_height: 控制最下面一横行的高度，它包含了左下角、下中、右下角三个小块的高度。
+-->
+<frame imageset="ccuijscj.imageset" image="ccmenpaidi" type="WidthAndHeight" left_width="31" center_width="18" right_width="31" top_height="27" center_height="26" bottom_height="27" />
+<frame imageset="ccuijscj.imageset" image="ccnamedi" type="WidthAndHeight" left_width="20" center_width="20" right_width="20" top_height="9" center_height="8" bottom_height="9" />
+<frame imageset="ccuijscj.imageset" image="ccbytext" type="OnlyWidth" left_width="33" center_width="34" right_width="33" />
+<frame imageset="ccuijscj.imageset" image="ccjstextbg" type="WidthAndHeight" left_width="48" center_width="48" right_width="48" top_height="40" center_height="41" bottom_height="40" />
+<frame imageset="common.imageset" image="common_buttonyellow60" type="OnlyWidth" left_width="30" center_width="6" right_width="30" />
+<frame imageset="ccui.imageset" image="fengex" type="OnlyHeight" top_height="22" center_height="21" bottom_height="22" />
+<frame imageset="ccui.imageset" image="biaoqianshu" type="OnlyHeight" top_height="13" center_height="10" bottom_height="13" />
+<frame imageset="ccui.imageset" image="biaoshi_1" type="OnlyWidth" left_width="74" center_width="33" right_width="75" />
+<frame imageset="ccui.imageset" image="hengxian" type="OnlyWidth" left_width="34" center_width="33" right_width="34" />
+<frame imageset="ccui.imageset" image="xtdzcc" type="OnlyWidth" left_width="37" center_width="38" right_width="37" />
+<frame imageset="ccui.imageset" image="lvsecc" type="OnlyWidth" left_width="37" center_width="38" right_width="37" />
+<frame imageset="ccui.imageset" image="baisehenxiang" type="OnlyWidth" left_width="12" center_width="12" right_width="12" />
+<frame imageset="ccui.imageset" image="baisehenxiang1" type="OnlyWidth" left_width="41" center_width="18" right_width="40" />
+<frame imageset="ccui.imageset" image="ccmakertext" type="OnlyWidth" left_width="16" center_width="17" right_width="16" />
+<frame imageset="ccui.imageset" image="fwxbtcc" type="OnlyWidth" left_width="44" center_width="30" right_width="43" />
+<frame imageset="ccui.imageset" image="fgbaibian" type="OnlyWidth" left_width="24" center_width="23" right_width="24" />
+<frame imageset="ccui.imageset" image="baoshidz" type="WidthAndHeight" left_width="85" center_width="24" right_width="54" top_height="59" center_height="58" bottom_height="59" />
+<frame imageset="ccui.imageset" image="hendi1" type="WidthAndHeight" left_width="83" center_width="82" right_width="83" top_height="68" center_height="46" bottom_height="91" />
+<frame imageset="ccui.imageset" image="anay_1" type="WidthAndHeight" left_width="40" center_width="40" right_width="40" top_height="27" center_height="16" bottom_height="31" />
+<frame imageset="ccui.imageset" image="anay_2" type="WidthAndHeight" left_width="40" center_width="40" right_width="40" top_height="27" center_height="16" bottom_height="31" />
+<frame imageset="ccui.imageset" image="anhsbtn1" type="WidthAndHeight" left_width="34" center_width="34" right_width="34" top_height="21" center_height="21" bottom_height="21" />
+<frame imageset="ccui.imageset" image="anhsbtn2" type="WidthAndHeight" left_width="34" center_width="34" right_width="34" top_height="21" center_height="21" bottom_height="21" />
+<frame imageset="ccui.imageset" image="anhsbtn3" type="WidthAndHeight" left_width="34" center_width="34" right_width="34" top_height="21" center_height="21" bottom_height="21" />
+<frame imageset="ccui.imageset" image="anhsbtn4" type="WidthAndHeight" left_width="34" center_width="34" right_width="34" top_height="21" center_height="21" bottom_height="21" />
+<frame imageset="ccui.imageset" image="baitext" type="WidthAndHeight" left_width="12" center_width="13" right_width="13" top_height="11" center_height="11" bottom_height="11" />
+<frame imageset="ccui.imageset" image="ccbaisetext" type="WidthAndHeight" left_width="17" center_width="17" right_width="17" top_height="16" center_height="16" bottom_height="16" />
+<frame imageset="ccui.imageset" image="cchuangsetext" type="WidthAndHeight" left_width="17" center_width="17" right_width="17" top_height="16" center_height="16" bottom_height="16" />
+<frame imageset="ccui.imageset" image="ccbsbanbianbg" type="WidthAndHeight" left_width="17" center_width="17" right_width="17" top_height="8" center_height="7" bottom_height="8" />
+<frame imageset="ccui.imageset" image="ckfcbtext" type="WidthAndHeight" left_width="49" center_width="50" right_width="49" top_height="41" center_height="40" bottom_height="41" />
+<frame imageset="ccui.imageset" image="ccanyabs1" type="WidthAndHeight" left_width="14" center_width="51" right_width="12" top_height="12" center_height="23" bottom_height="10" />
+<frame imageset="ccui.imageset" image="ccanyabs2" type="WidthAndHeight" left_width="14" center_width="51" right_width="12" top_height="12" center_height="23" bottom_height="10" />
+<frame imageset="ccui.imageset" image="ccanyabs4" type="WidthAndHeight" left_width="14" center_width="51" right_width="12" top_height="12" center_height="23" bottom_height="10" />
+<frame imageset="ccui.imageset" image="ccc01" type="WidthAndHeight" left_width="32" center_width="23" right_width="34" top_height="32" center_height="12" bottom_height="31" />
+<frame imageset="ccui.imageset" image="ccc02" type="WidthAndHeight" left_width="32" center_width="23" right_width="34" top_height="32" center_height="12" bottom_height="31" />
+<frame imageset="ccui.imageset" image="ccc03" type="WidthAndHeight" left_width="32" center_width="23" right_width="34" top_height="32" center_height="12" bottom_height="31" />
+<frame imageset="ccui.imageset" image="ccdganc1" type="WidthAndHeight" left_width="38" center_width="37" right_width="37" top_height="14" center_height="9" bottom_height="31" />
+<frame imageset="ccui.imageset" image="ccdganc2" type="WidthAndHeight" left_width="38" center_width="37" right_width="37" top_height="14" center_height="9" bottom_height="31" />
+<frame imageset="ccui.imageset" image="ccdganc3" type="WidthAndHeight" left_width="38" center_width="37" right_width="37" top_height="14" center_height="9" bottom_height="31" />
+<frame imageset="ccui.imageset" image="ccdgancw" type="WidthAndHeight" left_width="38" center_width="37" right_width="37" top_height="14" center_height="9" bottom_height="31" />
+<frame imageset="ccui.imageset" image="ccdganh1" type="WidthAndHeight" left_width="38" center_width="37" right_width="37" top_height="14" center_height="9" bottom_height="31" />
+<frame imageset="ccui.imageset" image="ccdganh2" type="WidthAndHeight" left_width="38" center_width="37" right_width="37" top_height="14" center_height="9" bottom_height="31" />
+<frame imageset="ccui.imageset" image="ccliaotiancl" type="WidthAndHeight" left_width="21" center_width="20" right_width="21" top_height="32" center_height="6" bottom_height="8" />
+<frame imageset="ccui.imageset" image="ccliaotiancr" type="WidthAndHeight" left_width="21" center_width="20" right_width="21" top_height="32" center_height="6" bottom_height="8" />
+<frame imageset="ccui.imageset" image="shurukuang" type="WidthAndHeight" left_width="17" center_width="17" right_width="17" top_height="15" center_height="16" bottom_height="15" />
+<frame imageset="ccui.imageset" image="ccydtext" type="WidthAndHeight" left_width="13" center_width="14" right_width="13" top_height="8" center_height="6" bottom_height="8" />
+<frame imageset="ccui.imageset" image="cyanc1" type="WidthAndHeight" left_width="22" center_width="23" right_width="22" top_height="19" center_height="10" bottom_height="19" />
+<frame imageset="ccui.imageset" image="cyanc2" type="WidthAndHeight" left_width="22" center_width="23" right_width="22" top_height="19" center_height="10" bottom_height="19" />
+<frame imageset="ccui.imageset" image="cyanc3" type="WidthAndHeight" left_width="22" center_width="23" right_width="22" top_height="19" center_height="10" bottom_height="19" />
+<frame imageset="ccui.imageset" image="heisetext" type="WidthAndHeight" left_width="14" center_width="15" right_width="14" top_height="11" center_height="11" bottom_height="11" />
+<frame imageset="ccui.imageset" image="qianhuitext" type="WidthAndHeight" left_width="14" center_width="15" right_width="14" top_height="11" center_height="11" bottom_height="11" />
+<frame imageset="ccui.imageset" image="cyzcqh1" type="WidthAndHeight" left_width="26" center_width="26" right_width="26" top_height="20" center_height="21" bottom_height="20" />
+<frame imageset="ccui.imageset" image="cyzcqh2" type="WidthAndHeight" left_width="26" center_width="26" right_width="26" top_height="20" center_height="21" bottom_height="20" />
+<frame imageset="ccui.imageset" image="cctextcy" type="WidthAndHeight" left_width="16" center_width="16" right_width="16" top_height="14" center_height="15" bottom_height="14" />
+<frame imageset="ccui.imageset" image="jinsetext" type="WidthAndHeight" left_width="14" center_width="13" right_width="14" top_height="14" center_height="13" bottom_height="14" />
+<frame imageset="ccui.imageset" image="teshucell1" type="WidthAndHeight" left_width="22" center_width="21" right_width="22" top_height="22" center_height="21" bottom_height="22" />
+<frame imageset="ccui.imageset" image="teshucell2" type="WidthAndHeight" left_width="22" center_width="21" right_width="22" top_height="22" center_height="21" bottom_height="22" />
+<frame imageset="ccui.imageset" image="xtd" type="WidthAndHeight" left_width="11" center_width="62" right_width="29" top_height="6" center_height="15" bottom_height="7" />
+<frame imageset="ccui.imageset" image="xth" type="WidthAndHeight" left_width="11" center_width="62" right_width="29" top_height="6" center_height="15" bottom_height="7" />
+<frame imageset="ccui.imageset" image="xths" type="WidthAndHeight" left_width="11" center_width="62" right_width="29" top_height="6" center_height="15" bottom_height="7" />
+<frame imageset="ccui.imageset" image="xtl" type="WidthAndHeight" left_width="11" center_width="62" right_width="29" top_height="6" center_height="15" bottom_height="7" />
+<frame imageset="ccui.imageset" image="xtls" type="WidthAndHeight" left_width="11" center_width="62" right_width="29" top_height="6" center_height="15" bottom_height="7" />
+<frame imageset="ccui.imageset" image="xtzs" type="WidthAndHeight" left_width="11" center_width="62" right_width="29" top_height="6" center_height="15" bottom_height="7" />
+<frame imageset="ccui.imageset" image="teshuyongc1" type="WidthAndHeight" left_width="52" center_width="24" right_width="48" top_height="40" center_height="29" bottom_height="51" />
+<frame imageset="ccui.imageset" image="teshubiaoshic2" type="OnlyWidth" left_width="108" center_width="69" right_width="99" />
+<frame imageset="ccui.imageset" image="banbianf3" type="WidthAndHeight" left_width="79" center_width="36" right_width="80" top_height="24" center_height="26" bottom_height="50" />
+<frame imageset="ccui.imageset" image="zdtext" type="WidthAndHeight" left_width="16" center_width="17" right_width="16" top_height="13" center_height="14" bottom_height="13" />
+<frame imageset="ccui.imageset" image="ccjbjstext" type="WidthAndHeight" left_width="48" center_width="48" right_width="48" top_height="40" center_height="41" bottom_height="40" />
+<frame imageset="ccfuben.imageset" image="ccmijingdz" type="WidthAndHeight" left_width="125" center_width="52" right_width="123" top_height="222" center_height="223" bottom_height="221" />
+<frame imageset="ccfuben.imageset" image="fubenc1" type="WidthAndHeight" left_width="301" center_width="9" right_width="373" top_height="246" center_height="245" bottom_height="246" />
+<frame imageset="ccfuben.imageset" image="fubend1" type="WidthAndHeight" left_width="7" center_width="6" right_width="7" top_height="7" center_height="6" bottom_height="7" />
+<frame imageset="ccfuben.imageset" image="fubend2" type="WidthAndHeight" left_width="7" center_width="6" right_width="7" top_height="7" center_height="6" bottom_height="7" />
+
+

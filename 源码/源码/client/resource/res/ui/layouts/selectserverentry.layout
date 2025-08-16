@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="SelectServerEntry" >
+        <Property Name="Scale" Value="x:1 y:1 z:1" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="LuaForDialog" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="SelectServerEntry/root" >
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+            <Window Type="DefaultWindow" Name="LoginDialog" >
+                <Property Name="Font" Value="simhei-12" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0.5,-286},{0.5,-333},{0.5,882},{0.5,364}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+                <Window Type="TaharezLook/StaticImage" Name="SelectServerEntry/back" >
+                    <Property Name="Image" Value="set:login_2 image:login_2_logo" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="Visible" Value="False" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,82},{0,558},{0,329}}" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="TaharezLook/StaticImage" Name="SelectServerEntry/back/pic3" >
+                    <Property Name="Image" Value="set:login_2 image:login_2_fuwuqikuang" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,183},{0,428},{0,935},{0,486}}" />
+                    <Window Type="TaharezLook/ImageButton" Name="SelectServerEntry/servername" >
+                        <Property Name="Font" Value="hycyj-14" />
+                        <Property Name="Text" Value="再续前缘" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="SizeType" Value="Auto" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="EnableClickAni" Value="True" />
+                        <Property Name="ClippedByParent" Value="False" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,80},{0,-2},{0,715},{0,58}}" />
+                        <Property Name="NormalTextColour" Value="FFFEFAD1" />
+                        <Property Name="PushedTextColour" Value="fffefad1" />
+                        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+                        <Property Name="ButtonDefaultColourEnable" Value="False" />
+                    </Window>
+                    <Window Type="TaharezLook/StaticImage" Name="SelectServerEntry/back/pic3/refresh" >
+                        <Property Name="Image" Value="set:login_2 image:login_2_dianjixuanfu" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,477},{0,13},{0,600},{0,45}}" />
+                        <Property Name="MousePassThroughEnabled" Value="True" />
+                    </Window>
+                    <Window Type="TaharezLook/StaticImage" Name="SelectServerEntry/dian" >
+                        <Property Name="Image" Value="set:ccui1 image:huisecc1" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,257},{0,15},{0,285},{0,42}}" />
+                        <Property Name="MousePassThroughEnabled" Value="True" />
+                    </Window>
+                    <Window Type="TaharezLook/StaticText" Name="SelectServerEntry/qu" >
+                        <Property Name="Font" Value="simhei-16" />
+                        <Property Name="Text" Value="一区" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="Visible" Value="False" />
+                        <Property Name="HorzExtent" Value="58" />
+                        <Property Name="VertExtent" Value="29.3138" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="BorderColour" Value="FF003454" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="HorzFormatting" Value="HorzCentred" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,29},{0,4},{0,187},{0,53}}" />
+                    </Window>
+                </Window>
+                <Window Type="TaharezLook/ImageButton" Name="SelectServerEntry/LoginBtn" >
+                    <Property Name="Font" Value="simhei-18" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="SizeType" Value="Auto" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="NormalImage" Value="set:ccui1 image:denglu2" />
+                    <Property Name="PushedImage" Value="set:ccui1 image:denglu2" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="EnableClickAni" Value="True" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.281606,99.4326},{0,537},{0.563124,28.9162},{0,602}}" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                </Window>
+                <Window Type="DefaultWindow" Name="SelectServerEntry/root/tengxun" >
+                    <Property Name="Font" Value="simhei-12" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="Visible" Value="False" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,109},{0,567},{0,959},{0,659}}" />
+                    <Window Type="TaharezLook/ImageButton" Name="SelectServerEntry/LoginBtn2" >
+                        <Property Name="Font" Value="simhei-18" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="SizeType" Value="Auto" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="NormalImage" Value="set:login_2 image:Ui_Login_Btn_weixin" />
+                        <Property Name="PushedImage" Value="set:login_2 image:Ui_Login_Btn_weixin" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="EnableClickAni" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,20},{0,265},{0,86}}" />
+                        <Property Name="ButtonBorderColour" Value="ff793314" />
+                        <Property Name="ButtonBorderEnable" Value="True" />
+                        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+                        <Property Name="ButtonDefaultColourEnable" Value="False" />
+                    </Window>
+                    <Window Type="TaharezLook/ImageButton" Name="SelectServerEntry/LoginBtn3" >
+                        <Property Name="Font" Value="simhei-18" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="SizeType" Value="Auto" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="NormalImage" Value="set:login_2 image:Ui_Login_Btn_qq" />
+                        <Property Name="PushedImage" Value="set:login_2 image:Ui_Login_Btn_qq" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="LuaMemberName" Value="0" />
+                        <Property Name="EnableClickAni" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,585},{0,20},{0,845},{0,86}}" />
+                        <Property Name="ButtonBorderColour" Value="ff793314" />
+                        <Property Name="ButtonBorderEnable" Value="True" />
+                        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+                        <Property Name="ButtonDefaultColourEnable" Value="False" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="SelectServerEntry/root/version" >
+                <Property Name="Font" Value="simhei-13" />
+                <Property Name="Text" Value="版本号 1.0" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="HorzExtent" Value="120" />
+                <Property Name="VertExtent" Value="23.8165" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="TextColours" Value="tl:FFFEFAD1 tr:FFFEFAD1 bl:FFFEFAD1 br:FFFEFAD1" />
+                <Property Name="BorderColour" Value="FF000000" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0,8},{0,7},{0,170},{0,38}}" />
+            </Window>
+            <Window Type="TaharezLook/ImageButton" Name="SelectServerEntry/switchBtn" >
+                <Property Name="Font" Value="simhei-12" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="SizeType" Value="Auto" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="NormalImage" Value="set:login_2 image:login_2_qiehuan" />
+                <Property Name="PushedImage" Value="set:login_2 image:login_2_qiehuan" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="EnableClickAni" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-156},{0,7},{1,-31},{0,44}}" />
+            </Window>
+            <Window Type="TaharezLook/ImageButton" Name="SelectServerEntry/playcgBtn" >
+                <Property Name="Font" Value="simhei-12" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="SizeType" Value="Auto" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="NormalImage" Value="set:login_2 image:login_2_piantou" />
+                <Property Name="PushedImage" Value="set:login_2 image:login_2_piantou" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="EnableClickAni" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-155},{1,-705},{1,-30},{1,-668}}" />
+            </Window>
+            <Window Type="TaharezLook/ImageButton" Name="SelectServerEntry/announceBtn" >
+                <Property Name="Font" Value="simhei-12" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="SizeType" Value="Auto" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="NormalImage" Value="set:login_2 image:login_2_gonggao" />
+                <Property Name="PushedImage" Value="set:login_2 image:login_2_gonggao" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="LuaMemberName" Value="4" />
+                <Property Name="EnableClickAni" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-155},{1,-661},{1,-30},{1,-624}}" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="SelectServerEntry/root/fangchenmi" >
+                <Property Name="Font" Value="simhei-10" />
+                <Property Name="Text" Value="抵制不良游戏 拒绝盗版游戏 适当游戏益脑 沉迷游戏伤身 注意自我保护 谨防受骗上当 合理安排时间 享受健康生活。" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="HorzExtent" Value="945" />
+                <Property Name="VertExtent" Value="18.3192" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="BorderColour" Value="FF000000" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="UnifiedAreaRect" Value="{{0.5,-507},{1,-39},{0.5,510},{1,1}}" />
+            </Window>
+            <Window Type="TaharezLook/ImageButton" Name="SelectServerEntry/switchBtn2" >
+                <Property Name="Font" Value="simhei-12" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="SizeType" Value="Auto" />
+                <Property Name="HoverImage" Value="set:diban2 image:hutong" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="NormalImage" Value="set:diban2 image:hutong" />
+                <Property Name="PushedImage" Value="set:diban2 image:hutong" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="DisabledImage" Value="set:diban2 image:hutong" />
+                <Property Name="EnableClickAni" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-156},{0,225},{1,-213},{0,191}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

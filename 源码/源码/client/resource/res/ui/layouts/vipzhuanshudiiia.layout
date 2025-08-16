@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="TaharezLook/StaticImage" Name="vipzhuanshuditua/bg" >
+        <Property Name="Font" Value="hycyj-20" />
+        <Property Name="Scale" Value="x:1 y:1 z:1" />
+        <Property Name="LuaClass" Value="CharacterInfoDlg" />
+        <Property Name="ModalState" Value="True" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="LuaForDialog" Value="False" />
+        <Property Name="LuaMemberName" Value="m_bg" />
+        <Property Name="SoundResource" Value="dlgopen.ogg" />
+        <Property Name="LimitWindowSize" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.5,-552},{0.5,-335},{0.5,552},{0.5,347}}" />
+        <Property Name="CloseSoundResource" Value="dlgopen.ogg" />
+        <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="vipzhuanshuditua/bag12" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Image" Value="set:chongwuui2 image:sucai39" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,-382},{0,-125},{0,-388},{0,-129}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="vipzhuanshuditua/bag121" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Image" Value="set:heji image:meng" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,-391},{0,-126},{0,-377},{0,-116}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="vipzhuanshuditua/Back/Pattern/diban/pingfen11" >
+            <Property Name="Font" Value="simhei-13" />
+            <Property Name="Text" Value="集成经脉时请按照顺序依次获取" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="HorzExtent" Value="336" />
+            <Property Name="VertExtent" Value="23.8165" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF50321A tr:FFFF0033 bl:FF50321A br:FF50321A" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,553},{0,120},{0,981},{0,153}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="vipzhuanshuditua" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Image" Value="set:jingmaia image:shele" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.5,-576},{0.5,-382},{0.5,588},{0.5,347}}" />
+            <Property Name="AllowModalStateClick" Value="True" />
+            <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+            <Window Type="TaharezLook/ImageButton" Name="vipzhuanshuditua/v5" >
+                <Property Name="Font" Value="simhei-16" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="SizeType" Value="Auto" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="NormalImage" Value="set:jingmaia image:long" />
+                <Property Name="PushedImage" Value="set:jingmaia image:long" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="EnableClickAni" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0.2,332},{0.2,73},{0.2,391},{0.2,235}}" />
+                <Property Name="AllowModalStateClick" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="vipzhuanshuditua/ring" >
+                <Property Name="Font" Value="simhei-13" />
+                <Property Name="Text" Value="侧重关注人物培养和玩法战斗表现" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="Visible" Value="False" />
+                <Property Name="HorzExtent" Value="360" />
+                <Property Name="ModalState" Value="True" />
+                <Property Name="VertExtent" Value="23.8165" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="TextColours" Value="tl:FFFFFFFF tr:FF693F00 bl:FFFFFFFF br:FFFFFFFF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="IsPixelDecide" Value="True" />
+                <Property Name="ClippedByParent" Value="False" />
+                <Property Name="LimitWindowSize" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.0441108,-651},{0.0490143,-227},{0.0441108,-158},{0.0490143,-137}}" />
+                <Property Name="AllowModalStateClick" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ImageButton" Name="vipzhuanshuditua/v3" >
+                <Property Name="Font" Value="simhei-16" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="SizeType" Value="Auto" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="NormalImage" Value="set:jingmaia image:fang" />
+                <Property Name="PushedImage" Value="set:jingmaia image:fang" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="EnableClickAni" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0.2,710},{0.2,73},{0.2,769},{0.2,235}}" />
+                <Property Name="AllowModalStateClick" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ImageButton" Name="vipzhuanshuditua/v1" >
+                <Property Name="Font" Value="simhei-16" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="SizeType" Value="Auto" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="NormalImage" Value="set:jingmaia image:dt" />
+                <Property Name="PushedImage" Value="set:jingmaia image:dt" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="EnableClickAni" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0.2,237},{0.2,73},{0.2,296},{0.2,235}}" />
+                <Property Name="AllowModalStateClick" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ImageButton" Name="vipzhuanshuditua/v2" >
+                <Property Name="Font" Value="simhei-16" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="SizeType" Value="Auto" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="NormalImage" Value="set:jingmaia image:yin" />
+                <Property Name="PushedImage" Value="set:jingmaia image:yin" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="EnableClickAni" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0.2,234},{0.2,282},{0.2,293},{0.2,444}}" />
+                <Property Name="AllowModalStateClick" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ImageButton" Name="vipzhuanshuditua/v12" >
+                <Property Name="Font" Value="simhei-16" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="SizeType" Value="Auto" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="NormalImage" Value="set:jingmaia image:xu" />
+                <Property Name="PushedImage" Value="set:jingmaia image:xu" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="EnableClickAni" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0.2,331},{0.2,282},{0.2,390},{0.2,444}}" />
+                <Property Name="AllowModalStateClick" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ImageButton" Name="vipzhuanshuditua/v4" >
+                <Property Name="Font" Value="simhei-16" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="SizeType" Value="Auto" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="NormalImage" Value="set:jingmaia image:hua" />
+                <Property Name="PushedImage" Value="set:jingmaia image:hua" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="EnableClickAni" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0.2,422},{0.2,282},{0.2,481},{0.2,444}}" />
+                <Property Name="AllowModalStateClick" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ImageButton" Name="vipzhuanshuditua/v7" >
+                <Property Name="Font" Value="simhei-16" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="SizeType" Value="Auto" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="NormalImage" Value="set:jingmaia image:nv" />
+                <Property Name="PushedImage" Value="set:jingmaia image:nv" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="EnableClickAni" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0.2,519},{0.2,282},{0.2,578},{0.2,444}}" />
+                <Property Name="AllowModalStateClick" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ImageButton" Name="vipzhuanshuditua/v8" >
+                <Property Name="Font" Value="simhei-16" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="SizeType" Value="Auto" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="NormalImage" Value="set:jingmaia image:pu" />
+                <Property Name="PushedImage" Value="set:jingmaia image:pu" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="EnableClickAni" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0.2,424},{0.2,73},{0.2,483},{0.2,235}}" />
+                <Property Name="AllowModalStateClick" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ImageButton" Name="vipzhuanshuditua/v9" >
+                <Property Name="Font" Value="simhei-16" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="SizeType" Value="Auto" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="NormalImage" Value="set:jingmaia image:shi" />
+                <Property Name="PushedImage" Value="set:jingmaia image:shi" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="EnableClickAni" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0.2,616},{0.2,283},{0.2,675},{0.2,445}}" />
+                <Property Name="AllowModalStateClick" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ImageButton" Name="vipzhuanshuditua/v10" >
+                <Property Name="Font" Value="simhei-16" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="SizeType" Value="Auto" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="NormalImage" Value="set:jingmaia image:yue" />
+                <Property Name="PushedImage" Value="set:jingmaia image:yue" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="EnableClickAni" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0.2,521},{0.2,73},{0.2,580},{0.2,235}}" />
+                <Property Name="AllowModalStateClick" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ImageButton" Name="vipzhuanshuditua/v6" >
+                <Property Name="Font" Value="simhei-16" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="SizeType" Value="Auto" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="NormalImage" Value="set:jingmaia image:mo" />
+                <Property Name="PushedImage" Value="set:jingmaia image:mo" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="EnableClickAni" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0.2,617},{0.2,73},{0.2,676},{0.2,235}}" />
+                <Property Name="AllowModalStateClick" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ImageButton" Name="vipzhuanshuditua/v11" >
+                <Property Name="Font" Value="simhei-16" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="SizeType" Value="Auto" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="NormalImage" Value="set:jingmaia image:huaguo" />
+                <Property Name="PushedImage" Value="set:jingmaia image:huaguo" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="EnableClickAni" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0.2,709},{0.2,283},{0.2,768},{0.2,445}}" />
+                <Property Name="AllowModalStateClick" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="vipzhuanshuditua/text3" >
+                <Property Name="Font" Value="simhei-12" />
+                <Property Name="Text" Value="寻宝探险开启时间每日08:00-10:00" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="Visible" Value="False" />
+                <Property Name="HorzExtent" Value="341" />
+                <Property Name="VertExtent" Value="21.9893" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="TextColours" Value="tl:FFBAFFF6 tr:FFBAFFF6 bl:FF1E90FF br:FFBAFFF6" />
+                <Property Name="BorderColour" Value="FF06CC11" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0.05,-730},{0.05,-144},{0.05,-346},{0.05,-123}}" />
+                <Property Name="AllowModalStateClick" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="vipzhuanshuditua/text2" >
+                <Property Name="Font" Value="simhei-12" />
+                <Property Name="Text" Value="九洲探险开启时间每日10:00-12:00" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="Visible" Value="False" />
+                <Property Name="HorzExtent" Value="341" />
+                <Property Name="VertExtent" Value="21.9893" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="TextColours" Value="tl:FFBAFFF6 tr:FFBAFFF6 bl:FF1E90FF br:FFBAFFF6" />
+                <Property Name="BorderColour" Value="FF06CC11" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0.05,-644},{0.05,-157},{0.05,-292},{0.05,-126}}" />
+                <Property Name="AllowModalStateClick" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="vipzhuanshuditua/text5" >
+                <Property Name="Font" Value="simhei-12" />
+                <Property Name="Text" Value="三界战令开启时间每日17:00-19:00" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="Visible" Value="False" />
+                <Property Name="HorzExtent" Value="341" />
+                <Property Name="VertExtent" Value="21.9893" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="TextColours" Value="tl:FFBAFFF6 tr:FFBAFFF6 bl:FF1E90FF br:FFBAFFF6" />
+                <Property Name="BorderColour" Value="FF06CC11" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0.05,-640},{0.05,-151},{0.05,-288},{0.05,-120}}" />
+                <Property Name="AllowModalStateClick" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="vipzhuanshuditua/text6" >
+                <Property Name="Font" Value="simhei-12" />
+                <Property Name="Text" Value="幻境寻宝开启时间每日22:00-07:00" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="Visible" Value="False" />
+                <Property Name="HorzExtent" Value="341" />
+                <Property Name="VertExtent" Value="21.9893" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="TextColours" Value="tl:FFFFFF00 tr:FF000000 bl:FF000000 br:FF000000" />
+                <Property Name="BorderColour" Value="FF06CC11" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0.05,-628},{0.05,-148},{0.05,-276},{0.05,-117}}" />
+                <Property Name="AllowModalStateClick" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/common_honganniu" Name="vipzhuanshuditua/fanhui" >
+                <Property Name="Font" Value="simhei-16" />
+                <Property Name="Text" Value="返回主界面" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="Visible" Value="False" />
+                <Property Name="SizeType" Value="Auto" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="EnableClickAni" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0.1,-443},{0.1,-191},{0.1,-292},{0.1,-144}}" />
+                <Property Name="AllowModalStateClick" Value="True" />
+            </Window>
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="vipzhuanshuditua/back" >
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="HoverImage" Value="set:moban2 image:guanbi" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="NormalImage" Value="set:moban2 image:guanbi" />
+            <Property Name="PushedImage" Value="set:moban2 image:guanbi" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="DisabledImage" Value="set:moban2 image:guanbi" />
+            <Property Name="EnableClickAni" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.5,425},{0.5,-338},{0.5,533},{0.5,-251}}" />
+            <Property Name="AllowModalStateClick" Value="True" />
+        </Window>
+    </Window>
+</GUILayout>

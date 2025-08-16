@@ -1,0 +1,1 @@
+start "" /d "..\" Launcher.exe designmode makergnfile:bin/release/LauncherImageBG.png^|bin/release/LauncherImageBG.rgn^|10^|20^|10

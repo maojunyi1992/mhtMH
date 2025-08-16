@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="TaharezLook/StaticImage" Name="switchaccountBack/bg" >
+        <Property Name="Scale" Value="x:1 y:1 z:1" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="LuaForDialog" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Property Name="AllowModalStateClick" Value="True" />
+        <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="switchaccount" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Image" Value="set:logindlginfo image:db" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="ModalState" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.5,-263},{0.5,-283},{0.5,156},{0.5,256}}" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Property Name="AllowModalStateClick" Value="True" />
+            <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticImage" Name="switchaccount/logo" >
+                <Property Name="Font" Value="simhei-16" />
+                <Property Name="Image" Value="set:login_2 image:login_2_logo" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="ClippedByParent" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,175},{0,10},{0,404},{0,109}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="AllowModalStateClick" Value="True" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ImageButton" Name="switchaccount/fy" >
+                <Property Name="Font" Value="mhsy-13-normal" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="SizeType" Value="Auto" />
+                <Property Name="HoverImage" Value="set:logindlginfo image:login" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="LuaMemberName" Value="loginFybtn" />
+                <Property Name="SoundResource" Value="fanye.ogg" />
+                <Property Name="EnableClickAni" Value="True" />
+                <Property Name="ClippedByParent" Value="False" />
+                <Property Name="HoverTextColour" Value="FF000000" />
+                <Property Name="UnifiedAreaRect" Value="{{0.05,294},{0.05,83},{0.05,583},{0.05,152}}" />
+                <Property Name="NormalTextColour" Value="FF000000" />
+                <Property Name="PushedTextColour" Value="FF000000" />
+                <Property Name="LuaEventOnClicked" Value="HandleLoginAccountBtnClick" />
+                <Property Name="ButtonBorderColour" Value="FF000000" />
+                <Property Name="DisabledTextColour" Value="FF000000" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="AllowModalStateClick" Value="True" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+                <Property Name="ButtonDefaultBorderEnable" Value="False" />
+                <Property Name="ButtonDefaultColourEnable" Value="False" />
+                <Window Type="TaharezLook/ImageButton" Name="switchaccount/regFyAN" >
+                    <Property Name="Font" Value="mhsy-13-normal" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="SizeType" Value="Auto" />
+                    <Property Name="HoverImage" Value="set:logindlginfo image:reg" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="NormalImage" Value="set:logindlginfo image:reg1" />
+                    <Property Name="PushedImage" Value="set:logindlginfo image:reg" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="LuaMemberName" Value="loginFybtn" />
+                    <Property Name="SoundResource" Value="fanye.ogg" />
+                    <Property Name="EnableClickAni" Value="False" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="HoverTextColour" Value="FF000000" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.1,116},{0.1,2},{0.1,250},{0.1,51}}" />
+                    <Property Name="NormalTextColour" Value="FF000000" />
+                    <Property Name="PushedTextColour" Value="FF000000" />
+                    <Property Name="LuaEventOnClicked" Value="HandleLoginAccountBtnClick" />
+                    <Property Name="ButtonBorderColour" Value="FF000000" />
+                    <Property Name="DisabledTextColour" Value="FF000000" />
+                    <Property Name="AllowModalStateClick" Value="True" />
+                    <Property Name="ButtonDefaultBorderEnable" Value="False" />
+                    <Property Name="ButtonDefaultColourEnable" Value="False" />
+                </Window>
+                <Window Type="TaharezLook/ImageButton" Name="switchaccount/loginFyAN" >
+                    <Property Name="Font" Value="mhsy-13-normal" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="SizeType" Value="Auto" />
+                    <Property Name="HoverImage" Value="set:logindlginfo image:login" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="NormalImage" Value="set:logindlginfo image:login1" />
+                    <Property Name="PushedImage" Value="set:logindlginfo image:login" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="LuaMemberName" Value="loginFybtn" />
+                    <Property Name="SoundResource" Value="fanye.ogg" />
+                    <Property Name="EnableClickAni" Value="False" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="HoverTextColour" Value="FF000000" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,10},{0,144},{0,59}}" />
+                    <Property Name="NormalTextColour" Value="FF000000" />
+                    <Property Name="PushedTextColour" Value="FF000000" />
+                    <Property Name="LuaEventOnClicked" Value="HandleLoginAccountBtnClick" />
+                    <Property Name="ButtonBorderColour" Value="FF000000" />
+                    <Property Name="DisabledTextColour" Value="FF000000" />
+                    <Property Name="AllowModalStateClick" Value="True" />
+                    <Property Name="ButtonDefaultBorderEnable" Value="False" />
+                    <Property Name="ButtonDefaultColourEnable" Value="False" />
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="switchaccount/logi" >
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="Visible" Value="False" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0,40},{0,180},{1,-40},{1,-30}}" />
+                <Property Name="AllowModalStateClick" Value="True" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+                <Window Type="TaharezLook/StaticText" Name="switchaccount/zhanghao" >
+                    <Property Name="Font" Value="mhsy-14-normal" />
+                    <Property Name="Text" Value="账号：" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="HorzExtent" Value="78" />
+                    <Property Name="VertExtent" Value="25.672" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="TextColours" Value="tl:FF000000 tr:FF000000 bl:FF000000 br:FF000000" />
+                    <Property Name="BorderColour" Value="FF003454" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,40},{0,99},{0,79}}" />
+                    <Property Name="AllowModalStateClick" Value="True" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="TaharezLook/common_dengluniu" Name="switchaccount/login" >
+                    <Property Name="Font" Value="mhsy-14-normal" />
+                    <Property Name="Text" Value="登 录" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="SizeType" Value="Auto" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="EnableClickAni" Value="False" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="HoverTextColour" Value="FFFFFFFF" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,99},{0,200},{0,238},{0,249}}" />
+                    <Property Name="NormalTextColour" Value="FFFFFFFF" />
+                    <Property Name="PushedTextColour" Value="FFFFFFFF" />
+                    <Property Name="DisabledTextColour" Value="FFFFFFFF" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Property Name="AllowModalStateClick" Value="True" />
+                </Window>
+                <Window Type="TaharezLook/StaticImage" Name="switchaccount/accountbg" >
+                    <Property Name="Image" Value="set:logindlginfo image:shuru" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="LimitWindowSize" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,100},{0,40},{0,309},{0,79}}" />
+                    <Property Name="AllowModalStateClick" Value="True" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                    <Window Type="TaharezLook/Editbox" Name="switchaccount/accountbox" >
+                        <Property Name="Font" Value="mhsy-14-normal" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="BlinkCaret" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="MaxTextLength" Value="2147483647" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,10},{0,0},{1,-10},{1,0}}" />
+                        <Property Name="TextParsingEnabled" Value="False" />
+                        <Property Name="AllowModalStateClick" Value="True" />
+                    </Window>
+                </Window>
+                <Window Type="TaharezLook/StaticImage" Name="switchaccount/pwdbg" >
+                    <Property Name="Image" Value="set:logindlginfo image:shuru" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="LimitWindowSize" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,100},{0,110},{0,309},{0,149}}" />
+                    <Property Name="AllowModalStateClick" Value="True" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                    <Window Type="TaharezLook/Editbox" Name="switchaccount/pwdbox" >
+                        <Property Name="Font" Value="mhsy-14-normal" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="BlinkCaret" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="MaxTextLength" Value="2147483647" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,10},{0,0},{1,-10},{1,0}}" />
+                        <Property Name="TextParsingEnabled" Value="False" />
+                        <Property Name="AllowModalStateClick" Value="True" />
+                    </Window>
+                </Window>
+                <Window Type="TaharezLook/StaticText" Name="switchaccount/zhanghao1" >
+                    <Property Name="Font" Value="mhsy-14-normal" />
+                    <Property Name="Text" Value="密码：" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="HorzExtent" Value="78" />
+                    <Property Name="VertExtent" Value="25.672" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="TextColours" Value="tl:FF000000 tr:FF000000 bl:FF000000 br:FF000000" />
+                    <Property Name="BorderColour" Value="FF003454" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.05,-7},{0.05,94},{0.05,82},{0.05,133}}" />
+                    <Property Name="AllowModalStateClick" Value="True" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="switchaccount/regi" >
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0,40},{0,170},{1,-40},{1,-30}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+                <Property Name="AllowModalStateClick" Value="True" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+                <Window Type="TaharezLook/StaticText" Name="switchaccount/regtext1" >
+                    <Property Name="Font" Value="mhsy-14-normal" />
+                    <Property Name="Text" Value="账号：" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="HorzExtent" Value="78" />
+                    <Property Name="VertExtent" Value="25.672" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="TextColours" Value="tl:FF000000 tr:FF000000 bl:FF000000 br:FF000000" />
+                    <Property Name="BorderColour" Value="FF003454" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="HorzFormatting" Value="RightAligned" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,50},{0,10},{0,139},{0,49}}" />
+                    <Property Name="AllowModalStateClick" Value="True" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="TaharezLook/StaticText" Name="switchaccount/regtext2" >
+                    <Property Name="Font" Value="mhsy-14-normal" />
+                    <Property Name="Text" Value="密码：" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="HorzExtent" Value="78" />
+                    <Property Name="VertExtent" Value="25.672" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="TextColours" Value="tl:FF000000 tr:FF000000 bl:FF000000 br:FF000000" />
+                    <Property Name="BorderColour" Value="FF003454" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="HorzFormatting" Value="RightAligned" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,50},{0.05,43},{0,139},{0.05,82}}" />
+                    <Property Name="AllowModalStateClick" Value="True" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="TaharezLook/StaticText" Name="switchaccount/regtext3" >
+                    <Property Name="Font" Value="mhsy-14-normal" />
+                    <Property Name="Text" Value="确认密码：" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="HorzExtent" Value="130" />
+                    <Property Name="VertExtent" Value="25.672" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="TextColours" Value="tl:FF000000 tr:FF000000 bl:FF000000 br:FF000000" />
+                    <Property Name="BorderColour" Value="FF003454" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="HorzFormatting" Value="RightAligned" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.05,-17},{0.1,76},{0.05,122},{0.1,115}}" />
+                    <Property Name="AllowModalStateClick" Value="True" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="TaharezLook/StaticText" Name="switchaccount/regtext4" >
+                    <Property Name="Font" Value="mhsy-14-normal" />
+                    <Property Name="Text" Value="邀请码：" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="HorzExtent" Value="104" />
+                    <Property Name="VertExtent" Value="25.672" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="TextColours" Value="tl:FF000000 tr:FF000000 bl:FF000000 br:FF000000" />
+                    <Property Name="BorderColour" Value="FF003454" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="HorzFormatting" Value="RightAligned" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,30},{0.05,143},{0,139},{0.05,182}}" />
+                    <Property Name="AllowModalStateClick" Value="True" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="TaharezLook/StaticText" Name="switchaccount/regtext5" >
+                    <Property Name="Font" Value="mhsy-14-normal" />
+                    <Property Name="Text" Value="验证码：" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="HorzExtent" Value="104" />
+                    <Property Name="VertExtent" Value="25.672" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="TextColours" Value="tl:FF000000 tr:FF000000 bl:FF000000 br:FF000000" />
+                    <Property Name="BorderColour" Value="FF003454" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="HorzFormatting" Value="RightAligned" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.05,13},{0.1,176},{0.05,122},{0.1,215}}" />
+                    <Property Name="AllowModalStateClick" Value="True" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+                <Window Type="TaharezLook/StaticImage" Name="switchaccount/regAccountbg" >
+                    <Property Name="Image" Value="set:logindlginfo image:shuru" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,130},{0,10},{0,319},{0,49}}" />
+                    <Property Name="AllowModalStateClick" Value="True" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                    <Window Type="TaharezLook/Editbox" Name="switchaccount/regAccount" >
+                        <Property Name="Font" Value="mhsy-14-normal" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="Tooltip" Value="账号必须为6-18位字母+数字组合" />
+                        <Property Name="BlinkCaret" Value="True" />
+                        <Property Name="ModalState" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="MaxTextLength" Value="2147483647" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,10},{0,0},{1,-10},{1,0}}" />
+                        <Property Name="TextParsingEnabled" Value="False" />
+                        <Property Name="AllowModalStateClick" Value="True" />
+                    </Window>
+                </Window>
+                <Window Type="TaharezLook/StaticImage" Name="switchaccount/regPasswordbg" >
+                    <Property Name="Image" Value="set:logindlginfo image:shuru" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,130},{0,60},{0,319},{0,99}}" />
+                    <Property Name="AllowModalStateClick" Value="True" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                    <Window Type="TaharezLook/Editbox" Name="switchaccount/regPassword" >
+                        <Property Name="Font" Value="mhsy-14-normal" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="Tooltip" Value="密码必须为6-18位字母+数字组合" />
+                        <Property Name="BlinkCaret" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="MaxTextLength" Value="2147483647" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,10},{0,0},{1,-10},{1,0}}" />
+                        <Property Name="TextParsingEnabled" Value="False" />
+                        <Property Name="AllowModalStateClick" Value="True" />
+                    </Window>
+                </Window>
+                <Window Type="TaharezLook/StaticImage" Name="switchaccount/regPasswordAgainbg" >
+                    <Property Name="Image" Value="set:logindlginfo image:shuru" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.05,113},{0.05,93},{0.05,302},{0.05,132}}" />
+                    <Property Name="AllowModalStateClick" Value="True" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                    <Window Type="TaharezLook/Editbox" Name="switchaccount/regPasswordAgain" >
+                        <Property Name="Font" Value="mhsy-14-normal" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="Tooltip" Value="请再次输入您的注册密码" />
+                        <Property Name="BlinkCaret" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="MaxTextLength" Value="2147483647" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,10},{0,0},{1,-10},{1,0}}" />
+                        <Property Name="TextParsingEnabled" Value="False" />
+                        <Property Name="AllowModalStateClick" Value="True" />
+                    </Window>
+                </Window>
+                <Window Type="TaharezLook/StaticImage" Name="switchaccount/regInvitebg" >
+                    <Property Name="Image" Value="set:logindlginfo image:shuru" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.05,113},{0.05,143},{0.05,302},{0.05,182}}" />
+                    <Property Name="AllowModalStateClick" Value="True" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                    <Window Type="TaharezLook/Editbox" Name="switchaccount/regInvite" >
+                        <Property Name="Font" Value="mhsy-14-normal" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="Tooltip" Value="请输入您的注册邀请码" />
+                        <Property Name="BlinkCaret" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="MaxTextLength" Value="2147483647" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,10},{0,0},{1,-10},{1,0}}" />
+                        <Property Name="TextParsingEnabled" Value="False" />
+                        <Property Name="AllowModalStateClick" Value="True" />
+                    </Window>
+                </Window>
+                <Window Type="TaharezLook/StaticImage" Name="switchaccount/regCaptcha1" >
+                    <Property Name="Image" Value="set:logindlginfo image:shuru" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.05,208},{0.05,193},{0.05,257},{0.05,232}}" />
+                    <Property Name="AllowModalStateClick" Value="True" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                    <Window Type="TaharezLook/Editbox" Name="switchaccount/regCaptcha" >
+                        <Property Name="Font" Value="mhsy-12-normal" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="Tooltip" Value="请输入您的验证码" />
+                        <Property Name="BlinkCaret" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="MaxTextLength" Value="2147483647" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                        <Property Name="TextParsingEnabled" Value="False" />
+                        <Property Name="AllowModalStateClick" Value="True" />
+                    </Window>
+                </Window>
+                <Window Type="TaharezLook/StaticImage" Name="switchaccount/captcha/bg" >
+                    <Property Name="Image" Value="set:huodong image:YZM" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.05,113},{0.05,193},{0.05,203},{0.05,232}}" />
+                    <Property Name="AllowModalStateClick" Value="True" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                    <Window Type="TaharezLook/StaticText" Name="switchaccount/captchaimg" >
+                        <Property Name="Font" Value="mhsy-12-normal" />
+                        <Property Name="Text" Value="10x10=?" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="HorzExtent" Value="77" />
+                        <Property Name="VertExtent" Value="22.0001" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="BorderColour" Value="FFF3F3F3" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="HorzFormatting" Value="HorzCentred" />
+                        <Property Name="ClippedByParent" Value="False" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.05,-5},{0.05,-2},{0.05,84},{0.05,37}}" />
+                        <Property Name="AllowModalStateClick" Value="True" />
+                    </Window>
+                </Window>
+                <Window Type="TaharezLook/common_dengluniu" Name="switchaccount/regBtn" >
+                    <Property Name="Font" Value="mhsy-14-normal" />
+                    <Property Name="Text" Value="注册账号" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="SizeType" Value="Auto" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="EnableClickAni" Value="True" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="HoverTextColour" Value="FFFFFFFF" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,99},{0,270},{0,239},{0,319}}" />
+                    <Property Name="NormalTextColour" Value="FFFFFFFF" />
+                    <Property Name="PushedTextColour" Value="FFFFFFFF" />
+                    <Property Name="DisabledTextColour" Value="FFFFFFFF" />
+                    <Property Name="HorizontalAlignment" Value="Centre" />
+                    <Property Name="AllowModalStateClick" Value="True" />
+                </Window>
+                <Window Type="TaharezLook/common_dengluniu" Name="switchaccount/regi/refresh" >
+                    <Property Name="Font" Value="simhei-12" />
+                    <Property Name="Text" Value="刷" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="SizeType" Value="Auto" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="EnableClickAni" Value="True" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="HoverTextColour" Value="FFFFFFFF" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,280.2},{0,210.2},{0,319.45},{0,249.45}}" />
+                    <Property Name="NormalTextColour" Value="FFFFFFFF" />
+                    <Property Name="DisabledTextColour" Value="FFFFFFFF" />
+                    <Property Name="AllowModalStateClick" Value="True" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="TaharezLook/FrameWindow" Name="characterxiuxingdlg" >
+        <Property Name="Font" Value="hycyj-20" />
+        <Property Name="Scale" Value="x:1 y:1 z:1" />
+        <Property Name="LuaClass" Value="CharacterXiuxingDlg" />
+        <Property Name="ModalState" Value="True" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="LuaForDialog" Value="True" />
+        <Property Name="LuaMemberName" Value="m_bg" />
+        <Property Name="RollUpEnabled" Value="True" />
+        <Property Name="SizingEnabled" Value="False" />
+        <Property Name="SoundResource" Value="dlgopen.ogg" />
+        <Property Name="LimitWindowSize" Value="False" />
+        <Property Name="TitlebarEnabled" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0.5,-552},{0.5,-334},{0.5,552},{0.5,348}}" />
+        <Property Name="DragMovingEnabled" Value="False" />
+        <Property Name="CloseSoundResource" Value="dlgopen.ogg" />
+        <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="characterxiuxingdlg/ccziti" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,238},{0.05,-26},{0.05,747},{0.05,20}}" />
+            <Window Type="TaharezLook/StaticText" Name="characterxiuxingdlg/ccziti/" >
+                <Property Name="Font" Value="simhei-18" />
+                <Property Name="Text" Value="修行" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="HorzExtent" Value="66" />
+                <Property Name="VertExtent" Value="32.9839" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="UnifiedAreaRect" Value="{{0,167},{0,5},{0,337},{0,43}}" />
+            </Window>
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="characterxiuxingdlg/qng" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="HoverImage" Value="set:xiulianguo image:qng" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="NormalImage" Value="set:xiulianguo image:qng" />
+            <Property Name="PushedImage" Value="set:xiulianguo image:qng" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="EnableClickAni" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,85.2184},{0,86.1163},{0,360.468},{0,290.366}}" />
+        </Window>
+        <Window Type="TaharezLook/Buttonc254" Name="characterxiuxingdlg/qiannengguo" >
+            <Property Name="Font" Value="simhei-13" />
+            <Property Name="Text" Value="潜能果" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="EnableClickAni" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,148.218},{0,540.116},{0,297.468},{0,599.366}}" />
+            <Property Name="ButtonBorderColour" Value="FF95592D" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="characterxiuxingdlg/qngdesc" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,30},{0.05,285},{0.05,305},{0.05,491}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="characterxiuxingdlg/qjbm" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="HoverImage" Value="set:xiulianguo image:qjbm" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="NormalImage" Value="set:xiulianguo image:qjbm" />
+            <Property Name="PushedImage" Value="set:xiulianguo image:qjbm" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="EnableClickAni" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,320.218},{0.05,52.1163},{0.05,652.468},{0.05,258.366}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="characterxiuxingdlg/qjbm1" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="HoverImage" Value="set:jingmaia image:mai" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="NormalImage" Value="set:jingmaia image:mai" />
+            <Property Name="PushedImage" Value="set:jingmaia image:mai" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="EnableClickAni" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,662.218},{0.05,51.1163},{0.05,976.468},{0.05,266.366}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="characterxiuxingdlg/qjbmdesc" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.1,280},{0.1,252},{0.1,585},{0.1,457}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="characterxiuxingdlg/qjbmdesc1" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.1,613},{0.1,250},{0.1,918},{0.1,455}}" />
+        </Window>
+        <Window Type="TaharezLook/Buttonc254" Name="characterxiuxingdlg/qijingbamai" >
+            <Property Name="Font" Value="simhei-13" />
+            <Property Name="Text" Value="奇经八脉" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="EnableClickAni" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,413.218},{0.05,511.116},{0.05,562.468},{0.05,570.366}}" />
+            <Property Name="ButtonBorderColour" Value="FF95592D" />
+        </Window>
+        <Window Type="TaharezLook/Buttonc254" Name="characterxiuxingdlg/qijingbamai1" >
+            <Property Name="Font" Value="simhei-13" />
+            <Property Name="Text" Value="装备经脉" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="EnableClickAni" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,744.218},{0.05,508.116},{0.05,893.468},{0.05,567.366}}" />
+            <Property Name="ButtonBorderColour" Value="FF95592D" />
+        </Window>
+    </Window>
+</GUILayout>

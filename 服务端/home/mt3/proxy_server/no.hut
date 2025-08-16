@@ -1,0 +1,4 @@
+TRACE : DataBetweenAuAnyAndGS userid=1,qtype=9001,flag=2
+TRACE : DataBetweenAuAnyAndGS userid=1,qtype=9002,flag=1
+TRACE : DataBetweenAuAnyAndGS userid=1,qtype=9001,flag=2
+TRACE : DataBetweenAuAnyAndGS userid=1,qtype=9002,flag=1

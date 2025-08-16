@@ -1,0 +1,7 @@
+MTG-14830
+ 
+【里程碑五】宠物技能由圆的改成方的【客户端】
+
+审核人：刘庚，提交人：王剑峰
+
+E:\mt3\client\resource\res\script\logic

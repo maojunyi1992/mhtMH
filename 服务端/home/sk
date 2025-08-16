@@ -1,0 +1,76 @@
+#!/bin/bash
+
+HOSTNAME="localhost"
+PORT="3306"
+USERNAME="root"
+PASSWORD="123456"
+
+
+DB1="mt3"
+
+
+
+
+
+#创建数据库
+sql="GRANT ALL PRIVILEGES ON *.* TO '${USERNAME}'@'%' IDENTIFIED BY '${PASSWORD}'WITH GRANT OPTION;"
+sql0="FLUSH   PRIVILEGES;"
+sql1="create database ${DB1} DEFAULT CHARACTER SET utf8;"
+
+
+mysql -u${USERNAME} -p${PASSWORD} -e "${sql}"
+mysql -u${USERNAME} -p${PASSWORD} -e "${sql0}"
+mysql -h${HOSTNAME} -P${PORT} -u${USERNAME} -p${PASSWORD} -e "${sql1}"
+
+
+
+#还原数据库
+mysql -u${USERNAME} -p${PASSWORD} ${DB1} < /home/sql/mt3.sql
+
+echo '源码屋提醒你，数据库导入成功！'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

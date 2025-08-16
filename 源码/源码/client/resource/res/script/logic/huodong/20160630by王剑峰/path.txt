@@ -1,0 +1,2 @@
+MTG-14748【里程碑五】【点卡服】活跃度上限点卡服单独配置在点卡服的通用配置表【客户端】
+E:\mt3\client\resource\res\script\logic\huodong

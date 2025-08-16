@@ -1,0 +1,1470 @@
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: Address already in use
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+start.sh: line 3: 14072 Killed                  java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: Address already in use
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+start.sh: line 3: 29536 Killed                  java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: Address already in use
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+start.sh: line 3: 32645 Killed                  java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+start.sh: 行 3: 11123 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+start.sh: 行 3: 31776 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+start.sh: 行 3:  1056 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+start.sh: 行 3:  4008 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+start.sh: 行 3: 19919 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+start.sh: 行 3: 10631 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+start.sh: 行 3:  7130 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+start.sh: 行 3: 21065 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+start.sh: 行 3:  7615 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+start.sh: 行 3: 23837 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+start.sh: 行 3:  5361 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+start.sh: 行 3: 18955 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+start.sh: 行 3: 29666 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+start.sh: 行 3:  4855 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+start.sh: 行 3: 10411 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+start.sh: 行 3: 11869 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+start.sh: 行 3: 24320 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt1/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+Exception in thread "main" java.lang.IllegalStateException: java.net.BindException: 地址已在使用
+	at mkio.Acceptor.open(Acceptor.java:52)
+	at mkio.Manager.open(Manager.java:132)
+	at mkio.MkioConf.open(MkioConf.java:28)
+	at mkio.Engine.open(Engine.java:84)
+	at mkio.Engine.open(Engine.java:56)
+	at mkdb.Mkdb.startNetwork(Mkdb.java:245)
+	at com.locojoy.ns.Main.main(Main.java:57)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at mkio.Acceptor.open(Acceptor.java:48)
+	... 6 more
+start.sh: 行 3:  4313 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt3/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+start.sh: 行 3: 31306 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt3/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+start.sh: 行 3:  9831 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt3/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+start.sh: 行 3: 12175 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt3/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+start.sh: 行 3: 21838 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt3/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+start.sh: 行 3: 25868 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt3/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+start.sh: 行 3:  4474 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt3/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+start.sh: 行 3: 32586 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt3/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+start.sh: 行 3:  1420 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt3/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+start.sh: 行 3:  2826 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt3/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+start.sh: 行 3:  3942 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt3/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+start.sh: 行 3:  6364 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt3/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+start.sh: 行 3:  8776 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt3/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+start.sh: 行 3: 11585 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt3/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+start.sh: 行 3: 26953 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt3/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+start.sh: 行 3: 27319 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt3/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+start.sh: 行 3:   600 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml
+Deprecated attribute "flushFatalTime" in node "nsdb"
+Deprecated attribute "flushPeriod" in node "nsdb"
+Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /home/mt3/name_server/libdb_amd64.so which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+start.sh: 行 3: 13138 已杀死               java -cp ./lib/jio.jar:./lib/monkeyking.jar:ns.jar com.locojoy.ns.Main nsdb.xml

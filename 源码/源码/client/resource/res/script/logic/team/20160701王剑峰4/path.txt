@@ -1,0 +1,5 @@
+MTG-14832  
+【BUG】【伙伴助战】解锁伙伴助战时无法弹出解锁确认窗口【V0.0.175PC版本】 
+ 审核人：刘庚 提交人：王剑峰
+
+E:\mt3\client\resource\res\script\logic\team\

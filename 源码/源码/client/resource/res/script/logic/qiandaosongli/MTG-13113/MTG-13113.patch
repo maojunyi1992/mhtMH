@@ -1,0 +1,31 @@
+Index: fengcefanhuandlg.lua
+===================================================================
+--- fengcefanhuandlg.lua	(revision 46870)
++++ fengcefanhuandlg.lua	(working copy)
+@@ -82,6 +82,13 @@
+     self.m_jianglidiban1 = winMgr:getWindow("fengcefanhuan/jianglidiban1")
+     self.m_jieshutu = winMgr:getWindow("fengcefanhuan/jieshutu")
+     self.m_jieshuban = winMgr:getWindow("fengcefanhuan/jieshuban")
++
++    self.m_imgStartText1 = winMgr:getWindow("fengcefanhuan/jianglidiban/gonggao2")
++    self.m_imgStartText2 = winMgr:getWindow("fengcefanhuan/jianglidiban/gonggao3")
++    self.m_imgStartText3 = winMgr:getWindow("fengcefanhuan/jianglidiban1/")
++    self.m_imgEnd1 = winMgr:getWindow("fengcefanhuan/jieshuban")
++    self.m_imgEnd2 = winMgr:getWindow("fengcefanhuan/jieshuban/jieshuyu")
++
+     require "logic.qiandaosongli.loginrewardmanager"
+ 	local mgr = LoginRewardManager.getInstance()
+     self.m_num:setText(MoneyFormat(mgr.m_TestReturnNum))
+@@ -95,6 +102,12 @@
+     self.m_jianglidiban1:setVisible(false)
+     self.m_jieshutu:setVisible(true)
+     self.m_jieshuban:setVisible(true)
++    
++    self.m_imgStartText1:setVisible(false)
++    self.m_imgStartText2:setVisible(false)
++    self.m_imgStartText3:setVisible(false)
++    self.m_imgEnd1:setVisible(true)
++    self.m_imgEnd2:setVisible(true)
+ end
+ function fengcehuanfandlg:HandleAnswerClicked(e)
+     local cgetchargerefunds = require "protodef.fire.pb.fushi.cgetchargerefunds".Create()

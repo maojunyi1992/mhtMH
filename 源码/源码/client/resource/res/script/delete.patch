@@ -1,0 +1,968 @@
+Index: handler/fire_pb_friends.lua
+===================================================================
+--- handler/fire_pb_friends.lua	(revision 50390)
++++ handler/fire_pb_friends.lua	(working copy)
+@@ -333,6 +333,7 @@
+         end
+         local sysname = MHSD_UTILS.get_resstring(2773)
+         gGetFriendsManager():PushChatMsg(-1, sysname, 1, 89, -1, 0, 0, 0, 0, 0, "", strmsg, self.time, "", 0)
++        sb:delete()
+     end
+ end
+ 
+Index: logic/addpointlistdlg.lua
+===================================================================
+--- logic/addpointlistdlg.lua	(revision 50390)
++++ logic/addpointlistdlg.lua	(working copy)
+@@ -158,7 +158,7 @@
+ 		strbuilder:Set("parameter1", i)
+ 		local  str = MHSD_UTILS.get_resstring(10020)
+ 		wnd:setText("  "..strbuilder:GetString(MHSD_UTILS.get_resstring(10020)))
+-		
++		strbuilder:delete()
+ 		--wnd:setText(MHSD_UTILS.get_resstring(1557)..i)
+ 		
+ 		
+@@ -219,6 +219,7 @@
+ 	--local sb = StringBuilder:new()
+ 	--sb:SetNum("parameter1", 1)
+ 	local tipMsg = strbuilder:GetString(MHSD_UTILS.get_msgtipstring(150014))
++    strbuilder:delete()
+ 	GetCTipsManager():AddMessageTip(tipMsg);
+ 	
+ 	 --GetCTipsManager():AddMessageTip(GameTable.message.GetCMessageTipTableInstance():getRecorder(144877).msg)
+Index: logic/answerquestion/answerquestionhelp.lua
+===================================================================
+--- logic/answerquestion/answerquestionhelp.lua	(revision 50390)
++++ logic/answerquestion/answerquestionhelp.lua	(working copy)
+@@ -124,11 +124,13 @@
+     local msgqing = require "utils.mhsdutils".get_resstring(11438)
+     strbuilder:Set("parameter1", tostring(self.m_name))
+     local content = strbuilder:GetString(msgqing)
++    strbuilder:delete()
+     self.m_txtTop:setText(content)
+     local msgtimu = require "utils.mhsdutils".get_resstring(11440)
+ 
+     self.m_txtTitle:setText(msgtimu..record.title)
+     
++    
+ end
+ function AnswerQuestionHelp.ShowUI(questionid, name, roleid, temp2)
+     
+Index: logic/battle/battleskilltip.lua
+===================================================================
+--- logic/battle/battleskilltip.lua	(revision 50390)
++++ logic/battle/battleskilltip.lua	(working copy)
+@@ -101,6 +101,7 @@
+         local fParam1 = RoleSkillManager.getInstance():GetSkillRealCost(EquipSkill.costType,EquipSkill.costnum)
+         sb:Set("parameter1", tostring(math.abs(fParam1)))
+ 		local ws = sb:GetString(EquipSkill.cost)
++        sb:delete()
+ 		self.m_pSkillCostNum:setText(ws)
+         
+ 		self.m_pSkillDesc:Clear()
+@@ -147,6 +148,7 @@
+             fParam1 = RoleSkillManager.getInstance():GetSkillRealCost(schoolskillbase.costTypeA,fParam1)
+             sb:Set("parameter1", tostring(fParam1))
+ 			local ws = sb:GetString(schoolskillbase.costA);
++            sb:delete()
+ 			self.m_pSkillCostNum:setText(ws);
+             ---------------           
+             local desc = ""
+@@ -178,6 +180,7 @@
+ 			local fParam1 = math.abs(math.floor(schoolskillbase.paramA * showLevel + schoolskillbase.paramB))
+             sb:Set("parameter1", tostring(fParam1))
+ 			local ws = sb:GetString(skillinfo.costA);
++            sb:delete()
+ 			self.m_pSkillCostNum:setText(ws);
+ 
+ 			ws = skillinfo.skilldescribe;
+Index: logic/characterinfo/characterinfodlg.lua
+===================================================================
+--- logic/characterinfo/characterinfodlg.lua	(revision 50390)
++++ logic/characterinfo/characterinfodlg.lua	(working copy)
+@@ -218,6 +218,7 @@
+     strbuilder:Set("parameter1", tostring(gGetDataManager():getServerLevel()))
+     strbuilder:Set("parameter2", tostring(gGetDataManager():getServerLevelDays()))
+     strAllString = strbuilder:GetString(strAllString)
++    strbuilder:delete()
+     local tips1 = require "logic.workshop.tips1"
+     tips1.getInstanceAndShow(strAllString, title)
+ 
+Index: logic/characterinfo/characterprodlg.lua
+===================================================================
+--- logic/characterinfo/characterprodlg.lua	(revision 50390)
++++ logic/characterinfo/characterprodlg.lua	(working copy)
+@@ -390,6 +390,7 @@
+     strbuilder:Set("parameter1", tostring(gGetDataManager():getServerLevel()))
+     strbuilder:Set("parameter2", tostring(gGetDataManager():getServerLevelDays()))
+     strAllString = strbuilder:GetString(strAllString)
++    strbuilder:delete()
+     local tips1 = require "logic.workshop.tips1"
+     tips1.getInstanceAndShow(strAllString, title)
+ 
+Index: logic/characterinfo/characterpropertyaddptrdlg.lua
+===================================================================
+--- logic/characterinfo/characterpropertyaddptrdlg.lua	(revision 50390)
++++ logic/characterinfo/characterpropertyaddptrdlg.lua	(working copy)
+@@ -652,7 +652,7 @@
+ 	local strbuilder = StringBuilder:new()
+ 	strbuilder:Set("parameter1", id)
+ 	self.m_schemeBtn:setText(strbuilder:GetString(MHSD_UTILS.get_resstring(10020)))
+-	
++	strbuilder:delete()
+ 	--之前的逻辑改成直接改成方案点加到固蓝中， 所以固定的蓝条值也需要改变
+ 	-- 将已加点数清零
+ 	for indexClear in pairs( self.addPointArray ) do
+@@ -836,6 +836,7 @@
+ 		strbuilder:Set("parameter1", money)
+ 			
+ 		local msg = strbuilder:GetString(MHSD_UTILS.get_msgtipstring(150012))
++        strbuilder:delete()
+ 			gGetMessageManager():AddConfirmBox(eConfirmNormal,msg, CharacterPropertyAddPtrDlg.OpenSchemeClickOK,self,	MessageManager.HandleDefaultCancelEvent, MessageManager)
+ 		
+ 	elseif 	self.schemeChangeTime ==0 then
+@@ -922,6 +923,7 @@
+ 		strbuilder:Set("parameter1", nAddPointLevel)
+ 		--150013
+ 		local tempStrTip = strbuilder:GetString(MHSD_UTILS.get_msgtipstring(150013))
++        strbuilder:delete()
+ 		GetCTipsManager():AddMessageTip(tempStrTip)
+ 		
+ 	end	
+Index: logic/characterinfo/characterpropertyaddptrresetcell.lua
+===================================================================
+--- logic/characterinfo/characterpropertyaddptrresetcell.lua	(revision 50390)
++++ logic/characterinfo/characterpropertyaddptrresetcell.lua	(working copy)
+@@ -169,7 +169,7 @@
+ 		        local strbuilder = StringBuilder:new()
+ 		        strbuilder:Set("parameter1", name)
+ 		        local tempStrTip = strbuilder:GetString(MHSD_UTILS.get_msgtipstring(150020))
+-
++                strbuilder:delete()
+ 		        GetCTipsManager():AddMessageTip(tempStrTip)
+             end
+         else
+Index: logic/chat/chatmanager.lua
+===================================================================
+--- logic/chat/chatmanager.lua	(revision 50390)
++++ logic/chat/chatmanager.lua	(working copy)
+@@ -329,6 +329,7 @@
+ 
+ 			end
+ 			strmsg = sb:GetString(tip.msg)
++            sb:delete()
+ 		end
+ 
+ 		local allid = BeanConfigManager.getInstance():GetTableByName("chat.cchatcolorconfig"):getAllID()
+Index: logic/family/familyBuildDialog.lua
+===================================================================
+--- logic/family/familyBuildDialog.lua	(revision 50390)
++++ logic/family/familyBuildDialog.lua	(working copy)
+@@ -201,10 +201,11 @@
+         strbuilder:Set("parameter2", BeanConfigManager.getInstance():GetTableByName("message.cstringres"):getRecorder(11243).msg)
+         local strMsg = strbuilder:GetString(BeanConfigManager.getInstance():GetTableByName("message.cstringres"):getRecorder(11237).msg)
+         self.m_TitleText:setText(strMsg)
+-
++        strbuilder:delete()
+         local strbuilder1 = StringBuilder:new()
+         strbuilder1:Set("parameter1", tostring(info.othersum))
+         local strMsg1 = strbuilder1:GetString(BeanConfigManager.getInstance():GetTableByName("message.cstringres"):getRecorder(11238).msg)
++        strbuilder1:delete()
+         self.m_ConditionText:setText(strMsg1)
+         for k, v in pairs(self.data.house) do
+             otherBuildLevel = otherBuildLevel + v
+@@ -228,10 +229,12 @@
+         strbuilder:Set("parameter1", tostring(id))
+         strbuilder:Set("parameter2", BeanConfigManager.getInstance():GetTableByName("message.cstringres"):getRecorder(11244).msg)
+         local strMsg = strbuilder:GetString(BeanConfigManager.getInstance():GetTableByName("message.cstringres"):getRecorder(11237).msg)
++        strbuilder:delete()
+         self.m_TitleText:setText(strMsg)
+         local strbuilder1 = StringBuilder:new()
+         strbuilder1:Set("parameter1", tostring(id + 1))
+         local strMsg1 = strbuilder1:GetString(BeanConfigManager.getInstance():GetTableByName("message.cstringres"):getRecorder(11247).msg)
++        strbuilder1:delete()
+         self.m_ConditionText:setText(strMsg1)
+ 
+         self.m_HelpText:Clear()
+@@ -254,10 +257,12 @@
+         strbuilder:Set("parameter1", tostring(id))
+         strbuilder:Set("parameter2", BeanConfigManager.getInstance():GetTableByName("message.cstringres"):getRecorder(11245).msg)
+         local strMsg = strbuilder:GetString(BeanConfigManager.getInstance():GetTableByName("message.cstringres"):getRecorder(11237).msg)
++        strbuilder:delete()
+         self.m_TitleText:setText(strMsg)
+         local strbuilder1 = StringBuilder:new()
+         strbuilder1:Set("parameter1", tostring(id + 1))
+         local strMsg1 = strbuilder1:GetString(BeanConfigManager.getInstance():GetTableByName("message.cstringres"):getRecorder(11247).msg)
++        strbuilder1:delete()
+         self.m_ConditionText:setText(strMsg1)
+ 
+         self.m_HelpText:Clear()
+@@ -280,11 +285,13 @@
+         strbuilder:Set("parameter1", tostring(id))
+         strbuilder:Set("parameter2", BeanConfigManager.getInstance():GetTableByName("message.cstringres"):getRecorder(11246).msg)
+         local strMsg = strbuilder:GetString(BeanConfigManager.getInstance():GetTableByName("message.cstringres"):getRecorder(11237).msg)
++        strbuilder:delete()
+         self.m_TitleText:setText(strMsg)
+         local strbuilder1 = StringBuilder:new()
+         strbuilder1:Set("parameter1", tostring(id + 1))
+         local strMsg1 = strbuilder1:GetString(BeanConfigManager.getInstance():GetTableByName("message.cstringres"):getRecorder(11247).msg)
+         self.m_ConditionText:setText(strMsg1)
++        strbuilder1:delete()
+ 
+         self.m_HelpText:Clear()
+         self.m_HelpText:AppendParseText(CEGUI.String(MHSD_UTILS.get_resstring(11242)))
+Index: logic/fuyuanbox/fuyuanboxdlg.lua
+===================================================================
+--- logic/fuyuanbox/fuyuanboxdlg.lua	(revision 50390)
++++ logic/fuyuanbox/fuyuanboxdlg.lua	(working copy)
+@@ -341,7 +341,7 @@
+ 		        local strbuilder = StringBuilder:new()
+ 		        strbuilder:Set("parameter1", name)
+ 		        local tempStrTip = strbuilder:GetString(MHSD_UTILS.get_msgtipstring(150020))
+-
++                strbuilder:delete()
+ 		        GetCTipsManager():AddMessageTip(tempStrTip)
+             end
+         else
+Index: logic/huodong/huodongdlg.lua
+===================================================================
+--- logic/huodong/huodongdlg.lua	(revision 50390)
++++ logic/huodong/huodongdlg.lua	(working copy)
+@@ -1189,11 +1189,12 @@
+ 	strbuilder:Set("parameter1", self.m_nGotDoublePtr)
+ 	local  str = MHSD_UTILS.get_resstring(11236)
+ 	self.m_txtYilingqu:setText("  "..strbuilder:GetString(MHSD_UTILS.get_resstring(11236)))
+-		
++	strbuilder:delete() 
+ 	local strbuilder = StringBuilder:new()
+ 	strbuilder:Set("parameter1", self.m_nCanDoublePtr)
+ 	local  str = MHSD_UTILS.get_resstring(11235)
+ 	self.m_txtShuangbei:setText("  "..strbuilder:GetString(MHSD_UTILS.get_resstring(11235)))
++    strbuilder:delete()
+ 	if self.m_nGotDoublePtr <= 0 then
+ 		self.m_btnDongjie:setVisible(false)
+ 		--self.m_txtYilingqu:setVisible(false)
+Index: logic/huodong/huodongdlgpay.lua
+===================================================================
+--- logic/huodong/huodongdlgpay.lua	(revision 50390)
++++ logic/huodong/huodongdlgpay.lua	(working copy)
+@@ -1229,11 +1229,13 @@
+ 	strbuilder:Set("parameter1", self.m_nGotDoublePtr)
+ 	local  str = MHSD_UTILS.get_resstring(11236)
+ 	self.m_txtYilingqu:setText("  "..strbuilder:GetString(MHSD_UTILS.get_resstring(11236)))
+-		
++	
++    strbuilder:delete()
+ 	local strbuilder = StringBuilder:new()
+ 	strbuilder:Set("parameter1", self.m_nCanDoublePtr)
+ 	local  str = MHSD_UTILS.get_resstring(11235)
+ 	self.m_txtShuangbei:setText("  "..strbuilder:GetString(MHSD_UTILS.get_resstring(11235)))
++    strbuilder:delete()
+ 	if self.m_nGotDoublePtr <= 0 then
+ 		self.m_btnDongjie:setVisible(false)
+ 		--self.m_txtYilingqu:setVisible(false)
+Index: logic/item/depot.lua
+===================================================================
+--- logic/item/depot.lua	(revision 50390)
++++ logic/item/depot.lua	(working copy)
+@@ -155,6 +155,7 @@
+ 		strbuilder:Set("parameter1", self.m_pageDepotSelect - 2)
+ 		strDepotWord = strbuilder:GetString(MHSD_UTILS.get_resstring(11153))
+ 	end
++    strbuilder:delete()
+ 	self.m_btnMianfei:setText(strDepotWord)
+ 
+ end
+Index: logic/item/depotmenubtn.lua
+===================================================================
+--- logic/item/depotmenubtn.lua	(revision 50390)
++++ logic/item/depotmenubtn.lua	(working copy)
+@@ -231,11 +231,13 @@
+ 				strbuilder:Set("parameter1", col + BTN_NUM_PER_LINE *(row - 1))
+ 				local strDepotWord = strbuilder:GetString(MHSD_UTILS.get_resstring(11152))
+ 				btn:setText(strDepotWord)
++                strbuilder:delete()
+ 			else
+ 				local strbuilder = StringBuilder:new()
+ 				strbuilder:Set("parameter1", col + BTN_NUM_PER_LINE *(row - 1) -2)
+ 				local strDepotWord = strbuilder:GetString(MHSD_UTILS.get_resstring(11153))
+ 				btn:setText(strDepotWord)
++                strbuilder:delete()
+ 			end
+ 
+ 
+Index: logic/item/itemcommon.lua
+===================================================================
+--- logic/item/itemcommon.lua	(revision 50390)
++++ logic/item/itemcommon.lua	(working copy)
+@@ -370,6 +370,7 @@
+ 	local des = BeanConfigManager.getInstance():GetTableByName("item.cfoodanddrugeffect"):getRecorder(self.data.id).effectdescribe
+     local sb = require "utils.stringbuilder":new()
+ 	self.effectDes = sb:GetString(des)
++    sb:delete()
+ end
+ 
+ -------------------------------------------------------------
+@@ -404,6 +405,7 @@
+ 	local des = BeanConfigManager.getInstance():GetTableByName("item.cfoodanddrugeffect"):getRecorder(self.data.id).effectdescribe
+     local sb = require "utils.stringbuilder":new()
+ 	self.effectDes = sb:GetString(des)
++    sb:delete()
+ end
+ 
+ -------------------------------------------------------------
+Index: logic/item/roleitemmanager.lua
+===================================================================
+--- logic/item/roleitemmanager.lua	(revision 50390)
++++ logic/item/roleitemmanager.lua	(working copy)
+@@ -1551,11 +1551,13 @@
+             local sb = StringBuilder.new()
+ 			sb:Set("parameter1", MHSD_UTILS.get_resstring(1187))
+ 			GetCTipsManager():AddMessageTip(sb:GetString(GameTable.message.GetCMessageTipTableInstance():getRecorder(140986).msg))
++            sb:delete()
+ 			return true
+ 		elseif baseid == NvErHongID and sex == eSexFemale then
+             local sb = StringBuilder.new()
+ 			sb:Set("parameter1", MHSD_UTILS.get_resstring(1188))
+ 			GetCTipsManager():AddMessageTip(sb:GetString(GameTable.message.GetCMessageTipTableInstance():getRecorder(140986).msg))
++            sb:delete()
+ 			return true
+ 		end
+ 
+Index: logic/jingji/jingjidialog3.lua
+===================================================================
+--- logic/jingji/jingjidialog3.lua	(revision 50390)
++++ logic/jingji/jingjidialog3.lua	(working copy)
+@@ -422,6 +422,7 @@
+         local strBuilder = StringBuilder:new()
+         strBuilder:Set("parameter1", MHSD_UTILS.get_resstring(11342))
+         GetCTipsManager():AddMessageTip(strBuilder:GetString(MHSD_UTILS.get_msgtipstring(160342)))
++        strBuilder:delete()
+     end
+ end
+ 
+@@ -434,6 +435,7 @@
+         local strBuilder = StringBuilder:new()
+         strBuilder:Set("parameter1", MHSD_UTILS.get_resstring(11343))
+         GetCTipsManager():AddMessageTip(strBuilder:GetString(MHSD_UTILS.get_msgtipstring(160342)))
++        strBuilder:delete()
+     end
+ end
+ 
+@@ -446,6 +448,7 @@
+         local strBuilder = StringBuilder:new()
+         strBuilder:Set("parameter1", MHSD_UTILS.get_resstring(11344))
+         GetCTipsManager():AddMessageTip(strBuilder:GetString(MHSD_UTILS.get_msgtipstring(160342)))
++        strBuilder:delete()
+     end      
+ end
+ 
+Index: logic/jingji/jingjidialog5.lua
+===================================================================
+--- logic/jingji/jingjidialog5.lua	(revision 50390)
++++ logic/jingji/jingjidialog5.lua	(working copy)
+@@ -730,6 +730,7 @@
+          local strBuilder = StringBuilder:new()
+         strBuilder:Set("parameter1", MHSD_UTILS.get_resstring(11342))
+         GetCTipsManager():AddMessageTip(strBuilder:GetString(MHSD_UTILS.get_msgtipstring(160342)))
++        strBuilder:delete()
+         return
+     end
+      if jjManager.nFirstSuccess5State==2 then
+@@ -746,6 +747,7 @@
+         local strBuilder = StringBuilder:new()
+         strBuilder:Set("parameter1", MHSD_UTILS.get_resstring(11345))
+         GetCTipsManager():AddMessageTip(strBuilder:GetString(MHSD_UTILS.get_msgtipstring(160342)))
++        strBuilder:delete()
+         return
+     end
+     if jjManager.nTenBattle5State==2 then
+Index: logic/npc/npcscenespeakdialog.lua
+===================================================================
+--- logic/npc/npcscenespeakdialog.lua	(revision 50390)
++++ logic/npc/npcscenespeakdialog.lua	(working copy)
+@@ -148,7 +148,7 @@
+         sb:Set("NAME", gGetDataManager():GetMainCharacterName())
+         sb:Set("SCHOOL", gGetDataManager():GetMainCharacterSchoolName())
+         local str = sb:GetString(questinfo.ScenarioInfoNpcConversationList[self.m_iConversationIndex])
+-
++        sb:delete()
+         self:dealNpcSpeak(str, strFacePath, nNpcId, strNpcSound)
+     else
+         self:dealNpcSpeak(questinfo.ScenarioInfoNpcConversationList[self.m_iConversationIndex], strFacePath, nNpcId, strNpcSound)
+@@ -209,7 +209,7 @@
+         sb:Set("NAME", gGetDataManager():GetMainCharacterName())
+         sb:Set("SCHOOL", gGetDataManager():GetMainCharacterSchoolName())
+         local str = sb:GetString(questinfo.ScenarioInfoFinishConversationList[self.m_iConversationIndex])
+-
++        sb:delete()
+         self:dealNpcSpeak(str, strFacePath, nNpcId, strNpcSound)
+     else
+         self:dealNpcSpeak(questinfo.ScenarioInfoFinishConversationList[self.m_iConversationIndex], strFacePath, nNpcId, strNpcSound)
+Index: logic/pet/battlepetsummondlg.lua
+===================================================================
+--- logic/pet/battlepetsummondlg.lua	(revision 50390)
++++ logic/pet/battlepetsummondlg.lua	(working copy)
+@@ -255,6 +255,7 @@
+ 			local sb = StringBuilder:new()
+ 			sb:Set("parameter1", tostring(petfightnum))
+ 			s = sb:GetString(s)	
++            sb:delete()
+ 			GetCTipsManager():AddMessageTip(s)
+ 		else
+ 			GetBattleManager():SetSummonID(self.m_SelectKey)
+Index: logic/pet/petaddpointdlg.lua
+===================================================================
+--- logic/pet/petaddpointdlg.lua	(revision 50390)
++++ logic/pet/petaddpointdlg.lua	(working copy)
+@@ -476,6 +476,7 @@
+ 			PetAddPointDlg.requestResetPoint,self,
+ 			MessageManager.HandleDefaultCancelEvent,MessageManager
+ 		)
++        sb:delete()
+ 	else
+ 		local costConf = BeanConfigManager.getInstance():GetTableByName("pet.cpetresetpointconfig"):getRecorder(count+1>5 and 5 or count+1)		
+ 		local sb = StringBuilder:new()
+@@ -487,6 +488,7 @@
+ 			PetAddPointDlg.requestResetPoint,self,
+ 			MessageManager.HandleDefaultCancelEvent,MessageManager
+ 		)
++        sb:delete()
+ 	end
+ end
+ 
+Index: logic/pet/petaddpointsetting.lua
+===================================================================
+--- logic/pet/petaddpointsetting.lua	(revision 50390)
++++ logic/pet/petaddpointsetting.lua	(working copy)
+@@ -205,6 +205,7 @@
+ 	sb:Set("parameter4", self.pointTexts[ATTR.NAILI]:getID())
+ 	sb:Set("parameter5", self.pointTexts[ATTR.MINJIE]:getID())
+ 	GetCTipsManager():AddMessageTip(sb:GetString(MHSD_UTILS.get_msgtipstring(150108))) --您当前设置属性点自动分配方案为...
++    sb:delete()
+ end
+ 
+ function PetAddPointSetting:refreshBtnState()
+Index: logic/pet/petchoosezizhi.lua
+===================================================================
+--- logic/pet/petchoosezizhi.lua	(revision 50390)
++++ logic/pet/petchoosezizhi.lua	(working copy)
+@@ -247,6 +247,7 @@
+ 			sb:Set("parameter2", self:getZiZhiStr(zizhiType))
+ 			sb:Set("parameter3", self.itemConf.name)
+ 			GetCTipsManager():AddMessageTip(sb:GetString(MHSD_UTILS.get_msgtipstring(150069))) --xxx宠物xx资质已满，无法使用xx
++            sb:delete()
+ 			return
+ 		end
+ 	else
+Index: logic/pet/petskillidentify.lua
+===================================================================
+--- logic/pet/petskillidentify.lua	(revision 50390)
++++ logic/pet/petskillidentify.lua	(working copy)
+@@ -211,6 +211,7 @@
+ 		sb:Set("parameter2", self.petData:getAttribute(fire.pb.attr.AttrType.LEVEL))
+ 		sb:Set("parameter3", SkillBoxControl.GetSkillNamebyID(self.lastSelectedBtn:getID()))
+ 		local msg = sb:GetString(MHSD_UTILS.get_msgtipstring(150065))
++        sb:delete()
+ 		local des = MHSD_UTILS.get_resstring(11118)
+ 		local num = conf.certificationcost
+ 		CostConfirmBox.show(msg, des, num, PetSkillIdentify.handleConfirmIdentify, self, PetSkillIdentify.DestroyDialog)
+@@ -223,6 +224,7 @@
+ 		sb:Set("parameter3", SkillBoxControl.GetSkillNamebyID(skill.skillid))
+ 		sb:Set("parameter4", SkillBoxControl.GetSkillNamebyID(self.lastSelectedBtn:getID()))
+ 		local msg = sb:GetString(MHSD_UTILS.get_msgtipstring(150066))
++        sb:delete()
+ 		local des = MHSD_UTILS.get_resstring(11119)
+ 		local num = conf.cancelcertificationcost
+ 		CostConfirmBox.show(msg, des, num, PetSkillIdentify.handleConfirmIdentify, self, PetSkillIdentify.DestroyDialog)
+Index: logic/pet/petstoragedlg.lua
+===================================================================
+--- logic/pet/petstoragedlg.lua	(revision 50390)
++++ logic/pet/petstoragedlg.lua	(working copy)
+@@ -283,6 +283,7 @@
+ 		local strbuilder = StringBuilder:new()
+ 		strbuilder:Set("parameter1", conf.nextneedmoney)
+ 		local tipMsg = strbuilder:GetString(MHSD_UTILS.get_msgtipstring(160027))
++        strbuilder:delete()
+ 		gGetMessageManager():AddConfirmBox(eConfirmNormal,tipMsg,self.tobuyStorage,self,self.cancal,self)
+ 	end
+ end
+@@ -456,6 +457,7 @@
+ 			_instance.storagePetNum = MainPetDataManager.getInstance():GetDeportPetNum()
+ 			_instance:createNextorLastPageCell()	
+ 		end
++        strbuilder:delete()
+ 	end
+ end
+ -- 更新仓库最大容量
+Index: logic/pointcardserver/currencytradingdlg.lua
+===================================================================
+--- logic/pointcardserver/currencytradingdlg.lua	(revision 50390)
++++ logic/pointcardserver/currencytradingdlg.lua	(working copy)
+@@ -337,6 +337,7 @@
+         local strbuilder = StringBuilder:new()
+         strbuilder:Set("parameter1", tostring(self.m_sellunitmax))
+         local content = strbuilder:GetString(MHSD_UTILS.get_msgtipstring(300017))
++        strbuilder:delete()
+         dlg:setMaxMsg(content)
+ 		local p = self.m_SellUnit:GetScreenPos()
+ 		SetPositionOffset(dlg:GetWindow(), p.x-350, p.y+130, 0.5, 1)
+@@ -398,6 +399,7 @@
+         local strbuilder = StringBuilder:new()
+         strbuilder:Set("parameter1", tostring(self.m_sellunitmin))
+         local content = strbuilder:GetString(MHSD_UTILS.get_msgtipstring(300010))
++        strbuilder:delete()
+         GetCTipsManager():AddMessageTip(content)
+         self.m_sellunit = self.m_sellunitmin
+         self.m_SellUnit:setText(tostring(MoneyFormat(self.m_sellunitmin)))
+@@ -445,6 +447,7 @@
+         local strbuilder = StringBuilder:new()
+         strbuilder:Set("parameter1", tostring(self.m_sellnummax))
+         local content = strbuilder:GetString(MHSD_UTILS.get_msgtipstring(300019))
++        strbuilder:delete()
+         dlg:setMaxMsg(content)
+ 		local p = self.m_SellNum:GetScreenPos()
+ 		SetPositionOffset(dlg:GetWindow(), p.x-350, p.y+130, 0.5, 1)
+@@ -492,6 +495,7 @@
+         local strbuilder = StringBuilder:new()
+         strbuilder:Set("parameter1", tostring(self.m_sellnummin))
+         local content = strbuilder:GetString(MHSD_UTILS.get_msgtipstring(300018))
++        strbuilder:delete()
+         GetCTipsManager():AddMessageTip(content)
+         self.m_sellnum = self.m_sellnummin
+         self.m_SellNum:setText(tostring(self.m_sellnummin))
+@@ -542,6 +546,7 @@
+         local strbuilder = StringBuilder:new()
+         strbuilder:Set("parameter1", tostring(self.m_buynummax))
+         local content = strbuilder:GetString(MHSD_UTILS.get_msgtipstring(300019))
++        strbuilder:delete()
+         dlg:setMaxMsg(content)
+ 		local p = self.m_BuyNum:GetScreenPos()
+ 		SetPositionOffset(dlg:GetWindow(), p.x-350, p.y+130, 0.5, 1)
+@@ -587,6 +592,7 @@
+         local strbuilder = StringBuilder:new()
+         strbuilder:Set("parameter1", tostring(self.m_buynummin))
+         local content = strbuilder:GetString(MHSD_UTILS.get_msgtipstring(300018))
++        strbuilder:delete()
+         GetCTipsManager():AddMessageTip(content)
+         self.m_buynum = self.m_buynummin
+         self.m_BuyNum:setText(tostring(self.m_buynummin))
+@@ -635,6 +641,7 @@
+         local strbuilder = StringBuilder:new()
+         strbuilder:Set("parameter1", tostring(self.m_buyunitmax))
+         local content = strbuilder:GetString(MHSD_UTILS.get_msgtipstring(300017))
++        strbuilder:delete()
+         dlg:setMaxMsg(content)
+ 		local p = self.m_BuyUnit:GetScreenPos()
+ 		SetPositionOffset(dlg:GetWindow(), p.x-350, p.y+130, 0.5, 1)
+@@ -680,6 +687,7 @@
+         local strbuilder = StringBuilder:new()
+         strbuilder:Set("parameter1", tostring(self.m_buyunitmin))
+         local content = strbuilder:GetString(MHSD_UTILS.get_msgtipstring(300010))
++        strbuilder:delete()
+         GetCTipsManager():AddMessageTip(content)
+         self.m_buyunit = self.m_buyunitmin
+         self.m_BuyUnit:setText(tostring(MoneyFormat(self.m_buyunitmin)))
+@@ -750,6 +758,7 @@
+     local content = strbuilder:GetString(MHSD_UTILS.get_resstring(11549))
+     gGetMessageManager():AddConfirmBox(eConfirmNormal, content, ClickYes, 
+     self, ClickNo, self,0,0,nil,MHSD_UTILS.get_resstring(2035),MHSD_UTILS.get_resstring(2036))
++    strbuilder:delete()
+ end
+ 
+ function CurrencyTradingDlg:HandleSellResetClick(e)
+@@ -785,6 +794,7 @@
+     local content = strbuilder:GetString(MHSD_UTILS.get_resstring(11538))
+     gGetMessageManager():AddConfirmBox(eConfirmNormal, content, ClickYes, 
+     self, ClickNo, self,0,0,nil,MHSD_UTILS.get_resstring(2035),MHSD_UTILS.get_resstring(2036))
++    strbuilder:delete()
+ 
+ end
+ 
+Index: logic/pointcardserver/pointcardrecordcell.lua
+===================================================================
+--- logic/pointcardserver/pointcardrecordcell.lua	(revision 50390)
++++ logic/pointcardserver/pointcardrecordcell.lua	(working copy)
+@@ -61,6 +61,7 @@
+     else
+         content = strbuilder:GetString(MHSD_UTILS.get_resstring(11509))
+     end
++    strbuilder:delete()
+     self.m_txt:Clear()
+     self.m_txt:AppendParseText(CEGUI.String(content))
+         
+Index: logic/pointcardserver/quickpointcardbuydlg.lua
+===================================================================
+--- logic/pointcardserver/quickpointcardbuydlg.lua	(revision 50390)
++++ logic/pointcardserver/quickpointcardbuydlg.lua	(working copy)
+@@ -116,6 +116,7 @@
+         local strbuilder = StringBuilder:new()
+         strbuilder:Set("parameter1", tostring(self.m_MaxNum))
+         local content = strbuilder:GetString(MHSD_UTILS.get_msgtipstring(300019))
++        strbuilder:delete()
+         dlg:setMaxMsg(content)
+ 		local p = self.m_numText:GetScreenPos()
+ 		SetPositionOffset(dlg:GetWindow(), p.x, p.y + 300, 0.5, 1)
+@@ -130,6 +131,7 @@
+         local strbuilder = StringBuilder:new()
+         strbuilder:Set("parameter1", tostring(self.m_MinNum))
+         local content = strbuilder:GetString(MHSD_UTILS.get_msgtipstring(300018))
++        strbuilder:delete()
+         GetCTipsManager():AddMessageTip(content)
+         self.m_Num = self.m_MinNum
+         self:refreshText()
+@@ -144,6 +146,7 @@
+         local strbuilder = StringBuilder:new()
+         strbuilder:Set("parameter1", tostring(self.m_MaxNum))
+         local content = strbuilder:GetString(MHSD_UTILS.get_msgtipstring(300018))
++        strbuilder:delete()
+         GetCTipsManager():AddMessageTip(content)
+     else
+         self.m_Num = self.m_Num - 1
+@@ -167,6 +170,7 @@
+         local strbuilder = StringBuilder:new()
+         strbuilder:Set("parameter1", tostring(self.m_MaxNum))
+         local content = strbuilder:GetString(MHSD_UTILS.get_msgtipstring(300019))
++        strbuilder:delete()
+         GetCTipsManager():AddMessageTip(content)
+     else
+         self.m_Num = self.m_Num + 1
+Index: logic/pointcardserver/quickpointcardselldlg.lua
+===================================================================
+--- logic/pointcardserver/quickpointcardselldlg.lua	(revision 50390)
++++ logic/pointcardserver/quickpointcardselldlg.lua	(working copy)
+@@ -115,6 +115,7 @@
+         local strbuilder = StringBuilder:new()
+         strbuilder:Set("parameter1", tostring(self.m_MaxNum))
+         local content = strbuilder:GetString(MHSD_UTILS.get_msgtipstring(300019))
++        strbuilder:delete()
+         dlg:setMaxMsg(content)
+ 		local p = self.m_numText:GetScreenPos()
+ 		SetPositionOffset(dlg:GetWindow(), p.x, p.y + 300, 0.5, 1)
+@@ -129,6 +130,7 @@
+         local strbuilder = StringBuilder:new()
+         strbuilder:Set("parameter1", tostring(self.m_MinNum))
+         local content = strbuilder:GetString(MHSD_UTILS.get_msgtipstring(300018))
++        strbuilder:delete()
+         GetCTipsManager():AddMessageTip(content)
+         self.m_Num = self.m_MinNum
+         self:refreshText()
+@@ -143,6 +145,7 @@
+         local strbuilder = StringBuilder:new()
+         strbuilder:Set("parameter1", tostring(self.m_MinNum))
+         local content = strbuilder:GetString(MHSD_UTILS.get_msgtipstring(300018))
++        strbuilder:delete()
+         GetCTipsManager():AddMessageTip(content)
+     else
+         self.m_Num = self.m_Num - 1
+@@ -166,6 +169,7 @@
+         local strbuilder = StringBuilder:new()
+         strbuilder:Set("parameter1", tostring(self.m_MinNum))
+         local content = strbuilder:GetString(MHSD_UTILS.get_msgtipstring(300019))
++        strbuilder:delete()
+         GetCTipsManager():AddMessageTip(content)
+     else
+         self.m_Num = self.m_Num + 1
+Index: logic/qiandaosongli/leveluprewardcell.lua
+===================================================================
+--- logic/qiandaosongli/leveluprewardcell.lua	(revision 50390)
++++ logic/qiandaosongli/leveluprewardcell.lua	(working copy)
+@@ -76,6 +76,7 @@
+ 	local strBuild = StringBuilder:new()
+ 	strBuild:Set("parameter1", nLv)
+ 	self.m_txtTitle:setText(strBuild:GetString(MHSD_UTILS.get_resstring(11203)))	
++    strBuild:delete()
+ 	local nCount = 0
+ 	for i = 0, self.m_vecItemList:size() - 1 do
+ 		local itemid = self.m_vecItemList[i]
+Index: logic/qiandaosongli/qiandaosonglidlg_mtg.lua
+===================================================================
+--- logic/qiandaosongli/qiandaosonglidlg_mtg.lua	(revision 50390)
++++ logic/qiandaosongli/qiandaosonglidlg_mtg.lua	(working copy)
+@@ -112,11 +112,13 @@
+ 	local strbuilder = StringBuilder:new()
+ 	strbuilder:Set("parameter1", self.m_times)
+ 	local strTimes = strbuilder:GetString(MHSD_UTILS.get_resstring( 11162))
++    strbuilder:delete()
+ 	self.m_txtDay:setText(strTimes)
+ 
+ 	local strbuilderB = StringBuilder:new()
+ 	strbuilderB:Set("parameter1", self.m_nFillTimes)
+ 	local strFillTimes = strbuilderB:GetString(MHSD_UTILS.get_resstring( 11163))
++    strbuilderB:delete()
+ 	self.m_txtTimes:setText(strFillTimes)
+ end
+ 
+Index: logic/shengsizhan/shengsibangdlg.lua
+===================================================================
+--- logic/shengsizhan/shengsibangdlg.lua	(revision 50390)
++++ logic/shengsizhan/shengsibangdlg.lua	(working copy)
+@@ -429,7 +429,8 @@
+ 		local chatCmd = require "protodef.fire.pb.talk.ctranschatmessage2serv".Create()
+ 		chatCmd.messagetype = id
+ 		chatCmd.message = strbuilder:GetString(msgqing)--"<T t=\"asdfasdfsdf\" c=\"FF693F00\"></T><P t=\"[watch]\" type=\"14\" key=\"".. tostring(dt.videoid) .."\" TextColor=\"FF693F00\"></P>"
+-		chatCmd.checkshiedmessage = ""
++		strbuilder:delete()
++        chatCmd.checkshiedmessage = ""
+ 		chatCmd.displayinfos = {}
+         if id == 4 then chatCmd.funtype = 2 
+         elseif id == 5 then chatCmd.funtype = 3 
+Index: logic/shengsizhan/shengsizhandlg.lua
+===================================================================
+--- logic/shengsizhan/shengsizhandlg.lua	(revision 50390)
++++ logic/shengsizhan/shengsizhandlg.lua	(working copy)
+@@ -156,6 +156,7 @@
+     MHSD_UTILS.get_resstring(2037),
+     MHSD_UTILS.get_resstring(2038)
+     )
++    strbuilder:delete()
+ end
+ function ShengSiZhanDlg:OnEditActive(args)
+     if self.inputBox:isInputFocus() then
+@@ -228,6 +229,7 @@
+     MHSD_UTILS.get_resstring(2037),
+     MHSD_UTILS.get_resstring(2038)
+     )
++    strbuilder:delete()
+ end
+ 
+ local p = require "protodef.fire.pb.battle.livedie.sacceptinvitationlivediebattle"
+Index: logic/shop/mallshop.lua
+===================================================================
+--- logic/shop/mallshop.lua	(revision 50390)
++++ logic/shop/mallshop.lua	(working copy)
+@@ -412,7 +412,7 @@
+ 	    local sb = require "utils.stringbuilder":new()
+ 	    sb:Set("parameter", limitNum)
+ 	    local strmsg = sb:GetString(goodsConf.des)
+-
++        sb:delete()
+ 	    self.detailText:Clear()
+         self.detailText:AppendParseText(CEGUI.String(strmsg))
+ 	    self.detailText:Refresh()
+Index: logic/skill/characterskillupdatedlg.lua
+===================================================================
+--- logic/skill/characterskillupdatedlg.lua	(revision 50390)
++++ logic/skill/characterskillupdatedlg.lua	(working copy)
+@@ -347,7 +347,7 @@
+ 
+             local unlockCond = winMgr:getWindow("SkillStudyDlg/jiesuojieneng/text12bg/xianzhi")
+             unlockCond:setText(strbuilder:GetString(MHSD_UTILS.get_resstring(11181)))
+-
++            strbuilder:delete()
+             local skillBox = CEGUI.toSkillBox(winMgr:getWindow("SkillStudyDlg/jiesuojieneng/skibox"))
+             skillBox:Clear()
+             SkillBoxControl.SetSkillInfo(skillBox, skillID,0)
+@@ -387,6 +387,7 @@
+             local strbuilder = StringBuilder.new()
+             strbuilder:Set("parameter1", tostring(acuPointLevel))
+             progressBar:setText(strbuilder:GetString(MHSD_UTILS.get_resstring(10030)))
++            strbuilder:delete()
+         end
+         self:updateTipsOfJueji(skillID)
+         if acuPointLevel < tonumber(GameTable.common.GetCCommonTableInstance():getRecorder(225).value) then
+@@ -396,13 +397,14 @@
+             local strbuilder = StringBuilder.new()
+             strbuilder:Set("parameter1", tostring(acuPointLevel + 1))
+             local part2 = strbuilder:GetString(MHSD_UTILS.get_resstring(10030))
++            strbuilder:delete()
+             local part3 = "(" .. MHSD_UTILS.get_resstring(3175) .. ")"
+ 
+             local dependLevels = StringBuilder.Split(skillPointInfo.juejiDependLevel, ",")
+             local strbuilder2 = StringBuilder.new()
+             strbuilder2:Set("parameter1", tostring(dependLevels[acuPointLevel + 1]))
+             local part4 = strbuilder2:GetString(MHSD_UTILS.get_resstring(11180))
+-
++            strbuilder2:delete()
+             local upgradeDesc = self:GetJuejiSkillTextNext(skillID)
+             local part = part1 .. part2 .. part3 .. "\n" .. part4 .. "\n" .. upgradeDesc
+             local desc_st = winMgr:getWindow("SkillStudyDlg/juejijiesuo/bf/bianliang")
+@@ -595,6 +597,7 @@
+     end
+ 
+     richBox:AppendText(CEGUI.String(strbuilder:GetString(consume)), CEGUI.ColourRect(CEGUI.PropertyHelper:stringToColour(Color1)))
++    strbuilder:delete()
+     richBox:AppendBreak()
+     richBox:AppendText(CEGUI.String(" "))
+     richBox:AppendBreak()
+@@ -719,6 +722,7 @@
+         end
+ 
+         self.m_levelUpDes_box:AppendText(CEGUI.String(strbuilder:GetString(consume)), CEGUI.ColourRect(CEGUI.PropertyHelper:stringToColour(Color1)))
++        strbuilder:delete()
+         self.m_levelUpDes_box:AppendBreak()
+         self.m_levelUpDes_box:AppendText(CEGUI.String(" "))
+         self.m_levelUpDes_box:AppendBreak()
+Index: logic/skill/gonghuiskilldlg.lua
+===================================================================
+--- logic/skill/gonghuiskilldlg.lua	(revision 50390)
++++ logic/skill/gonghuiskilldlg.lua	(working copy)
+@@ -294,6 +294,7 @@
+ 		strbld:Set("parameter2", curLifeSkillRecord.ParaIndexList[1])
+ 		strbld:Set("parameter3", curLifeSkillRecord.ParaIndexList[2])
+ 		skillDesc_layout:AppendParseText(CEGUI.String(strbld:GetString(curLifeSkillRecord.description)))
++        strbld:delete()
+ 	else
+ 		local textColour = CEGUI.PropertyHelper:stringToColourRect("ff8c5e2a")
+ 		skillDesc_layout:AppendText(CEGUI.String(curLifeSkillRecord.description), textColour, false)
+@@ -694,6 +695,7 @@
+ 				    local strbuilder = StringBuilder:new()
+ 				    strbuilder:Set("parameter1", eachItem.needLevel)
+ 				    level_st:setText(strbuilder:GetString(MHSD_UTILS.get_resstring(10030)))
++                    strbuilder:delete()
+ 				    level_st:setProperty("ClippedByParent", "true")
+ 				    -- 鎵撻�犵绛夌骇
+ 				    
+@@ -818,6 +820,7 @@
+ 			        local strbuilder = StringBuilder:new()
+ 			        strbuilder:Set("parameter1", eachItem.needLevel)
+ 			        level_st:setText(strbuilder:GetString(MHSD_UTILS.get_resstring(10030)))
++                    strbuilder:delete()
+ 			        level_st:setProperty("ClippedByParent", "true")
+ 			        
+ 
+@@ -1092,6 +1095,7 @@
+ 		    strbuilder:Set("parameter1", itemRecord.name)
+ 		    strbuilder:Set("parameter2", itemRecord.itemNameColor)
+ 		    GetCTipsManager():AddMessageTip(strbuilder:GetString(MHSD_UTILS.get_msgtipstring(150102)))
++            strbuilder:delete()
+         end
+ 	elseif result == 1 then
+ 		GetCTipsManager():AddMessageTipById(150101)
+Index: logic/skill/strengthusedlg.lua
+===================================================================
+--- logic/skill/strengthusedlg.lua	(revision 50390)
++++ logic/skill/strengthusedlg.lua	(working copy)
+@@ -232,7 +232,7 @@
+ 	local strbuilder =StringBuilder:new()
+ 	strbuilder:Set("parameter1", tostring(math.floor(3+0.09*roleLevel)))
+ 	local content = strbuilder:GetString(strAllString)
+-	
++	strbuilder:delete()
+ 	local tips1 = require "logic.workshop.tips1"
+     tips1.getInstanceAndShow(content, title)
+ 	
+@@ -245,6 +245,7 @@
+ 		local strbuilder = StringBuilder:new()
+ 		strbuilder:Set("parameter1", tostring(self.m_dagongStrength))
+ 		GetCTipsManager():AddMessageTip(strbuilder:GetString(MHSD_UTILS.get_msgtipstring(143432)))
++        strbuilder:delete()
+ 		return
+ 	end
+ 	local p = require "protodef.fire.pb.skill.liveskill.cliveskillmakefarm".Create()
+@@ -269,6 +270,7 @@
+ 		local strbuilder = StringBuilder:new()
+ 		strbuilder:Set("parameter1", tostring(self.m_tongxinStrength))
+ 		GetCTipsManager():AddMessageTip(strbuilder:GetString(MHSD_UTILS.get_msgtipstring(143432)))
++        strbuilder:delete()
+ 		return
+ 	end
+ 	local p = require "protodef.fire.pb.skill.liveskill.cliveskillmakefriendgift".Create()
+Index: logic/skill/xiulianskilldlg.lua
+===================================================================
+--- logic/skill/xiulianskilldlg.lua	(revision 50390)
++++ logic/skill/xiulianskilldlg.lua	(working copy)
+@@ -355,6 +355,7 @@
+     strbuilder:Set("parameter5", tostring(limit))
+     strbuilder:Set("color5", greenColor)
+     local content = strbuilder:GetString(strAllString)
++    strbuilder:delete()
+     tips1.getInstanceAndShow(content, title)
+ 
+     local tips_instance = tips1.getInstanceAndShow(content, title)
+Index: logic/task/renwulistdialog.lua
+===================================================================
+--- logic/task/renwulistdialog.lua	(revision 50390)
++++ logic/task/renwulistdialog.lua	(working copy)
+@@ -419,6 +419,7 @@
+         
+     end
+     strTrackContent = sb:GetString(strTrackContent)
++    sb:delete()
+     newUnit.pContent:Clear()
+ 	newUnit.pContent:AppendParseText(CEGUI.String(strTrackContent))
+     newUnit.pContent:Refresh()
+Index: logic/task/taskdialog.lua
+===================================================================
+--- logic/task/taskdialog.lua	(revision 50390)
++++ logic/task/taskdialog.lua	(working copy)
+@@ -587,6 +587,7 @@
+ 	sb:GetString(anyeRecord.followtitledes),
+ 	strTrackContent,
+ 	0,0,0,nil);
++    sb:delete()
+ end
+ function Renwudialog:RefreshItemNameAndColour(pItem, queststate)
+ 	if queststate == spcQuestState.DONE then
+Index: logic/team/teamhanhuaedit.lua
+===================================================================
+--- logic/team/teamhanhuaedit.lua	(revision 50390)
++++ logic/team/teamhanhuaedit.lua	(working copy)
+@@ -152,7 +152,7 @@
+         sb:Set("parameter7", self.m_TalkContant:GetPureText())
+         sb:Set("parameter8", gGetDataManager():GetMainCharacterID())
+         msg = sb:GetString(msg)
+-
++        sb:delete()
+ 	    local p = require('protodef.fire.pb.team.conekeyteammatch').Create()
+         p.channeltype = channelID
+         p.text = msg
+Index: logic/tips/commontipdlg.lua
+===================================================================
+--- logic/tips/commontipdlg.lua	(revision 50390)
++++ logic/tips/commontipdlg.lua	(working copy)
+@@ -1091,6 +1091,7 @@
+         local strbuilder = StringBuilder:new()
+         strbuilder:Set("parameter1", tostring(self.m_num))
+         content = strbuilder:GetString(itemAttrCfg.name)
++        strbuilder:delete()
+     else
+         content= itemAttrCfg.name
+         
+@@ -1703,8 +1704,8 @@
+ 	local strbuilder = StringBuilder:new()
+ 	strbuilder:Set("parameter1", nSignID % 100 - parentDlg.m_times )
+ 	local strSignTimes = strbuilder:GetString(MHSD_UTILS.get_resstring( 11178 )) 
++	strbuilder:delete()
+ 	
+-	
+ 	if nSignID % 100 <=  parentDlg.m_times then--had signed
+ 		self.richBox:AppendParseText(CEGUI.String(strGot))
+ 		self.richBox:AppendBreak()
+Index: logic/tips/equipinfotips.lua
+===================================================================
+--- logic/tips/equipinfotips.lua	(revision 50390)
++++ logic/tips/equipinfotips.lua	(working copy)
+@@ -267,6 +267,7 @@
+         local strbuilder = StringBuilder:new()
+         strbuilder:Set("parameter1", tejiPropertyCfg.costnum)
+         local content = strbuilder:GetString(tejiPropertyCfg.cost)
++        strbuilder:delete()
+ 		self.richBox:AppendText(CEGUI.String(content), CEGUI.ColourRect(CEGUI.PropertyHelper:stringToColour(strNormalColor)))
+ 		--self.richBox:AppendText(CEGUI.String(strTjiName), CEGUI.ColourRect(CEGUI.PropertyHelper:stringToColour(strNormalColor)))
+ 		self.richBox:AppendBreak()
+Index: logic/wisdomtrialdlg/wisdomrrialhelpdlg.lua
+===================================================================
+--- logic/wisdomtrialdlg/wisdomrrialhelpdlg.lua	(revision 50390)
++++ logic/wisdomtrialdlg/wisdomrrialhelpdlg.lua	(working copy)
+@@ -139,6 +139,7 @@
+     local msgqing = require "utils.mhsdutils".get_resstring(11438)
+     strbuilder:Set("parameter1", tostring(self.m_name))
+     local content = strbuilder:GetString(msgqing)
++    strbuilder:delete()
+     self.m_nameEditbox:AppendParseText(CEGUI.String(content))
+     self.m_nameEditbox:Refresh()
+     
+Index: manager/npcservicemanager.lua
+===================================================================
+--- manager/npcservicemanager.lua	(revision 50390)
++++ manager/npcservicemanager.lua	(working copy)
+@@ -500,6 +500,7 @@
+             local sb = StringBuilder:new()
+             sb:Set("parameter1", itemattr.name)
+             local strMsg = sb:GetString(tip)
++            sb:delete()
+             NpcDialog.getInstance():AddTipsMessage(npcId, npcBaseId, strMsg)
+         end
+     else

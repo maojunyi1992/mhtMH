@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="TaharezLook/FrameWindow" Name="MainPackDlg" >
+        <Property Name="Scale" Value="x:1 y:1 z:1" />
+        <Property Name="ModalState" Value="True" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="LuaForDialog" Value="True" />
+        <Property Name="RollUpEnabled" Value="True" />
+        <Property Name="SizingEnabled" Value="False" />
+        <Property Name="SoundResource" Value="dlgopen.ogg" />
+        <Property Name="LimitWindowSize" Value="False" />
+        <Property Name="TitlebarEnabled" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0.5,-562},{0.5,-353},{0.5,542},{0.5,329}}" />
+        <Property Name="DragMovingEnabled" Value="False" />
+        <Property Name="CloseSoundResource" Value="dlgopen.ogg" />
+        <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+        <Window Type="TaharezLook/common_hengxian" Name="MainPackDlg/hengxian" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,106},{0,531},{0,504},{0,533}}" />
+            <Property Name="AllowModalStateClick" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/AntiqueCase1" Name="MainPackDlg/Line" >
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.491426,-1},{0.0328948,35},{0.532155,-18},{0.953947,11}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MainPackDlg/Back" >
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,76},{0,568},{0,520},{0,669}}" />
+            <Window Type="TaharezLook/StaticText" Name="MainPackDlg/Back1" >
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="TextColours" Value="tl:FFDCF6CE tr:FFDCF6CE bl:FF10BBD3 br:FF10BBD3" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="ClippedByParent" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0.148936,43},{0,219},{0.148936,86}}" />
+                <Window Type="TaharezLook/StaticImage" Name="MainPackDlg/yuanbao1" >
+                    <Property Name="Image" Value="set:ccui1 image:jb" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,-36},{0,35},{0,-3}}" />
+                </Window>
+                <Window Type="TaharezLook/qiandi" Name="MainPackDlg/Back1/textbg1" >
+                    <Property Name="Font" Value="simhei-12" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,13},{0,-31},{0,195},{0,-6}}" />
+                </Window>
+                <Window Type="TaharezLook/StaticText" Name="MainPackDlg/yuanbao" >
+                    <Property Name="Font" Value="simhei-12" />
+                    <Property Name="Text" Value="1.111.111.111" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="HorzExtent" Value="143" />
+                    <Property Name="VertExtent" Value="21.9893" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="BorderColour" Value="FF845C33" />
+                    <Property Name="BorderEnable" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="HorzFormatting" Value="HorzCentred" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,34},{0.061224,-41},{0,185},{0.061224,-5}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="MainPackDlg/Back3" >
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="TextColours" Value="tl:FFDCF6CE tr:FFDCF6CE bl:FF10BBD3 br:FF10BBD3" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="ClippedByParent" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,493},{0.148936,-10},{0,711},{0.148936,33}}" />
+                <Window Type="TaharezLook/qiandi" Name="MainPackDlg/Back1/textbg11" >
+                    <Property Name="Font" Value="simhei-12" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,-235},{0,22},{0,-62},{0,47}}" />
+                </Window>
+                <Window Type="TaharezLook/StaticText" Name="MainPackDlg/money" >
+                    <Property Name="Font" Value="simhei-12" />
+                    <Property Name="Text" Value="2,222,222,221" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="HorzExtent" Value="143" />
+                    <Property Name="VertExtent" Value="21.9893" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="BorderColour" Value="FF845C33" />
+                    <Property Name="BorderEnable" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="HorzFormatting" Value="HorzCentred" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,-221},{0.061224,12},{0,-77},{0.061224,48}}" />
+                </Window>
+                <Window Type="TaharezLook/StaticImage" Name="MainPackDlg/money1" >
+                    <Property Name="Image" Value="set:ccui1 image:yb" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.05,-268},{0.05,16},{0.05,-232},{0.05,49}}" />
+                </Window>
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="MainPackDlg/Back4" >
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="TextColours" Value="tl:FFDCF6CE tr:FFDCF6CE bl:FF10BBD3 br:FF10BBD3" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="ClippedByParent" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,-6},{0.148936,47},{0,212},{0.148936,95}}" />
+                <Window Type="TaharezLook/StaticImage" Name="MainPackDlg/xianyu1" >
+                    <Property Name="Image" Value="set:ccui1 image:xy" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,5},{0,-4},{0,41},{0,28}}" />
+                </Window>
+                <Window Type="TaharezLook/qiandi" Name="MainPackDlg/Back1/textbg111" >
+                    <Property Name="Font" Value="simhei-12" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,21},{0,1},{0,198},{0,25}}" />
+                </Window>
+                <Window Type="TaharezLook/StaticText" Name="MainPackDlg/xianyu" >
+                    <Property Name="Font" Value="simhei-12" />
+                    <Property Name="Text" Value="2,222,222,221" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="HorzExtent" Value="143" />
+                    <Property Name="VertExtent" Value="21.9893" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="BorderColour" Value="FF845C33" />
+                    <Property Name="BorderEnable" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="HorzFormatting" Value="HorzCentred" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,40},{0.061224,-4},{0,197},{0.061224,21}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="MainPackDlg/Back5" >
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="Visible" Value="False" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="TextColours" Value="tl:FFDCF6CE tr:FFDCF6CE bl:FF10BBD3 br:FF10BBD3" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="ClippedByParent" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,-169},{0.148936,67},{0,49},{0.148936,110}}" />
+                <Window Type="TaharezLook/StaticImage" Name="MainPackDlg/rongyuzhi1" >
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,26},{0,-41},{0,72},{0,6}}" />
+                </Window>
+                <Window Type="TaharezLook/qiandi" Name="MainPackDlg/Back1/textbg1111" >
+                    <Property Name="Font" Value="simhei-12" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,19},{0,-45},{0,218},{0,11}}" />
+                </Window>
+                <Window Type="TaharezLook/StaticText" Name="MainPackDlg/rongyuzhi" >
+                    <Property Name="Font" Value="plantc-13" />
+                    <Property Name="Text" Value="2,222,222,221" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="HorzExtent" Value="72.5" />
+                    <Property Name="VertExtent" Value="27.9189" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="TextColours" Value="tl:FFFF46F0 tr:FFFF46F0 bl:FFFF46F0 br:FFFF46F0" />
+                    <Property Name="BorderColour" Value="FF845C33" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="HorzFormatting" Value="HorzCentred" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,72},{0.061224,-39},{0,206},{0.061224,-3}}" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="EquipDialog/Back" >
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,66},{0,62},{0,562},{0,668}}" />
+            <Window Type="TaharezLook/StaticImage" Name="EquipDialog/Back/Pattern" >
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,-69},{0,487},{0,513}}" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+                <Window Type="TaharezLook/StaticText" Name="EquipDialog/point1" >
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="Visible" Value="False" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="TextColours" Value="tl:FFFCDC6E tr:FFFCDC6E bl:FFFFB500 br:FFFFB500" />
+                    <Property Name="BorderColour" Value="FF220B01" />
+                    <Property Name="BorderEnable" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="HorzFormatting" Value="HorzCentred" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,92},{0.1,194},{0,141},{0.1,215}}" />
+                </Window>
+                <Window Type="TaharezLook/StaticImage" Name="EquipDialog/Back/Pattern/diban" >
+                    <Property Name="Font" Value="simhei-12" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,76},{0,555},{0,408},{0,594}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                    <Window Type="TaharezLook/StaticText" Name="EquipDialog/Back/Pattern/diban/pingfen" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Text" Value="人物评分" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="HorzExtent" Value="88" />
+                        <Property Name="VertExtent" Value="21.9893" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                        <Property Name="BorderColour" Value="FF003454" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,59},{0,2},{0,192},{0,36}}" />
+                    </Window>
+                    <Window Type="TaharezLook/StaticText" Name="EquipDialog/point" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Text" Value="5000" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="HorzExtent" Value="44" />
+                        <Property Name="VertExtent" Value="21.9893" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="TextColours" Value="tl:FF5E3F25 tr:FF5E3F25 bl:FF5E3F25 br:FF5E3F25" />
+                        <Property Name="BorderColour" Value="FF3C3518" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="ClippedByParent" Value="False" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.05,134},{0.05,1},{0.05,251},{0.05,33}}" />
+                    </Window>
+                </Window>
+                <Window Type="TaharezLook/StaticText" Name="EquipDialog/vippoint" >
+                    <Property Name="Font" Value="plantc-15" />
+                    <Property Name="Text" Value="88" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="Visible" Value="False" />
+                    <Property Name="HorzExtent" Value="20.5" />
+                    <Property Name="VertExtent" Value="34.8987" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="TextColours" Value="tl:FFFF0033 tr:FFFF0033 bl:FF000000 br:FF000000" />
+                    <Property Name="BorderColour" Value="FFFF0033" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="ClippedByParent" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.05,163},{0.05,151},{0.05,291},{0.05,188}}" />
+                </Window>
+                <Window Type="TaharezLook/StaticImage" Name="EquipDialog/Back/Pattern/equip" >
+                    <Property Name="Font" Value="simhei-12" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,-16},{0,55},{0,480},{0,525}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                    <Window Type="TaharezLook/StaticImage" Name="EquipDialog/Back/ditu" >
+                        <Property Name="Image" Value="set:diban image:di" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="HorzFormatting" Value="LeftAligned" />
+                        <Property Name="VertFormatting" Value="TopAligned" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,17},{0,-42},{0,499},{0,546}}" />
+                        <Property Name="MousePassThroughEnabled" Value="True" />
+                    </Window>
+                    <Window Type="TaharezLook/ItemCell" Name="EquipDialog/tire" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,43},{0,90},{0,126},{0,172}}" />
+                        <Property Name="NormalTextColour" Value="FF261407" />
+                    </Window>
+                    <Window Type="TaharezLook/ItemCell" Name="EquipDialog/arms" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,43},{0,180},{0,126},{0,262}}" />
+                        <Property Name="NormalTextColour" Value="FF261407" />
+                    </Window>
+                    <Window Type="TaharezLook/ItemCell" Name="EquipDialog/waistband" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,43},{0,270},{0,126},{0,352}}" />
+                        <Property Name="NormalTextColour" Value="FF261407" />
+                    </Window>
+                    <Window Type="TaharezLook/ItemCell" Name="EquipDialog/cloak1" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,43},{0,360},{0,126},{0,442}}" />
+                        <Property Name="NormalTextColour" Value="FF261407" />
+                    </Window>
+                    <Window Type="TaharezLook/StaticImage" Name="EquipDialog/spriteBack" >
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.05,136},{0.05,174},{0.05,310},{0.05,356}}" />
+                        <Property Name="MousePassThroughEnabled" Value="True" />
+                        <Window Type="DefaultWindow" Name="EquipDialog/Back/SpriteEffectTop" >
+                            <Property Name="Scale" Value="x:1 y:1 z:1" />
+                            <Property Name="EnableSound" Value="True" />
+                            <Property Name="LuaForDialog" Value="True" />
+                            <Property Name="ClippedByParent" Value="False" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,21},{0,-35},{0,161},{0,209}}" />
+                            <Property Name="MousePassThroughEnabled" Value="True" />
+                        </Window>
+                    </Window>
+                    <Window Type="TaharezLook/ItemCell" Name="EquipDialog/adorn" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,363},{0,90},{0,446},{0,172}}" />
+                        <Property Name="NormalTextColour" Value="FF261407" />
+                    </Window>
+                    <Window Type="TaharezLook/ItemCell" Name="EquipDialog/loricae" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,363},{0,180},{0,446},{0,262}}" />
+                        <Property Name="NormalTextColour" Value="FF261407" />
+                    </Window>
+                    <Window Type="TaharezLook/ItemCell" Name="EquipDialog/boot" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,363},{0,270},{0,446},{0,352}}" />
+                        <Property Name="NormalTextColour" Value="FF261407" />
+                    </Window>
+                    <Window Type="TaharezLook/ItemCelltm" Name="EquipDialog/cloak" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,363},{0,359},{0,446},{0,441}}" />
+                        <Property Name="NormalTextColour" Value="FF261407" />
+                    </Window>
+                    <Window Type="TaharezLook/StaticImage" Name="EquipDialog/Back/Pattern/equip/biaoshic" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Image" Value="set:ccui1 image:xingying1" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,363},{0,360},{0,446},{0,442}}" />
+                        <Property Name="MousePassThroughEnabled" Value="True" />
+                    </Window>
+                </Window>
+                <Window Type="TaharezLook/StaticImage" Name="EquipDialog/Back/Pattern/fabao" >
+                    <Property Name="Font" Value="simhei-12" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="Visible" Value="False" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,-9},{0,85},{0,447},{0,514}}" />
+                    <Window Type="TaharezLook/ItemCell" Name="EquipDialog/extern03" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,219},{0,62},{0,270},{0,107}}" />
+                        <Property Name="NormalTextColour" Value="FF261407" />
+                    </Window>
+                    <Window Type="TaharezLook/StaticImage" Name="EquipDialog/Back/Pattern/jingmai1" >
+                        <Property Name="Image" Value="set:chongwuui2 image:sucai60" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.1,-22},{0.1,-44},{0.1,414},{0.1,361}}" />
+                        <Property Name="MousePassThroughEnabled" Value="True" />
+                    </Window>
+                    <Window Type="TaharezLook/ItemCell" Name="EquipDialog/extern04" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,129},{0,123},{0,179},{0,171}}" />
+                        <Property Name="NormalTextColour" Value="FF261407" />
+                    </Window>
+                    <Window Type="TaharezLook/ItemCell" Name="EquipDialog/new1" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,177},{0,228},{0,226},{0,274}}" />
+                        <Property Name="NormalTextColour" Value="FF261407" />
+                    </Window>
+                    <Window Type="TaharezLook/ItemCell" Name="EquipDialog/new2" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,219},{0,322},{0,268},{0,367}}" />
+                        <Property Name="NormalTextColour" Value="FF261407" />
+                    </Window>
+                    <Window Type="TaharezLook/ItemCell" Name="EquipDialog/new3" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,259},{0,228},{0,308},{0,274}}" />
+                        <Property Name="NormalTextColour" Value="FF261407" />
+                    </Window>
+                    <Window Type="TaharezLook/ItemCell" Name="EquipDialog/new4" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,307},{0,123},{0,356},{0,170}}" />
+                        <Property Name="NormalTextColour" Value="FF261407" />
+                    </Window>
+                    <Window Type="TaharezLook/ItemCell" Name="EquipDialog/cloak11" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,220},{0,118},{0,268},{0,163}}" />
+                        <Property Name="NormalTextColour" Value="FF261407" />
+                    </Window>
+                    <Window Type="TaharezLook/ItemCell" Name="EquipDialog/new5" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,219},{0,178},{0,268},{0,225}}" />
+                        <Property Name="NormalTextColour" Value="FF261407" />
+                    </Window>
+                </Window>
+                <Window Type="TaharezLook/StaticImage" Name="EquipDialog/Back/Pattern/lingshi" >
+                    <Property Name="Font" Value="simhei-12" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="Visible" Value="False" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,-15},{0,104},{0,485},{0,499}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                    <Window Type="TaharezLook/ItemCell" Name="EquipDialog/fashion4" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Text" Value="法宝1" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,65},{0,82},{0,136},{0,151}}" />
+                        <Property Name="NormalTextColour" Value="FF261407" />
+                    </Window>
+                    <Window Type="TaharezLook/StaticImage" Name="EquipDialog/Back/Pattern/jingmai" >
+                        <Property Name="Image" Value="set:ccui1 image:fabaodi" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.1,9},{0.1,5},{0.1,372},{0.1,300}}" />
+                        <Property Name="MousePassThroughEnabled" Value="True" />
+                    </Window>
+                    <Window Type="TaharezLook/ItemCell" Name="EquipDialog/fashion1" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Text" Value="法宝2" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.05,321},{0.05,62},{0.05,392},{0.05,131}}" />
+                        <Property Name="NormalTextColour" Value="FF261407" />
+                    </Window>
+                    <Window Type="TaharezLook/ItemCell" Name="EquipDialog/fashion3" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Text" Value="法宝3" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.1,31},{0.1,183},{0.1,102},{0.1,252}}" />
+                        <Property Name="NormalTextColour" Value="FF261407" />
+                    </Window>
+                    <Window Type="TaharezLook/ItemCell" Name="EquipDialog/fashion2" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Text" Value="法宝4" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.15,256},{0.15,164},{0.15,327},{0.15,233}}" />
+                        <Property Name="NormalTextColour" Value="FF261407" />
+                    </Window>
+                    <Window Type="TaharezLook/ItemCell" Name="EquipDialog/extern01" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Text" Value="经脉1" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.2,106},{0.2,59},{0.2,177},{0.2,128}}" />
+                        <Property Name="NormalTextColour" Value="FF261407" />
+                    </Window>
+                    <Window Type="TaharezLook/ItemCell" Name="EquipDialog/extern02" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Text" Value="经脉1" />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.25,81},{0.25,162},{0.25,152},{0.25,231}}" />
+                        <Property Name="NormalTextColour" Value="FF261407" />
+                    </Window>
+                </Window>
+                <Window Type="TaharezLook/StaticImage" Name="EquipDialog/Back/Pattern/fashion" >
+                    <Property Name="Font" Value="simhei-12" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="Visible" Value="False" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,31},{0,481},{0,475}}" />
+                </Window>
+                <Window Type="TaharezLook/Button" Name="EquipDialog/Back/Pattern/clearequip" >
+                    <Property Name="Font" Value="simhei-12" />
+                    <Property Name="Text" Value="卸装装备" />
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="Visible" Value="False" />
+                    <Property Name="SizeType" Value="Auto" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="EnableSound" Value="True" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="EnableClickAni" Value="True" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.05,364},{0.05,417},{0.05,458},{0.05,461}}" />
+                </Window>
+            </Window>
+            <Window Type="TaharezLook/RichEditbox" Name="EquipDialog/Back/Sar" >
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="ReadOnly" Value="True" />
+                <Property Name="LineSpace" Value="1" />
+                <Property Name="BlinkCaret" Value="True" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="MaxTextLength" Value="2147483647" />
+                <Property Name="UnifiedAreaRect" Value="{{0.233256,0},{-0.179211,0},{0.233256,4},{-0.179211,4}}" />
+                <Property Name="BackGroundEnable" Value="False" />
+                <Property Name="BlinkCaretTimeout" Value="0.5" />
+                <Property Name="TextParsingEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="EquipDialog/ring" >
+                <Property Name="Text" Value="饰品总评分 50000" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="Visible" Value="False" />
+                <Property Name="HorzExtent" Value="136" />
+                <Property Name="VertExtent" Value="16.5" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="TextColours" Value="tl:FF37EFFF tr:FF37EFFF bl:FF1E90D8 br:FF1E90D8" />
+                <Property Name="BorderColour" Value="FF003458" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="ClippedByParent" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.0441108,59},{0.0490143,395},{0.0441108,255},{0.0490143,425}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="EquipDialog/wupin0" >
+                <Property Name="Font" Value="simhei-12" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="Visible" Value="False" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,305},{0,93},{0,394}}" />
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="MainPackDlg/money11211" >
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="ClippedByParent" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.15,-81},{0.15,329},{0.15,-13},{0.15,371}}" />
+            </Window>
+            <Window Type="TaharezLook/GroupButton1" Name="MainPackDlg/shizhuang" >
+                <Property Name="Font" Value="simhei-16" />
+                <Property Name="Text" Value="时装" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="EnableClickAni" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,-522},{0,35},{0,-349},{0,115}}" />
+            </Window>
+        </Window>
+        <Window Type="TaharezLook/GroupButton1" Name="EquipDialog/Ability" >
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="SoundResource" Value="Biaoqian.ogg" />
+            <Property Name="EnableClickAni" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,413},{0,631},{0,413},{0,631}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MainPackDlg/tidy2" >
+            <Property Name="Font" Value="simhei-14" />
+            <Property Name="Text" Value="商 会" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="SoundResource" Value="button.ogg" />
+            <Property Name="EnableClickAni" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,-449},{0.009058,198},{0,-291},{0,254}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MainPackDlg/tidy1" >
+            <Property Name="Text" Value="快速出售" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="SoundResource" Value="button.ogg" />
+            <Property Name="EnableClickAni" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,562},{0.05,592.9},{0.05,693},{0.05,640.9}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MainPackDlg/tidy3" >
+            <Property Name="Text" Value="随身仓库" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="SoundResource" Value="button.ogg" />
+            <Property Name="EnableClickAni" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,601},{0.05,509.9},{0.05,735},{0.05,561.9}}" />
+        </Window>
+        <Window Type="DefaultWindow" Name="MainPackDlg/tabpanle" >
+            <Property Name="Font" Value="simhei-16" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,553},{0,53},{0,1049},{0,595}}" />
+            <Window Type="TaharezLook/common_text2bg" Name="MainPackDlg/texg2bg" >
+                <Property Name="Font" Value="simhei-12" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0,8},{0,81},{0,468},{0,539}}" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ScrollablePane" Name="MainPackDlg/scrolllabelpane" >
+                <Property Name="Font" Value="simhei-18" />
+                <Property Name="Text" Value="    物 品    " />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="ContentArea" Value="l:0 t:0 r:480 b:1395" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="HorzStepSize" Value="0.1" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="VertStepSize" Value="0.1" />
+                <Property Name="HorzOverlapSize" Value="0.01" />
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,90},{0,469},{0,523}}" />
+                <Property Name="VertOverlapSize" Value="0.01" />
+                <Property Name="HorzScrollPosition" Value="0" />
+                <Property Name="VertScrollPosition" Value="0" />
+                <AutoWindow NameSuffix="__auto_container__" >
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="ContentArea" Value="l:0 t:0 r:480 b:1395" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="ChildExtentsArea" Value="l:0 t:0 r:480 b:1395" />
+                    <Window Type="TaharezLook/ItemTable" Name="MainPackDlg/tabpanle/Table1" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Text" Value="   一   " />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="SpaceX" Value="4" />
+                        <Property Name="SpaceY" Value="4" />
+                        <Property Name="ColCount" Value="5" />
+                        <Property Name="RowCount" Value="28" />
+                        <Property Name="CellWidth" Value="83" />
+                        <Property Name="CellHeight" Value="83" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="LimitWindowSize" Value="False" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,20},{0,3},{0,480},{0,1395}}" />
+                    </Window>
+                </AutoWindow>
+            </Window>
+            <Window Type="TaharezLook/GroupButtoncc1" Name="MainPackDlg/tabpanle/bagbtn" >
+                <Property Name="Font" Value="simhei-16" />
+                <Property Name="Text" Value="物 品" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="Selected" Value="True" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="SoundResource" Value="book.ogg" />
+                <Property Name="EnableClickAni" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,10},{0,234},{0,78}}" />
+            </Window>
+            <Window Type="TaharezLook/GroupButtoncc1" Name="MainPackDlg/tabpanle/taskbtn" >
+                <Property Name="Font" Value="simhei-16" />
+                <Property Name="Text" Value="任 务" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="SoundResource" Value="book.ogg" />
+                <Property Name="EnableClickAni" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,238},{0,10},{0,466},{0,78}}" />
+            </Window>
+            <Window Type="TaharezLook/ScrollablePane" Name="MainPackDlg/scrolllabelpane2" >
+                <Property Name="Font" Value="simhei-16" />
+                <Property Name="Text" Value="    任 务    " />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="Visible" Value="False" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="ContentArea" Value="l:0 t:0 r:496 b:453" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="HorzStepSize" Value="0.1" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="VertStepSize" Value="0.1" />
+                <Property Name="HorzOverlapSize" Value="0.01" />
+                <Property Name="UnifiedAreaRect" Value="{{0,3},{0,81},{0,476},{0,522}}" />
+                <Property Name="VertOverlapSize" Value="0.01" />
+                <Property Name="HorzScrollPosition" Value="0" />
+                <Property Name="VertScrollPosition" Value="0" />
+                <AutoWindow NameSuffix="__auto_container__" >
+                    <Property Name="Scale" Value="x:1 y:1 z:1" />
+                    <Property Name="ContentArea" Value="l:0 t:0 r:496 b:453" />
+                    <Property Name="LuaForDialog" Value="True" />
+                    <Property Name="ChildExtentsArea" Value="l:0 t:0 r:496 b:453" />
+                    <Window Type="TaharezLook/ItemTable" Name="MainPackDlg/tabpanle/Table2" >
+                        <Property Name="Font" Value="simhei-12" />
+                        <Property Name="Text" Value="   一   " />
+                        <Property Name="Scale" Value="x:1 y:1 z:1" />
+                        <Property Name="SpaceX" Value="4" />
+                        <Property Name="SpaceY" Value="4" />
+                        <Property Name="ColCount" Value="5" />
+                        <Property Name="RowCount" Value="5" />
+                        <Property Name="CellWidth" Value="83" />
+                        <Property Name="CellHeight" Value="83" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="EnableSound" Value="True" />
+                        <Property Name="LuaForDialog" Value="True" />
+                        <Property Name="LimitWindowSize" Value="False" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,22},{0,12},{0,496},{0,453}}" />
+                    </Window>
+                </AutoWindow>
+            </Window>
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="MainPackDlg/jiaccc" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="NormalImage" Value="set:ccui image:jia" />
+            <Property Name="PushedImage" Value="set:ccui image:jia" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="EnableClickAni" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,500},{0,594},{0,531},{0,622}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="MainPackDlg/jiacccc" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="NormalImage" Value="set:ccui image:jia" />
+            <Property Name="PushedImage" Value="set:ccui image:jia" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="EnableClickAni" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,264},{0,629},{0,295},{0,657}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="EquipDialog/Back/Pattern/VIP" >
+            <Property Name="Font" Value="simhei-14" />
+            <Property Name="Text" Value="会员VIP:" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,154},{0.05,128},{0.05,287},{0.05,168}}" />
+        </Window>
+        <Window Type="TaharezLook/Buttonc254" Name="MainPackDlg/tidy" >
+            <Property Name="Font" Value="simhei-14" />
+            <Property Name="Text" Value="整理背包" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="SoundResource" Value="button.ogg" />
+            <Property Name="EnableClickAni" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.050725,819},{0.050725,561},{0.050725,965},{0.050725,617}}" />
+            <Property Name="ButtonBorderColour" Value="ff743a0f" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MainPackDlg/qingkong1" >
+            <Property Name="Font" Value="simhei-16" />
+            <Property Name="Text" Value="后台攻略" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="SoundResource" Value="button.ogg" />
+            <Property Name="EnableClickAni" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.1,137},{0.1,57},{0.1,266},{0.1,105}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MainPackDlg/fenjiegem" >
+            <Property Name="Font" Value="simhei-14" />
+            <Property Name="Text" Value="分解宝石" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="SoundResource" Value="button.ogg" />
+            <Property Name="EnableClickAni" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,616},{0.059058,554},{0.05,733},{0.05,611}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MainPackDlg/qingkong" >
+            <Property Name="Font" Value="simhei-14" />
+            <Property Name="Text" Value="清理背包" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="SoundResource" Value="button.ogg" />
+            <Property Name="EnableClickAni" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.050725,666},{0.050725,562},{0.050725,806},{0.050725,617}}" />
+            <Property Name="NormalTextColour" Value="ffff0000" />
+        </Window>
+        <Window Type="TaharezLook/Buttonc254" Name="MainPackDlg/fenjieequip" >
+            <Property Name="Font" Value="simhei-14" />
+            <Property Name="Text" Value="分解装备" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="SoundResource" Value="button.ogg" />
+            <Property Name="EnableClickAni" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.050725,508},{0.050725,561},{0.050725,653},{0.050725,617}}" />
+            <Property Name="ButtonBorderColour" Value="ff743a0f" />
+            <Property Name="DisabledTextColour" Value="" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="MainPackDlg/jiacc" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="NormalImage" Value="set:ccui image:jia" />
+            <Property Name="PushedImage" Value="set:ccui image:jia" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="EnableClickAni" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,209},{0.05,560},{0.05,240},{0.05,588}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="MainPackDlg/ccziti" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,238},{0.05,-26},{0.05,747},{0.05,20}}" />
+            <Window Type="TaharezLook/StaticText" Name="MainPackDlg/ccziti/" >
+                <Property Name="Font" Value="simhei-18" />
+                <Property Name="Text" Value="包 裹" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="HorzExtent" Value="82.5" />
+                <Property Name="VertExtent" Value="32.9839" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="UnifiedAreaRect" Value="{{0,167},{0,5},{0,337},{0,43}}" />
+            </Window>
+        </Window>
+        <Window Type="TaharezLook/GroupButtonc2" Name="MainPackDlg/lingshi" >
+            <Property Name="Font" Value="simhei-16" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="EnableClickAni" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,85},{0.05,42},{0.05,421},{0.05,99}}" />
+        </Window>
+        <Window Type="TaharezLook/GroupButtonc3" Name="MainPackDlg/fabao" >
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="NormalImage" Value="set:ccui1 image:tujian" />
+            <Property Name="PushedImage" Value="set:ccui1 image:tujian" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="SoundResource" Value="button.ogg" />
+            <Property Name="EnableClickAni" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.25,-285},{0.25,-109},{0.25,-202},{0.25,84}}" />
+            <Property Name="ButtonBorderColour" Value="FF002B65" />
+            <Window Type="TaharezLook/StaticText" Name="MainPackDlg/fabao/t1" >
+                <Property Name="Font" Value="simhei-12" />
+                <Property Name="Text" Value="经 脉" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="HorzExtent" Value="22" />
+                <Property Name="VertExtent" Value="65.9678" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="TextColours" Value="tl:FF8C5E2A tr:FF8C5E2A bl:FF8C5E2A br:FF8C5E2A" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+                <Property Name="UnifiedAreaRect" Value="{{0,29.3},{0,25.3},{0,59.55},{0,119.55}}" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+            </Window>
+        </Window>
+        <Window Type="TaharezLook/GroupButtonc3" Name="MainPackDlg/huishou" >
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="NormalImage" Value="set:chongwuui image:fenye2" />
+            <Property Name="PushedImage" Value="set:chongwuui image:fenye1" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="SoundResource" Value="button.ogg" />
+            <Property Name="EnableClickAni" Value="True" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.25,776},{0.25,311},{0.25,846},{0.25,437}}" />
+            <Property Name="ButtonBorderColour" Value="FF002B65" />
+            <Window Type="TaharezLook/StaticText" Name="MainPackDlg/huishou/hui" >
+                <Property Name="Font" Value="simhei-14" />
+                <Property Name="Text" Value="回收" />
+                <Property Name="Scale" Value="x:1 y:1 z:1" />
+                <Property Name="HorzExtent" Value="26" />
+                <Property Name="VertExtent" Value="51.3187" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="TextColours" Value="tl:FF743A0F tr:FF743A0F bl:FF743A0F br:FF743A0F" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="LuaForDialog" Value="True" />
+                <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+                <Property Name="UnifiedAreaRect" Value="{{0,11.3},{0,4.3},{0,41.55},{0,97.55}}" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+            </Window>
+        </Window>
+        <Window Type="TaharezLook/GroupButtonc1" Name="MainPackDlg/equip" >
+            <Property Name="Font" Value="simhei-16" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="EnableClickAni" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.15,47},{0.15,341},{0.15,215},{0.15,411}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="MainPackDlg/jia1" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="EnableClickAni" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.1,-36},{0.1,519},{0.1,186},{0.1,558}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="MainPackDlg/jia2" >
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Scale" Value="x:1 y:1 z:1" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="LuaForDialog" Value="True" />
+            <Property Name="EnableClickAni" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.15,146},{0.15,485},{0.15,368},{0.15,524}}" />
+        </Window>
+    </Window>
+</GUILayout>

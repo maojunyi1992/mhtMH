@@ -1,0 +1,14 @@
+Index: huobanzhuzhanjiesuo.lua
+===================================================================
+--- huobanzhuzhanjiesuo.lua	(revision 50330)
++++ huobanzhuzhanjiesuo.lua	(working copy)
+@@ -135,6 +135,9 @@
+     local msg = strbuilder:GetString(MHSD_UTILS.get_msgtipstring(msgid))
+     strbuilder:delete()
+     gGetMessageManager():AddConfirmBox(eConfirmNormal, msg, huobanzhuzhanjiesuo.HandleYes, self, huobanzhuzhanjiesuo.HandleNo, self, 0, 0, nil, "", "")
++    self.mWndNpc1:setSelected(false)
++    self.mWndNpc2:setSelected(false)
++    self.mWndNpc3:setSelected(false)
+ end
+ 
+ -- ½âËø1

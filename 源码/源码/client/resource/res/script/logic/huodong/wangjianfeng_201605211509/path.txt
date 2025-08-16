@@ -1,0 +1,2 @@
+MTG-13170   E:\mt3\client\resource\res\script\logic\huodong
+MTG-13170  【BUG】【挂机】活动中好友试炼描述错误【0.0.143版本】 
